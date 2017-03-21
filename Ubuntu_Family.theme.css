@@ -73,7 +73,7 @@ DIV#overlay-explanation,
 .change-log LI, .change-log .markdown-modal-footer,
 .server-row SPAN:not(.server-name-span):not(BUTTON), #pubs-footer,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
-#bdcl H1, #bdcl .footer,
+#bdcl H1, #bdcl .footer{
     font-family: var(--bodyfam) !important;}
 
 /* Monospace fonts */
