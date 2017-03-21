@@ -44,17 +44,17 @@ DIV#bda-qem *, .emoji-picker .category,
 #app-mount:after{
     font-family: var(--headfam) !important;}
 
-/* Body content and information */
+/* Body content, menus and and information */
 INPUT, LABEL A, P,
 .notice,
-.tooltip,
-.checkbox, .radio, .Select *,
+.tooltip, .checkbox, .radio, .Select *,
 .timestamp,
 .help-text, .item-group,
 .popout-menu, .option-popout *,
 DIV.friends-online, DIV#bd-pub-button,
 .modal-inner .scroller,
 .topic, .search-bar *,
+.quick-region-select,
 .channel-textarea-inner *,
 .message-group .markup:not(.user-name):not(CODE):not(PRE),
 .search-popout DIV:not(.header),
