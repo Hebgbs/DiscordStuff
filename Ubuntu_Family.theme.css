@@ -44,7 +44,7 @@ DIV#bda-qem *, .emoji-picker .category,
 #app-mount:after{
     font-family: var(--headfam) !important;}
 
-/* Body content, menus and and information */
+/* Body content, menus and information */
 INPUT, LABEL A, P,
 .notice,
 .tooltip, .checkbox, .radio, .Select *,
