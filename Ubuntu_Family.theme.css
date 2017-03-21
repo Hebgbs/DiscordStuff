@@ -3,7 +3,7 @@
 /* > This is an example of how different fonts could be applied to the Dicord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
    > Information about additional changes at the bottom of this sheet.
-   > Additional notes can be found @ https://git.io/vyxJO */
+   > Additional notes can be found @ ADDRESS HERE */
    
 /* Font configiuration */
 	/* > Import argument for web fonts;
@@ -51,7 +51,7 @@ INPUT, LABEL A, P,
 .checkbox, .radio, .Select *,
 .timestamp,
 .help-text, .item-group,
-.popout-menu,
+.popout-menu, .option-popout *,
 DIV.friends-online, DIV#bd-pub-button,
 .modal-inner .scroller,
 .topic, .search-bar *,
@@ -74,7 +74,6 @@ DIV#overlay-explanation,
 .server-row SPAN:not(.server-name-span):not(BUTTON), #pubs-footer,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
 #bdcl H1, #bdcl .footer,
-* .bda-description{
     font-family: var(--bodyfam) !important;}
 
 /* Monospace fonts */
