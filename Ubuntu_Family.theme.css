@@ -1,0 +1,118 @@
+//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular, Ubuntu Condensed Regular, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
+
+/* > This is an example of how different fonts could be applied to the Dicord interface.
+     Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
+   > Information about additional changes at the bottom of this sheet.
+   > Additional notes can be found @ ADDRESS HERE */
+   
+/* Font configiuration */
+	/* > Import argument for web fonts;
+		 use whatever famlies specified for these imports */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed|Ubuntu+Mono');
+:root{ /* Begin each with the families provided by the import arguments */
+	--headfam: Ubuntu,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--bodyfam: "Ubuntu Condensed",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--monofam: "Ubuntu Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+
+/* Headings and titles */
+BUTTON, H2, H3, H4, FORM HEADER, LABEL:not(A),
+DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
+.badge, .new-messages-indicator, .channels-wrap *,
+.channel-name, .alert-actions *, .btn-close-forever,
+.modal-inner .markdown-modal-header,
+.title, .search-popout DIV.header, .empty-results-content *,
+.channel-name.focus *,
+.user-name, .username,
+.edit-operation,
+.nickname, .channel-members SPAN,
+.user-popout .discord-tag *,
+.roles, .notes .label,
+.messages-popout .bottom,
+DIV#bda-qem *, .emoji-picker .category,
+.friends-header,.friends-empty *,
+.friends-table-header,.friends-row,
+#voice-connection-popout,
+.tab-bar *,
+.connection, .authed-app .header,
+.user-settings-modal-keybinds .account-warning,
+.radio-theme:after,
+.item-game *:not(.last-played),
+.streamer-mode-enabled-btn,
+.change-log .markdown-modal-header, .changelog-margin-top,
+* .bda-name,
+.server-row SPAN.server-name-span,
+#app-mount:after{
+    font-family: var(--headfam) !important;}
+
+/* Body content and information */
+INPUT, LABEL A, P,
+.notice,
+.tooltip,
+.checkbox, .radio, .Select *,
+.timestamp,
+.help-text, .item-group,
+.popout-menu,
+DIV.friends-online, DIV#bd-pub-button,
+.modal-inner .scroller,
+.topic, .search-bar *,
+.channel-textarea-inner *,
+.message-group .markup:not(.user-name):not(CODE):not(PRE),
+.search-popout DIV:not(.header),
+.member-activity, DIV.activity, .activity STRONG, .friends-table-body .status-text,
+DIV.creation-date-wrapper,
+.note *, .protip *,
+.need-help-modal *:not(H1),
+*::-webkit-input-placeholder,
+.friend-table-add-description,
+.user-settings-avatar-upload .remove-button,
+.user-settings-modal-accounts-list,
+.authed-app .body, .authed-app LI,
+.control-group A,
+DIV#overlay-explanation,
+.item-game .last-played *, .now-playing, .now-playing-add,
+.change-log LI, .change-log .markdown-modal-footer,
+.server-row SPAN:not(.server-name-span):not(BUTTON), #pubs-footer,
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
+#bdcl H1, #bdcl .footer,
+* .bda-description{
+    font-family: var(--bodyfam) !important;}
+
+/* Monospace fonts */
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
+CODE,
+CODE.inline,
+.shortcut-recorder INPUT,
+.CodeMirror{
+    font-family: var(--monofam) !important;
+	font-size: 10pt !important;}
+
+/* > These can (and should) be modified or removed as necessary.
+     Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
+   > Any fixes applied, removed or to be modified requires Discord to be restated. */
+
+	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
+:root{--listfix: 0px;}
+.bda-slist .bda-left{
+	width: calc(80% - var(--listfix)) !Important;}
+.bda-slist .bda-right{
+	width: 20% !important;
+	margin-right: var(--listfix) !Important;}
+	
+    /* Resolve spacing issues with some parts of the interface */
+.empty-results-text{
+    width: calc(280px + 26px) !Important;}
+
+	/* Resolve spacing issues with ClearVision themes */
+DIV#voice-connection{
+    padding-left: 4px !Important;
+	padding-right: 14px !important;}
+
+	/* Font weight adjustments */
+.tab-bar.TOP *,
+.badge,
+.title *,
+.user-name, .channel-members *:not(H2),
+.alert-actions *, .btn-close-forever,
+.server-info SPAN:not(.server-name-span), #pubs-footer SPAN,
+#voice-connection-popout A{
+    font-weight: normal !Important;}
