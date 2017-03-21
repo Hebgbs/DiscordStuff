@@ -1,4 +1,4 @@
-//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed Regular, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
+//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
@@ -48,7 +48,7 @@ DIV#bda-qem *, .emoji-picker .category,
 INPUT, LABEL A, P,
 .notice,
 .tooltip, .checkbox, .radio, .Select *,
-.timestamp,
+.timestamp, DIV.attachment-inner DIV,
 .help-text, .item-group,
 .popout-menu, .option-popout *,
 DIV.friends-online, DIV#bd-pub-button,
@@ -58,11 +58,12 @@ DIV.friends-online, DIV#bd-pub-button,
 .channel-textarea-inner *,
 .message-group .markup:not(.user-name):not(CODE):not(PRE),
 .search-popout DIV:not(.header),
+.account .discriminator, .account:after,
 .member-activity, DIV.activity, .activity STRONG, .friends-table-body .status-text,
 DIV.creation-date-wrapper,
 .note *, .protip *,
 .need-help-modal *:not(H1),
-*::-webkit-input-placeholder, .account:after,
+*::-webkit-input-placeholder,
 .friend-table-add-description,
 .user-settings-avatar-upload .remove-button,
 .user-settings-modal-accounts-list,
@@ -78,8 +79,8 @@ DIV#overlay-explanation,
 
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
-CODE,
-CODE.inline,
+CODE, CODE.inline,
+DIV.attachment-inner A,
 .shortcut-recorder INPUT,
 .CodeMirror{
     font-family: var(--monofam) !important;
