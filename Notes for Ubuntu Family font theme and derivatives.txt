@@ -11,7 +11,7 @@ This entire block up to line 044 is dedicated to headings, titles and other "Bol
 
 !!! View informaton about content below line 087 for fixing appearance of connection information right of the guild scroller.
 
-> Line 047: /* Body content and information */
+> Line 047: /* Body content, menus and information */
 Thie entire block up to line 076 is dedicated to body text, informative text and other parts of the interface which do not stand out as readily. Fonts for this should be more subdued, and ideally thinner in size to stuff more text into each line, while still being pleasant to read. As a stellar example of this, Ubuntu Condensed manages to make the overlay explanation in the "Overlay" User Settings modal still pleasant to read, but wraps around to two lines instead of three.
 
 !!! View informaton about content below line 087 for fixing appearance of BetterDiscord's Themes and Plugins tabs in the BetterDiscord category of the User Settings modal.
