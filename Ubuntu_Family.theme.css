@@ -1,9 +1,9 @@
-//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular, Ubuntu Condensed Regular, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
+//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed Regular, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
 
-/* > This is an example of how different fonts could be applied to the Dicord interface.
+/* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
    > Information about additional changes at the bottom of this sheet.
-   > Additional notes can be found @ ADDRESS HERE */
+   > Additional notes can be found @ https://git.io/vyxJO */
    
 /* Font configiuration */
 	/* > Import argument for web fonts;
@@ -30,7 +30,7 @@ DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
 .messages-popout .bottom,
 DIV#bda-qem *, .emoji-picker .category,
 .friends-header,.friends-empty *,
-.friends-table-header,.friends-row,
+.friends-table-header, .friends-row,
 #voice-connection-popout,
 .tab-bar *,
 .connection, .authed-app .header,
