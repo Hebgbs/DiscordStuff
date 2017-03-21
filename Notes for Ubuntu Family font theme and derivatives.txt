@@ -1,0 +1,42 @@
+> Line 011: @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono');
+This line is intended to load web fonts. If instead you are using local fonts installed on local machine, lines 009-011 can be removed entirely in favour for fonts on your local machine.
+Local font locations;
+* Windows: `%systemroot%\fonts
+* All else: `/usr/share/fonts`, `$HOME/.fonts`
+
+Please view information from the font fountry or distributor about the web-applicable name for the font you wish to use.
+
+> Line 017: /* Headings and titles */
+This entire block up to line 044 is dedicated to headings, titles and other "Bold fonts" that are intended to be applied to differentiate from the information or body sections in various parts of the Discord interface. This font should stand out significantly compared to the body font used.
+
+!!! View informaton about content below line 087 for fixing appearance of connection information right of the guild scroller.
+
+> Line 047: /* Body content and information */
+Thie entire block up to line 076 is dedicated to body text, informative text and other parts of the interface which do not stand out as readily. Fonts for this should be more subdued, and ideally thinner in size to stuff more text into each line, while still being pleasant to read. As a stellar example of this, Ubuntu Condensed manages to make the overlay explanation in the "Overlay" User Settings modal still pleasant to read, but wraps around to two lines instead of three.
+
+!!! View informaton about content below line 087 for fixing appearance of BetterDiscord's Themes and Plugins tabs in the BetterDiscord category of the User Settings modal.
+
+> Line 080: /* Monospace fonts */
+This entire block up to line 085 is dedicated to code. This deals with inline code text for messages (`Code`), code blocks (```\nCode```) and the .CodeMirror class BetterDiscord relies on. For giggles, it also declares the BetterDiscord version text uses monospace as well. This change can be undone by commenting the entirety of line 079. It may also be removed, but doing so will make following this document more difficult than it has any right to be.
+
+!!! If you're someone who deals a lot in it for your own Discord UI projects, you may want to adjust some of this to your own preference, specificallt the class .CodeMirror by breaking it off into its own block with a different font you like, or by specifying a variable (example: --codefam) and choosing what font you prefer in the section beginning at line 011. Make this one of the very last changes you make so information later in this document makes sense.
+
+> Line 089: /* > These can (and should) be modified or removed as necessary.
+Below this line are fixes that are necessary for optimal rendering of the user interface. In order of appearance;
+
+>>> Line 092
+Issue this resolves: Checkbox duplication and list text overlapping, making the BetterDiscord Themes and PLugins tabs (not the catrgories from EvenBetterRepo) difficult to manipulate.
+How to adjust: Line 092; Adjust value for variable --listfix
+Additional info: If the font specified at line 13 for variable --headfam is too large for the buttons which also causes them to duplicate, this fix should also resolve that issue.
+
+>>> Line 101
+Issue this resolves: Font being too large for placeholder when no chat search results are found ("We searched far and wide. Unfortunately, no results were found.") so it wraps around two lines (as it does by default with no style applied) instead of three.
+How to adjust: In the calc equation provided, adjust the lower number. By default this is 28px to accommodate the style's default font.
+
+>>> Line 104
+Issue this resolves: Spacing in the section right of the guild scroller where the text and voice channels are listed, at voice status and actions
+Additional info: Delete this if you want, however in my experimentation if you are using a body font that is especially wide (like Raleway, for example) then stuff looks weird. If this isn't nedessary to you or the theme in use, you're free to remove it.
+
+>>> Line 110
+Issue this resolves: Some thickness preferences.
+Additional info: Modify or remove as desired.
