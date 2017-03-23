@@ -21,7 +21,7 @@ DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
 .channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
 .channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
 .user-name, .username, .nickname, #user-profile-modal .connected-accounts,
-.modal-inner .markdown-modal-header, .title, .search-popout DIV.header,
+.modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
 .empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
 .invite-button *, .divider *,
 .edit-operation, .image-gif:after, .download-button,
@@ -52,7 +52,7 @@ INPUT, LABEL A, P,
 .popout-menu, .option-popout *, .context-menu *,
 .popout .text, .popout .subtitle,
 DIV.friends-online, DIV#bd-pub-button,
-.topic, .search-bar *,
+.topic.topic-expandable, .search-bar *,
 .empty-message H1, .system-message DIV, .quick-region-select,
 .channel-textarea-inner *,
 .message-group .markup:not(.user-name):not(CODE):not(PRE),
@@ -116,6 +116,7 @@ DIV#voice-connection{
 .radio-theme:after,
 .embed-field-name, .embed-footer,
 .invite-button-body,.divider *,
+.topic:not(.topic-expandable),
 .user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
 #voice-connection-popout A,
@@ -125,4 +126,4 @@ DIV#voice-connection{
 font-weight: bold !Important;}
 		/* Font size */
 #pubs-footer SPAN{
-    font-size: 16px !Important;}
+    font-size: 16px !Important;
