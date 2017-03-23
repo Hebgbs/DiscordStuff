@@ -1,4 +1,4 @@
-//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.0"}*//{}
+//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.2"}*//{}
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
@@ -15,20 +15,20 @@
 	--monofam: "Ubuntu Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace;}
 
 /* Headings and titles */
-BUTTON, H2, H3, H4, FORM HEADER, LABEL:not(A),
+BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
 DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
-.badge, .new-messages-indicator, .channels-wrap *,
-.channel-name, .alert-actions *, .btn-close-forever,
-.modal-inner .markdown-modal-header,
-.title, .search-popout DIV.header, .empty-results-content *,
-.channel-name.focus *,
-.user-name, .username,
-.edit-operation,
-.nickname, .channel-members SPAN,
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
+.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
+.channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
+.user-name, .username, .nickname, #user-profile-modal .connected-accounts,
+.modal-inner .markdown-modal-header, .title, .search-popout DIV.header,
+.empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
+.invite-button *, .divider *,
+.edit-operation, .image-gif:after, .download-button,
 .user-popout .discord-tag *,
-.roles, .notes .label,
+.roles, .notes .label, .modal-inner .section-header,
 .messages-popout .bottom,
-DIV#bda-qem *, .emoji-picker .category,
+DIV#bda-gem *, .emoji-picker .category,
 .friends-header,.friends-empty *,
 .friends-table-header, .friends-row,
 #voice-connection-popout,
@@ -40,26 +40,26 @@ DIV#bda-qem *, .emoji-picker .category,
 .streamer-mode-enabled-btn,
 .change-log .markdown-modal-header, .changelog-margin-top,
 * .bda-name,
-.server-row SPAN.server-name-span,
+.server-row SPAN.server-name-span, .server-row.server-pinned,
 #app-mount:after{
     font-family: var(--headfam) !important;}
 
 /* Body content, menus and information */
 INPUT, LABEL A, P,
-.notice,
-.tooltip, .checkbox, .radio, .Select *,
-.timestamp, DIV.attachment-inner DIV,
+.notice, .tooltip, .checkbox, .radio, .Select *, 
+.timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
 .help-text, .item-group,
-.popout-menu, .option-popout *,
+.popout-menu, .option-popout *, .context-menu *,
+.popout .text, .popout .subtitle,
 DIV.friends-online, DIV#bd-pub-button,
-.modal-inner .scroller,
 .topic, .search-bar *,
-.quick-region-select,
+.empty-message H1, .system-message DIV, .quick-region-select,
 .channel-textarea-inner *,
 .message-group .markup:not(.user-name):not(CODE):not(PRE),
 .search-popout DIV:not(.header),
-.account .discriminator, .account:after,
-.member-activity, DIV.activity, .activity STRONG, .friends-table-body .status-text,
+.user-popout .discriminator, SPAN.discriminator, .account:after,
+.channel-activity, .channel-activity STRONG, DIV.activity,
+.activity STRONG, .member-activity,  .friends-table-body .status-text,
 DIV.creation-date-wrapper,
 .note *, .protip *,
 .need-help-modal *:not(H1),
@@ -72,7 +72,8 @@ DIV.creation-date-wrapper,
 DIV#overlay-explanation,
 .item-game .last-played *, .now-playing, .now-playing-add,
 .change-log LI, .change-log .markdown-modal-footer,
-.server-row SPAN:not(.server-name-span):not(BUTTON), #pubs-footer,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
+#server-bd-tag, #pubs-footer,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
 #bdcl H1, #bdcl .footer{
     font-family: var(--bodyfam) !important;}
@@ -80,7 +81,7 @@ DIV#overlay-explanation,
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
 CODE, CODE.inline,
-DIV.attachment-inner A,
+DIV.attachment-inner A, .accessory .embed-provider,
 .shortcut-recorder INPUT,
 .CodeMirror{
     font-family: var(--monofam) !important;
@@ -88,7 +89,7 @@ DIV.attachment-inner A,
 
 /* > These can (and should) be modified or removed as necessary.
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
-   > Any fixes applied, removed or to be modified requires Discord to be restated. */
+   > Any fixes applied, removed or to be modified requires Discord to be restarted. */
 
 	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
 :root{--listfix: 0px;}
@@ -99,20 +100,29 @@ DIV.attachment-inner A,
 	margin-right: var(--listfix) !Important;}
 	
     /* Resolve spacing issues with some parts of the interface */
+		/* Search results "Empty" placeholder " */
 .empty-results-text{
     width: calc(280px + 26px) !Important;}
-
-	/* Resolve spacing issues with ClearVision themes */
+		/* Voice connection status; ClearVision only */
 DIV#voice-connection{
     padding-left: 4px !Important;
 	padding-right: 14px !important;}
 
-	/* Font weight adjustments */
-.tab-bar.TOP *,
-.badge,
-.title *,
-.user-name, .channel-members *:not(H2),
+	/* Other Font tweaks */
+		/* Font weight */
+.title *, .accessory .embed-provider,
+.tab-bar.TOP *, .guild-header *,
+.badge, .reaction-count, .more-mutual-guilds-btn,
+.radio-theme:after,
+.embed-field-name, .embed-footer,
+.invite-button-body,.divider *,
+.user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
-.server-info SPAN:not(.server-name-span), #pubs-footer SPAN,
-#voice-connection-popout A{
+#voice-connection-popout A,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
     font-weight: normal !Important;}
+.system-message A{
+font-weight: bold !Important;}
+		/* Font size */
+#pubs-footer SPAN{
+    font-size: 16px !Important;}
