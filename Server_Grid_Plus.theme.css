@@ -1,4 +1,4 @@
-//META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.0~Hebgbs"}*//{}
+//META{"name":"Server_Grid_Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.0~Hebgbs"}*//{}
 
 :root{ /* Change integers to adjust how this theme functions */
     --NguildCols: /*Show*/ 1 /*column(s) normally*/;
