@@ -44,7 +44,7 @@
 
 .guilds-wrapper .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
-    This code resolves the above tampering with the DMs section. */
+       This code resolves the above tampering with the DMs section. */
     position: static;
     margin: inherit;
     margin-top: 8px;
