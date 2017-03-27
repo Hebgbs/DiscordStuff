@@ -1,8 +1,8 @@
 //META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.0~Hebgbs"}*//{}
 
 :root{ /* Change integers to adjust how this theme functions */
-	--NguildCols: /*Show*/ 1 /*column(s) normally*/;
-	--HguildCols: /*Show*/ 3 /*column(s) on hover*/;}
+    --NguildCols: /*Show*/ 1 /*column(s) normally*/;
+    --HguildCols: /*Show*/ 3 /*column(s) on hover*/;}
 
 /* #######################################
    # Don't touch any of the below if you #
@@ -27,16 +27,16 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-	margin-left: 8px;
+    margin-left: 8px;
     margin-top: 8px;}
 
 .guilds-wrapper .guilds .guild.unread::before{
-	left: -2px;
+    left: -2px;
     top: 5px;
     z-index:9000;}
 
 .guilds-wrapper .guilds .guild:first-child{
-	/* FIXME: Code needs to not affect SPAN.dms */
+    /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
     left: 0;
     margin: auto;
@@ -44,29 +44,29 @@
 
 .guilds-wrapper .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
-	   This code resolves the above tampering with the DMs section. */
+    This code resolves the above tampering with the DMs section. */
     position: static;
     margin: inherit;
     margin-top: 8px;
     margin-left: 8px}
 
 #bd-pub-li{
-	position: absolute;
+    position: absolute;
     top: 0px;
     left: 0px;}
 
 #bd-pub-li #bd-pub-button{
     position:absolute;
     width: 100%;
-	text-align: center;}
+    text-align: center;}
 
 .guilds-wrapper .guilds .guild-separator{
-	position: relative;
+    position: relative;
     width: 100%;
     margin-top: 10px;}
 
 .guilds-wrapper .guilds .friends-online{
-	position: relative;
+    position: relative;
     width: 100%;
     margin: auto;
     margin-top: 5px;}
@@ -75,7 +75,7 @@
     display: none;}
 
 .guilds-wrapper .guilds .guild{
-	position: relative;
+    position: relative;
 }
 
 .guilds-wrapper .guilds .dms{
