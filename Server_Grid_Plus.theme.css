@@ -1,7 +1,7 @@
 //META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, modified by Hebgbs","version":"1.0~Hebgbs"}*//{}
 
 :root{ /* Value represents How many columns of servers / DMs will appear.
-		  Cut this block and paste into custom CSS to adjust at-will. */
+	  Cut this block and paste into custom CSS to adjust at-will. */
     --guildcols: 3;}
 
 /* How many columns to display normally;
@@ -29,16 +29,16 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-	  margin-left: 8px;
+    margin-left: 8px;
     margin-top: 8px;}
 
 .guilds-wrapper .guilds .guild.unread::before{
-	  left: -2px;
+    left: -2px;
     top: 5px;
     z-index:9000;}
 
 .guilds-wrapper .guilds .guild:first-child{
-	/* FIXME: Code needs to not affect SPAN.dms */
+    /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
     left: 0;
     margin: auto;
@@ -46,7 +46,7 @@
 
 .guilds-wrapper .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
-	   This code resolves the above tampering with the DMs section. */
+       This code resolves the above tampering with the DMs section. */
     position: static;
     margin: inherit;
     margin-top: 8px;
@@ -63,12 +63,12 @@
 	  text-align: center;}
 
 .guilds-wrapper .guilds .guild-separator{
-	  position: relative;
+    position: relative;
     width: 100%;
     margin-top: 10px;}
 
 .guilds-wrapper .guilds .friends-online{
-	  position: relative;
+    position: relative;
     width: 100%;
     margin: auto;
     margin-top: 5px;}
