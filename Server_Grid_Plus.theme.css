@@ -15,9 +15,9 @@
 .guilds-wrapper:not(:hover) .scroller-wrap{
     width: calc(26px + (58px * var(--NguildCols)));}
 /* How many columns to display on hover */
-.guilds-wrapper:hover{
+.guilds-wrapper/*:hover*/{
     width: calc(6px + (58px * var(--HguildCols)));}
-.guilds-wrapper:hover .scroller-wrap{
+.guilds-wrapper/*:hover*/ .scroller-wrap{
     width: calc(26px + (58px * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
@@ -27,42 +27,42 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-	margin: 8px 0px 0px 8px;}
+    margin: 8px 0px 0px 8px;}
 
 .guilds-wrapper .guilds .guild.unread::before{
-	left: -2px;
+    left: -2px;
     top: 5px;
     z-index:9000;}
 
 .guilds-wrapper .guilds .guild:first-child{
-	/* FIXME: Code needs to not affect SPAN.dms */
+    /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
     left: 0;
     margin: 15px auto auto auto}
 
 .guilds-wrapper .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
-	   This code resolves the above tampering with the DMs section. */
+       This code resolves the above tampering with the DMs section. */
     position: static;
     margin: 8px inherit inherit 8px;}
 
 #bd-pub-li{
-	position: absolute;
+    position: absolute;
     top: 0px;
     left: 0px;}
 
 #bd-pub-li #bd-pub-button{
     position:absolute;
     width: 100%;
-	text-align: center;}
+    text-align: center;}
 
 .guilds-wrapper .guilds .guild-separator{
-	position: relative;
+    position: relative;
     width: 100%;
     margin-top: 10px;}
 
 .guilds-wrapper .guilds .friends-online{
-	position: relative;
+    position: relative;
     width: 100%;
     margin: 5px auto auto auto;}
 
@@ -70,7 +70,7 @@
     display: none;}
 
 .guilds-wrapper .guilds .guild{
-	position: relative;}
+    position: relative;}
 
 .guilds-wrapper .guilds .dms{
     width: 100%;
