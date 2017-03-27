@@ -1,4 +1,4 @@
-//META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, modified by Hebgbs","version":"1.0~Hebgbs"}*//{}
+//META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.0~Hebgbs"}*//{}
 
 :root{ /* Value represents How many columns of servers / DMs will appear.
 	  Cut this block and paste into custom CSS to adjust at-will. */
