@@ -15,9 +15,9 @@
 .guilds-wrapper:not(:hover) .scroller-wrap{
     width: calc(26px + (58px * var(--NguildCols)));}
 /* How many columns to display on hover */
-.guilds-wrapper/*:hover*/{
+.guilds-wrapper:hover{
     width: calc(6px + (58px * var(--HguildCols)));}
-.guilds-wrapper/*:hover*/ .scroller-wrap{
+.guilds-wrapper:hover .scroller-wrap{
     width: calc(26px + (58px * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
@@ -75,8 +75,7 @@
     display: none;}
 
 .guilds-wrapper .guilds .guild{
-    position: relative;
-}
+    position: relative;}
 
 .guilds-wrapper .guilds .dms{
     width: 100%;
