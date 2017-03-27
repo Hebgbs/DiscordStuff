@@ -1,0 +1,89 @@
+//META{"name":"Server Grid Plus","description":"Display servers and DMs in a column grid<br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, modified by Hebgbs","version":"1.0~Hebgbs"}*//{}
+
+:root{ /* Value represents How many columns of servers / DMs will appear.
+		  Cut this block and paste into custom CSS to adjust at-will. */
+    --guildcols: 3;}
+
+/* How many columns to display normally;
+   Remove / comment the code in this block to disable. */
+.guilds-wrapper:not(:hover){
+    width: 64px;}
+.guilds-wrapper:not(:hover) .scroller-wrap{
+    width: 84px;}
+/* How many columns to display on hover;
+   Change value for "--guildcols" in :root to adjust how many columns are made. */
+.guilds-wrapper/*:hover*/{
+    width: calc(6px + (58px * var(--guildcols)));}
+.guilds-wrapper/*:hover*/ .scroller-wrap{
+    width: calc(26px + (58px * var(--guildcols)));}
+
+/* #######################################
+   # Don't touch any of the below if you #
+   # know nothing of what you are doing. #
+   ####################################### */
+
+.guilds-wrapper .guilds{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;}
+
+.guilds-wrapper .guilds .guild{
+	  margin-left: 8px;
+    margin-top: 8px;}
+
+.guilds-wrapper .guilds .guild.unread::before{
+	  left: -2px;
+    top: 5px;
+    z-index:9000;}
+
+.guilds-wrapper .guilds .guild:first-child{
+	/* FIXME: Code needs to not affect SPAN.dms */
+    position: relative; 
+    left: 0;
+    margin: auto;
+    margin-top: 15px;}
+
+.guilds-wrapper .guilds .dms .guild:first-child{
+    /* Probably a temporary fix until a better solution is found.
+	   This code resolves the above tampering with the DMs section. */
+    position: static;
+    margin: inherit;
+    margin-top: 8px;
+    margin-left: 8px}
+
+#bd-pub-li{
+	  position: absolute;
+    top: 0px;
+    left: 0px;}
+
+#bd-pub-li #bd-pub-button{
+    position:absolute;
+    width: 100%;
+	  text-align: center;}
+
+.guilds-wrapper .guilds .guild-separator{
+	  position: relative;
+    width: 100%;
+    margin-top: 10px;}
+
+.guilds-wrapper .guilds .friends-online{
+	  position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;}
+
+.guilds-wrapper .guilds .guild.selected:before{
+    display: none;}
+
+.guilds-wrapper .guilds .guild{
+    position: relative;
+}
+
+.guilds-wrapper .guilds .dms{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;}
+
+.guilds-wrapper .guilds .dms .guild{
+    left: 0;}
