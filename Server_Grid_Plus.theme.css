@@ -4,6 +4,14 @@
     --NguildCols: /*Show*/ 1 /*column(s) normally*/;
     --HguildCols: /*Show*/ 3 /*column(s) on hover*/;}
 
+/* Uncomment to hide the "Public" button */
+/*.scroller.guilds{
+    padding-top: 0;}
+.guilds-wrapper .guilds .guild:first-child{
+	margin-top: 8px !important;}
+#bd-pub-li{
+    display: none;}*/
+
 /* #######################################
    # Don't touch any of the below if you #
    # know nothing of what you are doing. #
@@ -27,7 +35,7 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-    margin: 8px 0px 0px 8px;}
+    margin: 8px 0 0 8px;}
 
 .guilds-wrapper .guilds .guild.unread::before{
     left: -2px;
@@ -37,14 +45,14 @@
 .guilds-wrapper .guilds .guild:first-child{
     /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
-    left: 0;
+    left: -2px;
     margin: 15px auto auto auto}
 
 .guilds-wrapper .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
        This code resolves the above tampering with the DMs section. */
     position: static;
-    margin: 8px inherit inherit 8px;}
+    margin: 8px 0 0 8px;}
 
 #bd-pub-li{
     position: absolute;
