@@ -40,18 +40,29 @@
 .guilds-wrapper .guilds .guild.unread::before{
     left: -2px;
     top: 5px;
+    
     z-index:9000;}
 
 .guilds-wrapper .guilds .guild:first-child{
     /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
-    left: -2px;
-    margin: 15px auto auto auto}
+    margin: 15px 0 0 8px}
 
-.guilds-wrapper .guilds .dms .guild:first-child{
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
+	width: calc((58px * var(--NguildCols)) - 8px);}
+.guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
+.guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
+    width: calc((58px * var(--HguildCols)) - 8px);}
+
+.guilds-wrapper .guilds .friends-icon:after{
+    background-size: 36px 36px;}
+
+.guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
        This code resolves the above tampering with the DMs section. */
     position: static;
+    width: 50px;
     margin: 8px 0 0 8px;}
 
 #bd-pub-li{
@@ -88,6 +99,9 @@
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
+    /* Thanks Hammock for helping with this. */
+.tooltips .tooltip-right[style*="top: 47px"]{
+    margin-left: calc((58px * var(--HguildCols)) - 50px);}}
 /* Fix for tooltips breaking hover */
 .tooltips{
     pointer-events: none;}
