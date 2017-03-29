@@ -9,12 +9,12 @@ Please view information from the font fountry or distributor about the web-appli
 > Line 017: /* Headings and titles */
 This entire block up to line 044 is dedicated to headings, titles and other "Bold fonts" that are intended to be applied to differentiate from the information or body sections in various parts of the Discord interface. This font should stand out significantly compared to the body font used.
 
-!!! View informaton about content below line 087 for fixing appearance of connection information right of the guild scroller.
+!!! View information about content below line 087 for fixing appearance of connection information right of the guild scroller.
 
 > Line 047: /* Body content, menus and information */
 Thie entire block up to line 076 is dedicated to body text, informative text and other parts of the interface which do not stand out as readily. Fonts for this should be more subdued, and ideally thinner in size to stuff more text into each line, while still being pleasant to read. As a stellar example of this, Ubuntu Condensed manages to make the overlay explanation in the "Overlay" User Settings modal still pleasant to read, but wraps around to two lines instead of three.
 
-!!! View informaton about content below line 087 for fixing appearance of BetterDiscord's Themes and Plugins tabs in the BetterDiscord category of the User Settings modal.
+!!! View information about content below line 087 for fixing appearance of BetterDiscord's Themes and Plugins tabs in the BetterDiscord category of the User Settings modal.
 
 > Line 081: /* Monospace fonts */
 This entire block up to line 085 is dedicated to code. This deals with inline code text for messages (`Code`), code blocks (```\nCode```) and the .CodeMirror class BetterDiscord relies on. For giggles, it also declares the BetterDiscord version text uses monospace as well. This change can be undone by commenting the entirety of line 079. It may also be removed, but doing so will make following this document more difficult than it has any right to be.
@@ -37,10 +37,14 @@ How to adjust: In the calc equation provided, adjust the lower number. By defaul
 Issue this resolves: Spacing in the section right of the guild scroller where the text and voice channels are listed, at voice status and actions
 Additional info: Delete this if you want, however in my experimentation if you are using a body font that is especially wide (like Raleway, for example) then stuff looks weird. If this isn't nedessary to you or the theme in use, you're free to remove it.
 
->>> Line 111 / 112
+>>> Line 111
+issue this resolves: Descender text being cut off with certain fonts.
+Additional info: Default is "Inherit", chang this to a pixel value of your choosing. Normally 26px resolves this.
+
+>>> Line 115 / 116
 Issue this resolves: Some font thickness preferences.
 Additional info: Modify or remove as desired.
 
->>> Line 111 / 126
+>>> Line 115 / 131
 Issue this resolves: Some font size preferences.
 Additional info: Modify or remove as desired.
