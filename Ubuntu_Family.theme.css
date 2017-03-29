@@ -1,4 +1,4 @@
-//META{"name":"Ubuntu font family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.2"}*//{}
+//META{"name":"Ubuntu_font_family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.2"}*//{}
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
@@ -73,7 +73,7 @@ DIV#overlay-explanation,
 .item-game .last-played *, .now-playing, .now-playing-add,
 .change-log LI, .change-log .markdown-modal-footer,
 .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
-#server-bd-tag, #pubs-footer,
+.bda-description, #server-bd-tag, #pubs-footer,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
 #bdcl H1, #bdcl .footer{
     font-family: var(--bodyfam) !important;}
@@ -107,6 +107,10 @@ DIV.attachment-inner A, .accessory .embed-provider,
 DIV#voice-connection{
     padding-left: 4px !Important;
 	padding-right: 14px !important;}
+
+	/* Resolve descender cutoff */
+.title .channel-name{
+    line-height: inherit;}
 
 	/* Other Font tweaks */
 		/* Font weight */
