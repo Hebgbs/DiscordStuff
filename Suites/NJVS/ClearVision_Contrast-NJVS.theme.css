@@ -8,7 +8,7 @@
     color: #000 !important;}
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete{
     color: #fff !Important;}
-SPAN.icon.icon-unread-arrow,
+SPAN.icon.icon-unread-arrow, .guilds-wrapper .guilds:hover .friends-icon:after,
 .popout-menu-item.invite DIV.popout-menu-icon,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
     filter: brightness(0) !important;}
