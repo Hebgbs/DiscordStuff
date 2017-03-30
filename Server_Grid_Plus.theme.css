@@ -1,6 +1,24 @@
-//META{"name":"Server_Grid_Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.1~Hebgbs"}*//{}
+//META{"name":"Server_Grid_Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.2~Hebgbs"}*//{}
 
-:root{ /* Change integers to adjust how this theme functions */
+/* ################################
+   # How the DM button should act #
+   ################################ */
+/* Because of some disagreement over how this should work,
+   this section is wholly dedicated to appeasing everybody.
+
+   Each of the two files detailed below will function as such;
+   > SGP_DM-A.css; Centres button no matter what; Jiiks' Original behaviour.
+   > SGP_DM-B.css; Makes button expand with columns, moves tooltip to suit.
+
+   A complete omission of the import below makes it act like any other server button;
+   a satisfiable option for people who don't want the button to move or expand. */
+    
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/SGP_DM-A.css);
+
+/* #####################################
+   # How the server list will function #
+   ##################################### */
+:root{ /* Change the integers to define the numbers of columns which will appear. */
     --NguildCols: /*Show*/ 1 /*column(s) normally*/;
     --HguildCols: /*Show*/ 3 /*column(s) on hover*/;}
 
