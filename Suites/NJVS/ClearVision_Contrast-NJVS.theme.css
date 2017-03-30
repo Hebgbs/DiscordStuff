@@ -2,8 +2,8 @@
 
 .tooltip, BUTTON:not(.outlined), .badge, .changelog-margin-top,
 .channel-textarea-autocomplete-inner .active *,
-.search-popout .search-option:hover .answer, .search-popout DIV.selected .answer,
-.search-popout .search-option:hover .display-username, .search-popout DIV.selected .display-username,
+.search-popout .search-option:hover .answer, .search-popout .search-option.selected .answer,
+.search-popout .search-option:hover .display-username, .search-popout .search-option.selected .display-username,
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
