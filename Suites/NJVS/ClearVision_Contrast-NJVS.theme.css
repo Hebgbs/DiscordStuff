@@ -11,16 +11,34 @@
     color: #000 !important;}
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete{
     color: #fff !Important;}
-SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon::after,
+SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .popout-menu-item.invite DIV.popout-menu-icon,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after,
-.search-popout DIV:hover::before, .search-popout DIV.selected::before{
+.search-popout DIV:hover:before, .search-popout DIV.selected:before{
     filter: brightness(0) !important;}
 
 .connection-options .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
     filter: brightness(1) !important;}
 
 .channel-textarea-autocomplete-inner .active *,
-.guild:first-child:hover .friends-icon::after,
+.guild:first-child:hover .friends-icon:after,
 {
     transition: .3s ease-in-out !important;}
+
+/* The jump button wasn't beng too kind so I used the nuclear option to fix it. */
+.jump-button:after{
+    content: "Jump";
+    background-color: transparent;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 2px);
+    padding-top: 2px;
+    border-radius: 3px;
+	transition: .1s ease-in-out;}
+
+.jump-button:hover:after{
+    background-color: var(--main-color);
+    color: #000;}
