@@ -26,7 +26,7 @@
 /*.scroller.guilds{
     padding-top: 0;}
 .guilds-wrapper .guilds .guild:first-child{
-	margin-top: 8px !important;}
+    margin-top: 8px !important;}
 #bd-pub-li{
     display: none;}*/
 
@@ -58,7 +58,6 @@
 .guilds-wrapper .guilds .guild.unread::before{
     left: -2px;
     top: 5px;
-    
     z-index:9000;}
 
 .guilds-wrapper .guilds .guild:first-child{
@@ -68,12 +67,13 @@
 
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
-	width: calc((58px * var(--NguildCols)) - 8px);}
+    width: calc((58px * var(--NguildCols)) - 8px);}
 .guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
 .guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
     width: calc((58px * var(--HguildCols)) - 8px);}
 
-.guilds-wrapper .guilds .friends-icon:after{
+.guilds-wrapper .guilds .friends-icon:after,
+.guilds-wrapper .guilds:hover .friends-icon:after{
     background-size: 36px 36px;}
 
 .guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
