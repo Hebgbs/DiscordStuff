@@ -8,10 +8,13 @@
     color: #000 !important;}
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete{
     color: #fff !Important;}
-SPAN.icon.icon-unread-arrow, .guilds-wrapper .guilds:hover .friends-icon:after,
+SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon::after,
 .popout-menu-item.invite DIV.popout-menu-icon,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
     filter: brightness(0) !important;}
 
 .connection-options .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
     filter: brightness(1) !important;}
+
+.guild:first-child:hover .friends-icon::after{
+    transition: .3s ease-in-out !important;}
