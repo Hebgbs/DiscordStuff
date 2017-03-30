@@ -7,9 +7,10 @@
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
-.new-messages-indicator, .popout-menu-item.invite *{
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *{
     color: #000 !important;}
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete{
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
+.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer BUTTON.button:not(.button-primary){
     color: #fff !Important;}
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .popout-menu-item.invite DIV.popout-menu-icon,
