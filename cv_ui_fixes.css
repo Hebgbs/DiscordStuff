@@ -1,0 +1,13 @@
+/* CSS addition sheet for Discord to resolve some issues with Zerthox's ClearVision themes;
+   This is a universal sheet for works created by and derived from Hebgbs.
+   Copyleft 2017, CC0. Do whatever you may please, use and modify at your own peril. */
+
+/* Voice connection status */
+DIV#voice-connection{
+    padding-left: 4px !Important;
+    padding-right: 14px !important;}
+
+/* Adjust width / position of member list headings */
+.channel-members H2{
+    padding: 4px 4px 4px 5px;
+    width: 196px !important;}
