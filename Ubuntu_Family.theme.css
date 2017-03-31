@@ -42,7 +42,7 @@
     /* Resolve spacing issues with some parts of the interface */
         /* Search results "Empty" placeholder */
 .empty-results-text{
-    width: calc(280px +/*Shift by an additional*/ 26px) !Important;}
+    width: calc(280px +/*Expand by an additional*/ 26px) !Important;}
     
     /* Resolve descender cutoff
        > It may be "Inherit" by default but integer values are accepted. 
