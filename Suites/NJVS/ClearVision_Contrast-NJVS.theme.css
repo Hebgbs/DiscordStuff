@@ -3,7 +3,8 @@
 .tooltip, BUTTON:not(.outlined), .badge, .changelog-margin-top,
 .channel-textarea-autocomplete-inner .active *,
 .search-popout .search-option:hover .answer, .search-popout .search-option.selected .answer,
-.search-popout .search-option:hover .display-username, .search-popout .search-option.selected .display-username,
+.search-popout .user:hover .display-username, .search-popout .user.selected .display-username,
+.react-datepicker__day:hover, .date-picker-hint .hint-value,
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
@@ -13,9 +14,11 @@
 .modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer BUTTON.button:not(.button-primary){
     color: #fff !Important;}
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
-.popout-menu-item.invite DIV.popout-menu-icon,
+.guild:first-child.active .friends-icon:after, .channel DIV.icon-friends:after,
+.popout-menu-item.invite DIV.popout-menu-icon, .status-deafened:after,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after,
-.search-popout DIV:hover:before, .search-popout DIV.selected:before{
+.search-popout DIV:hover:before, .search-popout DIV.selected:before,
+.status-deafened:after{
     filter: brightness(0) !important;}
 
 .connection-options .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
@@ -26,7 +29,8 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 {
     transition: .3s ease-in-out !important;}
 
-/* The jump button wasn't beng too kind so I used the nuclear option to fix it. */
+/* Stuff wasn't beng too kind so I used the nuclear option to fix it. */
+	/* Jump button */
 .jump-button:after{
     content: "Jump";
     background-color: transparent;
@@ -43,3 +47,15 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .jump-button:hover:after{
     background-color: var(--main-color);
     color: #000;}
+
+	/* Friend icon */
+.channel DIV.icon-friends{
+    background-image: none !important;}
+
+.channel DIV.icon-friends:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
+	filter: brightness(0) !important;}
