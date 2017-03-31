@@ -1,98 +1,35 @@
-//META{"name":"Ubuntu_font_family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.2"}*//{}
+//META{"name":"Ubuntu_font_family","description":"The Ubuntu font suite, for the Discord interface.<br>Used: Ubuntu Regular & Bold, Ubuntu Condensed, Ubuntu Mono Regular<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.3"}*//{}
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
-   > Information about additional changes at the bottom of this sheet.
-   > Additional notes can be found @ https://git.io/vyxJO */
+   > There use to be additional information here but inline comments now supersede it.
+	 Look in the code and use all of the information presented below to modify this as you need. */
    
 /* Font configiuration */
-	/* > Import argument for web fonts;
-		 use whatever famlies specified for these imports */
+	/* Import argument for base sheet;
+	   The only reason to modify this is when using your own fork,
+	   or if the author is no longer capable of maintaining the base. */
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/triple_font_min.css');
+	/* Import argument for web fonts;
+	   use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed|Ubuntu+Mono');
 :root{ /* Begin each with the families provided by the import arguments */
 	--headfam: Ubuntu,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 	--bodyfam: "Ubuntu Condensed",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 	--monofam: "Ubuntu Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace;}
 
-/* Headings and titles */
-BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
-DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
-.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
-.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
-.channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
-.user-name, .username, .nickname, #user-profile-modal .connected-accounts,
-.modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
-.empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
-.invite-button *, .divider *,
-.edit-operation, .image-gif:after, .download-button,
-.user-popout .discord-tag *,
-.roles, .notes .label, .modal-inner .section-header,
-.messages-popout .bottom, .popout .guild-name,
-DIV#bda-gem *, .emoji-picker .category,
-.friends-header,.friends-empty *,
-.friends-table-header, .friends-row,
-#voice-connection-popout,
-.tab-bar *,
-.connection, .authed-app .header,
-.user-settings-modal-keybinds .account-warning,
-.radio-theme:after,
-.item-game *:not(.last-played),
-.streamer-mode-enabled-btn,
-.change-log .markdown-modal-header, .changelog-margin-top,
-* .bda-name,
-.server-row SPAN.server-name-span, .server-row.server-pinned,
-#app-mount:after{
-    font-family: var(--headfam) !important;}
-
-/* Body content, menus and information */
-INPUT, LABEL A, P,
-.notice, .tooltip, .checkbox, .radio, .Select *, 
-.timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
-.help-text, .item-group,
-.popout-menu, .option-popout *, .context-menu *,
-.popout .text, .popout .subtitle,
-DIV.friends-online, DIV#bd-pub-button,
-.topic.topic-expandable, .search-bar *,
-.empty-message H1, .system-message DIV, .quick-region-select,
-.channel-textarea-inner *,
-.message-group .markup:not(.user-name):not(CODE):not(PRE),
-.search-popout DIV:not(.header),
-.user-popout .discriminator, SPAN.discriminator, .account:after,
-.channel-activity, .channel-activity STRONG, DIV.activity, .embed-link .embed-description,
-.activity STRONG, .member-activity,  .friends-table-body .status-text,
-DIV.creation-date-wrapper,
-.note *, .protip *,
-.need-help-modal *:not(H1),
-*::-webkit-input-placeholder,
-.friend-table-add-description,
-.user-settings-avatar-upload .remove-button,
-.user-settings-modal-accounts-list,
-.authed-app .body, .authed-app LI,
-.control-group A,
-DIV#overlay-explanation,
-.item-game .last-played *, .now-playing, .now-playing-add,
-.change-log LI, .change-log .markdown-modal-footer,
-.server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
-.bda-description, #server-bd-tag, #pubs-footer,
-#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
-#bdcl H1, #bdcl .footer{
-    font-family: var(--bodyfam) !important;}
-
-/* Monospace fonts */
-#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
-CODE, CODE.inline,
-DIV.attachment-inner A, .accessory .embed-provider,
-.shortcut-recorder INPUT,
-.CodeMirror{
-    font-family: var(--monofam) !important;
-	font-size: 10pt !important;}
+/* > Some comments in here are for the author as reminders
+     though they should be perfectly understandable to passerbys.
+   > If you feel like modifying this sheet, by all means do so! */
 
 /* > These can (and should) be modified or removed as necessary.
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
    > Any fixes applied, removed or to be modified requires Discord to be restarted. */
 
-	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
-:root{--listfix: 0px;}
+	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
+	   > Change this integer if necessary; Make the checkboxes line up with default position.
+	   > This can easily be done in a raster editor or capture software with grid overlay. */
+:root{--listfix: /*Move the checkboxes by*/ 0px;}
 .bda-slist .bda-left{
 	width: calc(80% - var(--listfix)) !Important;}
 .bda-slist .bda-right{
@@ -100,19 +37,25 @@ DIV.attachment-inner A, .accessory .embed-provider,
 	margin-right: var(--listfix) !Important;}
 	
     /* Resolve spacing issues with some parts of the interface */
-		/* Search results "Empty" placeholder " */
+		/* Search results "Empty" placeholder */
 .empty-results-text{
-    width: calc(280px + 26px) !Important;}
-		/* Voice connection status; ClearVision only */
+    width: calc(280px +/*Shift by an additional*/ 26px) !Important;}
+		/* Voice connection status; ClearVision only. Remove / comment if not using ClearVision */
 DIV#voice-connection{
     padding-left: 4px !Important;
 	padding-right: 14px !important;}
 
-	/* Resolve descender cutoff */
+	/* Resolve descender cutoff
+	   > It may be "Inherit" by default but integer values are accepted. 
+	   > For longer descenders, normally 26px or 28px is enough. */
 .title .channel-name{
     line-height: inherit;}
 
-	/* Other Font tweaks */
+	/* Other Font tweaks 
+	   > Feel free to play with these!
+	   > Refer to the imported CSS for items you can modify.
+	   > Use the built-in inspector to poke at bits and
+		 correlate with contents of the imported style sheet. */
 		/* Font weight */
 .title *, .accessory .embed-provider,
 .tab-bar.TOP *, .guild-header *,
