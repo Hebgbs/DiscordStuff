@@ -1,0 +1,77 @@
+/* CSS sheet for Discord fonts;
+   This is a universal sheet for works created by and derived from Hebgbs. */
+   
+   Copyleft 2017, CC0. Do whatever you may please, use and modify at your own peril. */
+
+/* Headings and titles */
+BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
+DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
+.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
+.channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
+.user-name, .username, .nickname, #user-profile-modal .connected-accounts,
+.modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
+.empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
+.invite-button *, .divider *,
+.edit-operation, .image-gif:after, .download-button,
+.user-popout .discord-tag *, .jump-button,
+.roles, .notes .label, .modal-inner .section-header,
+.messages-popout .bottom, .popout .guild-name,
+DIV#bda-gem *, .emoji-picker .category,
+.friends-header,.friends-empty *,
+.friends-table-header, .friends-row,
+#voice-connection-popout, .tab-bar *, * .bda-name,
+.connection, .authed-app .header,
+.user-settings-modal-keybinds .account-warning,
+.radio-theme:after,
+.item-game *:not(.last-played),
+.streamer-mode-enabled-btn,
+.change-log .markdown-modal-header, .changelog-margin-top,
+.server-row SPAN.server-name-span, .server-row.server-pinned,
+.keyboard-shortcuts-modal H1 .content, .quickswitcher-container .section-title,
+.quickswitcher-container .result-match, .quickswitcher-empty-state-not,
+#app-mount:after{
+    font-family: var(--headfam) !important;}
+
+/* Body content, menus and information */
+INPUT, LABEL A, P,
+.notice, .tooltip, .checkbox, .radio, .Select *, 
+.timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
+.help-text, .item-group, .quickswitcher-container .misc-controls,
+.popout-menu, .option-popout *, .context-menu *,
+.popout .text, .popout .subtitle, .keyboard-shortcuts-modal .modal-subtitle,
+DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username,
+.topic.topic-expandable, .search-bar *, .quickswitcher-container .result-note,
+.empty-message H1, .system-message DIV, .quick-region-select,
+.channel-textarea-inner *,
+.message-group .markup:not(.user-name):not(CODE):not(PRE),
+.search-popout DIV:not(.header),
+.user-popout .discriminator, SPAN.discriminator, .account:after,
+.channel-activity, .channel-activity STRONG, DIV.activity, .embed-link .embed-description,
+.activity STRONG, .member-activity,  .friends-table-body .status-text,
+DIV.creation-date-wrapper,
+.note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
+.need-help-modal *:not(H1), .quickswitcher-empty-state-cta,
+*::-webkit-input-placeholder,
+.friend-table-add-description, .quickswitcher-container .list-nav,
+.user-settings-avatar-upload .remove-button,
+.user-settings-modal-accounts-list,
+.authed-app .body, .authed-app LI,
+.control-group A,
+DIV#overlay-explanation,
+.item-game .last-played *, .now-playing, .now-playing-add,
+.change-log LI, .change-log .markdown-modal-footer,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
+.bda-description, #server-bd-tag, #pubs-footer,
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
+#bdcl H1, #bdcl .footer{
+    font-family: var(--bodyfam) !important;}
+
+/* Monospace fonts */
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
+CODE, CODE.inline, .keyboard-shortcuts-modal .keybind-shortcut SPAN,
+DIV.attachment-inner A, .accessory .embed-provider,
+.shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
+.CodeMirror, .quickswitcher-container .misc-controls SPAN{
+    font-family: var(--monofam) !important;
+	font-size: 10pt !important;}
