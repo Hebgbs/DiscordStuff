@@ -74,4 +74,4 @@ DIV.attachment-inner A, .accessory .embed-provider,
 .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
 .CodeMirror, .quickswitcher-container .misc-controls SPAN{
     font-family: var(--monofam) !important;
-	font-size: 10pt !important;}
+    font-size: 10pt !important;}
