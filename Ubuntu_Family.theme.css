@@ -10,11 +10,11 @@
        The only reason to modify this is when using your own fork,
        or if the author is no longer capable of maintaining the base. */
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/triple_font_min.css');
-    /* Import argument for web fonts;
-       use whatever famlies specified for these imports */
     /* Fixes for ClearVision themes;
        If not using Zerthox's ClearVision themes, comment this import. */
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css')
+    /* Import argument for web fonts;
+       use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed|Ubuntu+Mono');
 :root{ /* Begin each with the families provided by the import arguments */
     --headfam: Ubuntu,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
