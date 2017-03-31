@@ -12,10 +12,10 @@
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/triple_font_min.css');
     /* Fixes for ClearVision themes;
        If not using Zerthox's ClearVision themes, comment this import. */
-@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css')
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
     /* Import argument for web fonts;
        use whatever famlies specified for these imports */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed|Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script|Source+Code+Pro&subset=latin-ext');
 :root{ /* Begin each with the families provided by the import arguments */
     --headfam: Ubuntu,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     --bodyfam: "Ubuntu Condensed",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;

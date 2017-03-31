@@ -7,7 +7,7 @@
    
 /* Font configiuration */
     /* Fixes for ClearVision theme */
-@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css')
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
 	/* > Import argument for web fonts;
 		 use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Coda|Revalia|Share+Tech+Mono&subset=latin-ext');
