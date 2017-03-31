@@ -2,10 +2,12 @@
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
-   > Information about additional changes at the bottom of this sheet.
-   > Additional notes can be found @ https://git.io/vyxJO */
+   > There use to be additional information here but inline comments now supersede it.
+     Look in the code and use all of the information presented below to modify this as you need. */
    
 /* Font configiuration */
+    /* Fixes for ClearVision theme */
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css')
 	/* > Import argument for web fonts;
 		 use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Coda|Revalia|Share+Tech+Mono&subset=latin-ext');
@@ -17,7 +19,7 @@
 /* Headings and titles */
 H2, H3, H4, FORM HEADER, LABEL:not(A),
 P.name, P.author, .form-header, .header *:not(INPUT),
-.reaction-count, .new-messages-indicator, .channels-wrap *, 
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
 .channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
 .channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
 .user-name, .username, .nickname, #user-profile-modal .connected-accounts,
@@ -31,28 +33,28 @@ P.name, P.author, .form-header, .header *:not(INPUT),
 DIV#bda-gem *, .emoji-picker .category,
 .friends-header,.friends-empty *,
 .friends-table-header, .friends-row,
-#voice-connection-popout,
-.tab-bar *,
+#voice-connection-popout, .tab-bar *, * .bda-name,
 .connection, .authed-app .header,
 .user-settings-modal-keybinds .account-warning,
 .radio-theme:after,
 .item-game *:not(.last-played),
 .streamer-mode-enabled-btn,
 .change-log .markdown-modal-header, .changelog-margin-top,
-* .bda-name,
 .server-row SPAN.server-name-span, .server-row.server-pinned,
+.keyboard-shortcuts-modal H1 .content, .quickswitcher-container .section-title,
+.quickswitcher-container .result-match, .quickswitcher-empty-state-not,
 #app-mount:after{
     font-family: var(--headfam) !important;}
-/* --- Some code from above migrated below to make certain elements look better --- */
+
 /* Body content, menus and information */
-BUTTON:not(.guilds-add), INPUT, LABEL A, P,
+INPUT, LABEL A, P, BUTTON:not(.guilds-add), DIV.btn, .jump-button,
 .notice, .tooltip, .checkbox, .radio, .Select *, 
 .timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
-DIV.btn, .badge, .help-text, .item-group,
+.help-text, .item-group, .quickswitcher-container .misc-controls,
 .popout-menu, .option-popout *, .context-menu *,
-.popout .text, .popout .subtitle, .jump-button,
-DIV.friends-online, DIV#bd-pub-button,
-.topic.topic-expandable, .search-bar *,
+.popout .text, .popout .subtitle, .keyboard-shortcuts-modal .modal-subtitle,
+DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username,
+.topic.topic-expandable, .search-bar *, .quickswitcher-container .result-note,
 .empty-message H1, .system-message DIV, .quick-region-select,
 .channel-textarea-inner *,
 .message-group .markup:not(.user-name):not(CODE):not(PRE),
@@ -61,10 +63,10 @@ DIV.friends-online, DIV#bd-pub-button,
 .channel-activity, .channel-activity STRONG, DIV.activity, .embed-link .embed-description,
 .activity STRONG, .member-activity,  .friends-table-body .status-text,
 DIV.creation-date-wrapper,
-.note *, .protip *,
-.need-help-modal *:not(H1),
+.note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
+.need-help-modal *:not(H1), .quickswitcher-empty-state-cta,
 *::-webkit-input-placeholder,
-.friend-table-add-description,
+.friend-table-add-description, .quickswitcher-container .list-nav,
 .user-settings-avatar-upload .remove-button,
 .user-settings-modal-accounts-list,
 .authed-app .body, .authed-app LI,
@@ -80,40 +82,48 @@ DIV#overlay-explanation,
 
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
-CODE, CODE.inline,
+CODE, CODE.inline, .keyboard-shortcuts-modal .keybind-shortcut SPAN,
 DIV.attachment-inner A, .accessory .embed-provider,
-.shortcut-recorder INPUT,
-.CodeMirror{
+.shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
+.CodeMirror, .quickswitcher-container .misc-controls SPAN{
     font-family: var(--monofam) !important;
-	font-size: 10pt !important;}
+    font-size: 10pt !important;}
+
+/* > Some comments in here are for the author as reminders
+     though they should be perfectly understandable to passerbys.
+   > If you feel like modifying this sheet, by all means do so! */
 
 /* > These can (and should) be modified or removed as necessary.
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
    > Any fixes applied, removed or to be modified requires Discord to be restarted. */
 
-	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
-:root{--listfix: 6px;}
+    /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
+       > Change this integer if necessary; Make the checkboxes line up with default position.
+       > This can easily be done in a raster editor or capture software with grid overlay. */
+:root{--listfix: /*Move the checkboxes by*/ 6px;}
 .bda-slist .bda-left{
-	width: calc(80% - var(--listfix)) !Important;}
+    width: calc(80% - var(--listfix)) !Important;}
 .bda-slist .bda-right{
-	width: 20% !important;
-	margin-right: var(--listfix) !Important;}
-	
+    width: 20% !important;
+    margin-right: var(--listfix) !Important;}
+    
     /* Resolve spacing issues with some parts of the interface */
-		/* Search results "Empty" placeholder */
+        /* Search results "Empty" placeholder */
 .empty-results-text{
-    width: calc(280px + 26px) !Important;}
-		/* Voice connection status; ClearVision only */
-DIV#voice-connection{
-    padding-left: 4px !Important;
-	padding-right: 14px !important;}
-
-	/* Resolve descender cutoff */
+    width: calc(280px +/*Shift by an additional*/ 26px) !Important;}
+    
+    /* Resolve descender cutoff
+       > It may be "Inherit" by default but integer values are accepted. 
+       > For longer descenders, normally 26px or 28px is enough. */
 .title .channel-name{
     line-height: 26px;}
 
-	/* Other Font tweaks */
-		/* Font weight */
+    /* Other Font tweaks 
+       > Feel free to play with these!
+       > Refer to the imported CSS for items you can modify.
+       > Use the built-in inspector to poke at bits and
+         correlate with contents of the imported style sheet. */
+        /* Font weight */
 .title *, .accessory .embed-provider,
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
@@ -128,6 +138,6 @@ DIV#voice-connection{
     font-weight: normal !Important;}
 .system-message A{
 font-weight: bold !Important;}
-		/* Font size */
+        /* Font size */
 #pubs-footer SPAN{
     font-size: 16px !Important;
