@@ -78,7 +78,7 @@ DIV#overlay-explanation,
 .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
 .bda-description, #server-bd-tag, #pubs-footer, #bdcl H1, #bdcl .footer,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
-BUTTON:not(.guilds-add), DIV.btn, .badge, {
+BUTTON:not(.guilds-add), DIV.btn, .badge{
     font-family: var(--bodyfam) !important;}
 
 /* Monospace fonts */
