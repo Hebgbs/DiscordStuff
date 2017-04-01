@@ -15,7 +15,7 @@
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
     /* Import argument for web fonts;
        use whatever famlies specified for these imports */
-@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script|Source+Code+Pro&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&subset=latin-ext');
 :root{ /* Begin each with the families provided by the import arguments */
     --headfam: Ubuntu,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     --bodyfam: "Ubuntu Condensed",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
