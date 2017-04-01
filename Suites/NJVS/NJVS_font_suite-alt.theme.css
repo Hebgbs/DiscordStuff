@@ -1,0 +1,143 @@
+//META{"name":"NJVS_font_suite (Alternative)","description":"<br><b>This is intended to be used as part of the NJVS theme suite.</b><br>A bold suite of Google's web fonts for the Discord interface.<br>Fonts used: BioRhyme, Coda Regular, Share Tech Mono<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes.</b>","author":"Hebgbs","version":"1.2~NJVS"}*//{}
+
+/* > This is an example of how different fonts could be applied to the Discord interface.
+     Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
+   > There use to be additional information here but inline comments now supersede it.
+     Look in the code and use all of the information presented below to modify this as you need. */
+   
+/* Font configiuration */
+    /* Fixes for ClearVision theme */
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
+	/* > Import argument for web fonts;
+		 use whatever famlies specified for these imports */
+@import url('https://fonts.googleapis.com/css?family=Coda|BioRhyme|Share+Tech+Mono&subset=latin-ext');
+:root{ /* Begin each with the families provided by the import arguments */
+	--headfam: BioRhyme,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--bodyfam: Coda,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--monofam: "Share Tech Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+
+/* Headings and titles */
+H2, H3, H4, FORM HEADER, LABEL:not(A),
+P.name, P.author, .form-header, .header *:not(INPUT),
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
+.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
+.channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
+.user-name, .username, .nickname, #user-profile-modal .connected-accounts, .typing SPAN.text STRONG,
+.modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
+.empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
+.invite-button *, .divider *,
+.edit-operation, .image-gif:after, .download-button,
+.user-popout .discord-tag *,
+.roles, .notes .label, .modal-inner .section-header,
+.messages-popout .bottom, .popout .guild-name,
+DIV#bda-gem *, .emoji-picker .category,
+.friends-header,.friends-empty *,
+.friends-table-header, .friends-row,
+#voice-connection-popout, .tab-bar *, * .bda-name,
+.connection, .authed-app .header,
+.user-settings-modal-keybinds .account-warning,
+.radio-theme:after,
+.item-game *:not(.last-played),
+.streamer-mode-enabled-btn,
+.change-log .markdown-modal-header, .changelog-margin-top,
+.server-row SPAN.server-name-span, .server-row.server-pinned,
+.keyboard-shortcuts-modal H1 .content, .quickswitcher-container .section-title,
+.quickswitcher-container .result-match, .quickswitcher-empty-state-not,
+#app-mount:after{
+    font-family: var(--headfam) !important;}
+
+/* Body content, menus and information */
+INPUT, LABEL A, P, BUTTON:not(.guilds-add), DIV.btn, .jump-button,
+.notice, .tooltip, .checkbox, .radio, .Select *, 
+.timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
+.help-text, .item-group, .quickswitcher-container .misc-controls,
+.popout-menu, .option-popout *, .context-menu *,
+.popout .text, .popout .subtitle, .keyboard-shortcuts-modal .modal-subtitle,
+DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username,
+.topic.topic-expandable, .search-bar *, .quickswitcher-container .result-note,
+.empty-message H1, .system-message DIV, .quick-region-select,
+.channel-textarea-inner *, .typing SPAN.text,
+.message-group .markup:not(.user-name):not(CODE):not(PRE),
+.search-popout DIV:not(.header),
+.user-popout .discriminator, SPAN.discriminator, .account:after,
+.channel-activity, .channel-activity STRONG, DIV.activity, .embed-link .embed-description,
+.activity STRONG, .member-activity,  .friends-table-body .status-text,
+DIV.creation-date-wrapper,
+.note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
+.need-help-modal *:not(H1), .quickswitcher-empty-state-cta,
+*::-webkit-input-placeholder,
+.friend-table-add-description, .quickswitcher-container .list-nav,
+.user-settings-avatar-upload .remove-button,
+.user-settings-modal-accounts-list,
+.authed-app .body, .authed-app LI,
+.control-group A,
+DIV#overlay-explanation,
+.item-game .last-played *, .now-playing, .now-playing-add,
+.change-log LI, .change-log .markdown-modal-footer,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
+.bda-description, #server-bd-tag, #pubs-footer,
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
+#bdcl H1, #bdcl .footer{
+    font-family: var(--bodyfam) !important;}
+
+/* Monospace fonts */
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
+CODE, CODE.inline, .keyboard-shortcuts-modal .keybind-shortcut SPAN,
+DIV.attachment-inner A, .accessory .embed-provider,
+.shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
+.CodeMirror, .quickswitcher-container .misc-controls SPAN{
+    font-family: var(--monofam) !important;
+    font-size: 10pt !important;}
+
+/* > Some comments in here are for the author as reminders
+     though they should be perfectly understandable to passerbys.
+   > If you feel like modifying this sheet, by all means do so! */
+
+/* > These can (and should) be modified or removed as necessary.
+     Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
+   > Any fixes applied, removed or to be modified requires Discord to be restarted. */
+
+    /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
+       > Change this integer if necessary; Make the checkboxes line up with default position.
+       > This can easily be done in a raster editor or capture software with grid overlay. */
+:root{--listfix: /*Move the checkboxes by*/ 6px;}
+.bda-slist .bda-left{
+    width: calc(80% - var(--listfix)) !Important;}
+.bda-slist .bda-right{
+    width: 20% !important;
+    margin-right: var(--listfix) !Important;}
+    
+    /* Resolve spacing issues with some parts of the interface */
+        /* Search results "Empty" placeholder */
+.empty-results-text{
+    width: calc(280px +/*Shift by an additional*/ 26px) !Important;}
+    
+    /* Resolve descender cutoff
+       > It may be "Inherit" by default but integer values are accepted. 
+       > For longer descenders, normally 26px or 28px is enough. */
+.title .channel-name{
+    line-height: 26px;}
+
+    /* Other Font tweaks 
+       > Feel free to play with these!
+       > Refer to the imported CSS for items you can modify.
+       > Use the built-in inspector to poke at bits and
+         correlate with contents of the imported style sheet. */
+        /* Font weight */
+.title *, .accessory .embed-provider,
+.tab-bar.TOP *, .guild-header *,
+.badge, .reaction-count, .more-mutual-guilds-btn,
+.radio-theme:after,
+.embed-field-name, .embed-footer,
+.invite-button-body,.divider *,
+.topic:not(.topic-expandable),
+.user-name, .username, .channel-members *:not(H2),
+.alert-actions *, .btn-close-forever,
+#voice-connection-popout A,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+    font-weight: normal !Important;}
+.system-message A{
+font-weight: bold !Important;}
+        /* Font size */
+#pubs-footer SPAN{
+    font-size: 16px !Important;
