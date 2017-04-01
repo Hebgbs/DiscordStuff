@@ -6,13 +6,13 @@
    > Additional notes can be found @ https://git.io/vyxJO */
    
 /* Font configiuration */
-	/* > Import argument for web fonts;
-		 use whatever famlies specified for these imports */
+    /* > Import argument for web fonts;
+         use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Macondo');
 :root{ /* Begin each with the families provided by the import arguments */
-	--headfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-	--bodyfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-	--monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+    --headfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --bodyfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
 
 /* Headings and titles */
 BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
@@ -85,35 +85,35 @@ DIV.attachment-inner A, .accessory .embed-provider,
 .shortcut-recorder INPUT,
 .CodeMirror{
     font-family: var(--monofam) !important;
-	font-size: 10pt !important;}
+    font-size: 10pt !important;}
 
 /* > These can (and should) be modified or removed as necessary.
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
    > Any fixes applied, removed or to be modified requires Discord to be restarted. */
 
-	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
+    /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
 :root{--listfix: 0px;}
 .bda-slist .bda-left{
-	width: calc(80% - var(--listfix)) !Important;}
+    width: calc(80% - var(--listfix)) !Important;}
 .bda-slist .bda-right{
-	width: 20% !important;
-	margin-right: var(--listfix) !Important;}
-	
+    width: 20% !important;
+    margin-right: var(--listfix) !Important;}
+    
     /* Resolve spacing issues with some parts of the interface */
-		/* Search results "Empty" placeholder " */
+        /* Search results "Empty" placeholder " */
 .empty-results-text{
     width: calc(280px + 26px) !Important;}
-		/* Voice connection status; ClearVision only */
+        /* Voice connection status; ClearVision only */
 DIV#voice-connection{
     padding-left: 4px !Important;
-	padding-right: 14px !important;}
+    padding-right: 14px !important;}
 
-	/* Resolve descender cutoff */
+    /* Resolve descender cutoff */
 .title .channel-name{
     line-height: Inherit;}
 
-	/* Other Font tweaks */
-		/* Font weight */
+    /* Other Font tweaks */
+        /* Font weight */
 .title *, .accessory .embed-provider,
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
@@ -128,6 +128,6 @@ DIV#voice-connection{
     font-weight: normal !Important;}
 .system-message A{
 font-weight: bold !Important;}
-		/* Font size */
+        /* Font size */
 #pubs-footer SPAN{
     font-size: 16px !Important;

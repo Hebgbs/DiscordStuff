@@ -12,9 +12,9 @@
        use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Macondo|Indie+Flower');
 :root{ /* Begin each with the families provided by the import arguments */
-	--headfam: Macondo,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-	--bodyfam: "Indie Flower",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-	--monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+    --headfam: Macondo,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --bodyfam: "Indie Flower",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
 
 /* > Some comments in here are for the author as reminders
      though they should be perfectly understandable to passerbys.

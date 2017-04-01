@@ -17,7 +17,7 @@
        use whatever famlies specified for these imports */
 @import url('https://fonts.googleapis.com/css?family=Griffy');
  :root { /* Begin with the family provided by the import argument */
-	--headfam: Griffy,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --headfam: Griffy,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     --bodyfam: Griffy,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     --monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
 
