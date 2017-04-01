@@ -1,0 +1,133 @@
+//META{"name":"Macondo_font","description":"The Google web font Macondo, now for the Discord interface.<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.2"}*//{}
+
+/* > This is an example of how different fonts could be applied to the Discord interface.
+     Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
+   > Information about additional changes at the bottom of this sheet.
+   > Additional notes can be found @ https://git.io/vyxJO */
+   
+/* Font configiuration */
+	/* > Import argument for web fonts;
+		 use whatever famlies specified for these imports */
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+:root{ /* Begin each with the families provided by the import arguments */
+	--headfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--bodyfam: "Macondo",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	--monofam: Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+
+/* Headings and titles */
+BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
+DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
+.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
+.channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
+.user-name, .username, .nickname, #user-profile-modal .connected-accounts,
+.modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
+.empty-results-content *, .embed DIV:nth-child(2), .embed-field-name,
+.invite-button *, .divider *,
+.edit-operation, .image-gif:after, .download-button,
+.user-popout .discord-tag *,
+.roles, .notes .label, .modal-inner .section-header,
+.messages-popout .bottom, .popout .guild-name,
+DIV#bda-gem *, .emoji-picker .category,
+.friends-header,.friends-empty *,
+.friends-table-header, .friends-row,
+#voice-connection-popout,
+.tab-bar *,
+.connection, .authed-app .header,
+.user-settings-modal-keybinds .account-warning,
+.radio-theme:after,
+.item-game *:not(.last-played),
+.streamer-mode-enabled-btn,
+.change-log .markdown-modal-header, .changelog-margin-top,
+* .bda-name,
+.server-row SPAN.server-name-span, .server-row.server-pinned,
+#app-mount:after{
+    font-family: var(--headfam) !important;}
+
+/* Body content, menus and information */
+INPUT, LABEL A, P,
+.notice, .tooltip, .checkbox, .radio, .Select *, 
+.timestamp, DIV.attachment-inner DIV, .embed DIV:nth-child(3),
+.help-text, .item-group,
+.popout-menu, .option-popout *, .context-menu *,
+.popout .text, .popout .subtitle,
+DIV.friends-online, DIV#bd-pub-button,
+.topic.topic-expandable, .search-bar *,
+.empty-message H1, .system-message DIV, .quick-region-select,
+.channel-textarea-inner *,
+.message-group .markup:not(.user-name):not(CODE):not(PRE),
+.search-popout DIV:not(.header),
+.user-popout .discriminator, SPAN.discriminator, .account:after,
+.channel-activity, .channel-activity STRONG, DIV.activity, .embed-link .embed-description,
+.activity STRONG, .member-activity,  .friends-table-body .status-text,
+DIV.creation-date-wrapper,
+.note *, .protip *,
+.need-help-modal *:not(H1),
+*::-webkit-input-placeholder,
+.friend-table-add-description,
+.user-settings-avatar-upload .remove-button,
+.user-settings-modal-accounts-list,
+.authed-app .body, .authed-app LI,
+.control-group A,
+DIV#overlay-explanation,
+.item-game .last-played *, .now-playing, .now-playing-add,
+.change-log LI, .change-log .markdown-modal-footer,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
+.bda-description, #server-bd-tag, #pubs-footer,
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN,
+#bdcl H1, #bdcl .footer{
+    font-family: var(--bodyfam) !important;}
+
+/* Monospace fonts */
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
+CODE, CODE.inline,
+DIV.attachment-inner A, .accessory .embed-provider,
+.shortcut-recorder INPUT,
+.CodeMirror{
+    font-family: var(--monofam) !important;
+	font-size: 10pt !important;}
+
+/* > These can (and should) be modified or removed as necessary.
+     Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
+   > Any fixes applied, removed or to be modified requires Discord to be restarted. */
+
+	/* BetterDiscord layout for tabs "Plugins" and  "Themes" list items */
+:root{--listfix: 0px;}
+.bda-slist .bda-left{
+	width: calc(80% - var(--listfix)) !Important;}
+.bda-slist .bda-right{
+	width: 20% !important;
+	margin-right: var(--listfix) !Important;}
+	
+    /* Resolve spacing issues with some parts of the interface */
+		/* Search results "Empty" placeholder " */
+.empty-results-text{
+    width: calc(280px + 26px) !Important;}
+		/* Voice connection status; ClearVision only */
+DIV#voice-connection{
+    padding-left: 4px !Important;
+	padding-right: 14px !important;}
+
+	/* Resolve descender cutoff */
+.title .channel-name{
+    line-height: Inherit;}
+
+	/* Other Font tweaks */
+		/* Font weight */
+.title *, .accessory .embed-provider,
+.tab-bar.TOP *, .guild-header *,
+.badge, .reaction-count, .more-mutual-guilds-btn,
+.radio-theme:after,
+.embed-field-name, .embed-footer,
+.invite-button-body,.divider *,
+.topic:not(.topic-expandable),
+.user-name, .username, .channel-members *:not(H2),
+.alert-actions *, .btn-close-forever,
+#voice-connection-popout A,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+    font-weight: normal !Important;}
+.system-message A{
+font-weight: bold !Important;}
+		/* Font size */
+#pubs-footer SPAN{
+    font-size: 16px !Important;

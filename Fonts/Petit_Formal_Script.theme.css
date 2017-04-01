@@ -1,0 +1,75 @@
+//META{"name":"Petit_Formal_Script_font","description":"The Google web font Petit Formal Script, for the Discord interface.<br>Also included: The extended Latin character set.<br><br>This should override any fonts in other themes, if applicable.","author":"Hebgbs","version":"1.3"}*//{}
+
+/* > This is an example of how different fonts could be applied to the Discord interface.
+     Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
+   > There use to be additional information here but inline comments now supersede it.
+     Look in the code and use all of the information presented below to modify this as you need. */
+   
+/* Font configiuration */
+    /* Import argument for base sheet;
+       The only reason to modify this is when using your own fork,
+       or if the author is no longer capable of maintaining the base. */
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/triple_font_min.css');
+    /* Fixes for ClearVision themes;
+       If not using Zerthox's ClearVision themes, comment this import. */
+@import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
+    /* Import argument for web fonts;
+       use whatever famlies specified for these imports */
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script|Source+Code+Pro&subset=latin-ext');
+:root{ /* Begin each with the families provided by the import arguments */
+    --headfam: "Petit Formal Script",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --bodyfam: "Petit Formal Script",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --monofam: "Source Code Pro", Consolas,"Liberation Mono",Menlo,Courier,monospace;}
+
+/* > Some comments in here are for the author as reminders
+     though they should be perfectly understandable to passerbys.
+   > If you feel like modifying this sheet, by all means do so! */
+
+/* > These can (and should) be modified or removed as necessary.
+     Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
+   > Any fixes applied, removed or to be modified requires Discord to be restarted. */
+
+    /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
+       > Change this integer if necessary; Make the checkboxes line up with default position.
+       > This can easily be done in a raster editor or capture software with grid overlay. */
+:root{--listfix: /*Move the checkboxes by*/ 15px;}
+.bda-slist .bda-left{
+    width: calc(80% - var(--listfix)) !Important;}
+.bda-slist .bda-right{
+    width: 20% !important;
+    margin-right: var(--listfix) !Important;}
+    
+    /* Resolve spacing issues with some parts of the interface */
+        /* Search results "Empty" placeholder */
+.empty-results-text{
+    width: calc(280px +/*Shift by an additional*/ 26px) !Important;}
+    
+    /* Resolve descender cutoff
+       > It may be "Inherit" by default but integer values are accepted. 
+       > For longer descenders, normally 26px or 28px is enough. */
+.title .channel-name{
+    line-height: 26px;}
+
+    /* Other Font tweaks 
+       > Feel free to play with these!
+       > Refer to the imported CSS for items you can modify.
+       > Use the built-in inspector to poke at bits and
+         correlate with contents of the imported style sheet. */
+        /* Font weight */
+.title *, .accessory .embed-provider,
+.tab-bar.TOP *, .guild-header *,
+.badge, .reaction-count, .more-mutual-guilds-btn,
+.radio-theme:after,
+.embed-field-name, .embed-footer,
+.invite-button-body,.divider *,
+.topic:not(.topic-expandable),
+.user-name, .username, .channel-members *:not(H2),
+.alert-actions *, .btn-close-forever,
+#voice-connection-popout A,
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+    font-weight: normal !Important;}
+.system-message A{
+font-weight: bold !Important;}
+        /* Font size */
+#pubs-footer SPAN{
+    font-size: 16px !Important;
