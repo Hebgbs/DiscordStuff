@@ -24,8 +24,8 @@ Changelog: https://git.io/v6r5N
 ============== CUSTOMIZABLE COLORS ===============
 */
 :root {
-	--main-color: #ddbb00;
-	--hover-color: #ffff00;
+    --main-color: #ddbb00;
+    --hover-color: #ffff00;
     --background-blur: 0px;
     --background-brightness: 100%;
 }

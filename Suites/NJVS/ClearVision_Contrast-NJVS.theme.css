@@ -30,7 +30,7 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     transition: .3s ease-in-out !important;}
 
 /* Stuff wasn't beng too kind so I used the nuclear option to fix it. */
-	/* Jump button */
+    /* Jump button */
 .jump-button:after{
     content: "Jump";
     background-color: transparent;
@@ -42,13 +42,13 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     height: calc(100% - 2px);
     padding-top: 2px;
     border-radius: 3px;
-	transition: .1s ease-in-out;}
+    transition: .1s ease-in-out;}
 
 .jump-button:hover:after{
     background-color: var(--main-color);
     color: #000;}
 
-	/* Friend icon */
+    /* Friend icon */
 .channel DIV.icon-friends{
     background-image: none !important;}
 
@@ -58,4 +58,4 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     width: 100%;
     height: 100%;
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
-	filter: brightness(0) !important;}
+    filter: brightness(0) !important;}
