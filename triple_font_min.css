@@ -7,12 +7,12 @@
 BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
 DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
 .badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
-.channel-name, .private-channel-call-actions *,.alert-actions *, .btn-close-forever,
+.channel-name, .private-channel-call-actions *, .alert-actions *, .btn-close-forever,
 .channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
 .user-name, .username, .nickname, #user-profile-modal .connected-accounts, .typing SPAN.text STRONG,
 .modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
-.empty-results-content *, .invite-button *, .divider *,
-.embed DIV:not(.embed-author) A:not(.embed-provider),
+.search-header *, .empty-results-content *, .invite-button *, .divider *,
+.embed-author, .embed-title,
 .edit-operation, .image-gif:after, .download-button,
 .user-popout .discord-tag *, .jump-button, .emoji-picker .category,
 .roles, .notes .label, .modal-inner .section-header,
@@ -31,7 +31,7 @@ DIV#bda-gem *, #app-mount:after{
 /* Body content, menus and information */
 INPUT, LABEL A, P,
 .notice, .tooltip, .checkbox, .radio, .Select *, *::-webkit-input-placeholder,
-.timestamp, DIV.attachment-inner DIV, .embed .embed-author,
+.timestamp, DIV.attachment-inner DIV,
 .help-text, .item-group, .quickswitcher-container .misc-controls,
 .popout-menu, .option-popout *, .context-menu *, .embed .embed-description,
 .popout .text, .popout .subtitle, .keyboard-shortcuts-modal .modal-subtitle,
@@ -41,7 +41,7 @@ DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username
 .channel-textarea-inner *, .typing SPAN.text,
 .message-group .body .markup:not(.user-name):not(CODE):not(PRE),
 .user-popout .discriminator, SPAN.discriminator, .account:after,
-EMBED.embed-rich .embed-field-value, EMBED.embed-rich .embed-field-name,
+.embed-rich .embed-fields *,
 .search-popout DIV:not(.header), .channel-activity, .channel-activity STRONG, DIV.activity,
 .activity STRONG, .member-activity,  .friends-table-body .status-text,
 .note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
@@ -59,7 +59,8 @@ DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer,
 
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
-CODE, CODE.inline, .keyboard-shortcuts-modal .keybind-shortcut SPAN,
+CODE, CODE.inline, .keyboard-shortcuts-modal
+.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN,
 DIV.attachment-inner A, .accessory .embed-provider, .embed-footer,
 .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
 .CodeMirror, .quickswitcher-container .misc-controls SPAN{
