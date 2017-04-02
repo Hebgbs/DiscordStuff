@@ -61,7 +61,7 @@ DIV#voice-connection{
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
 .embed-rich .embed-author-name, .embed-field-value, .embed-footer,
-.invite-button-body,.divider *,
+.invite-button-body, .divider *,
 .topic:not(.topic-expandable),
 .user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
