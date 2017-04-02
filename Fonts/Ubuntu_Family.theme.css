@@ -60,13 +60,14 @@
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
 .radio-theme:after,
-.embed-field-name, .embed-footer,
+.embed-field-name, .embed-rich .embed-field-name, .embed-footer,
 .invite-button-body,.divider *,
 .topic:not(.topic-expandable),
 .user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
 #voice-connection-popout A,
-.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN,
+.embed-rich .embed-field-value{
     font-weight: normal !Important;}
 .system-message A{
 font-weight: bold !Important;}
