@@ -60,17 +60,17 @@ DIV#voice-connection{
        > Use the built-in inspector to poke at bits and
          correlate with contents of the imported style sheet. */
         /* Font weight */
-.title *, .accessory .embed-provider,
+.title *, .embed-provider,
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
-.radio-theme:after,
-.embed-field-name, .embed-footer,
+.embed-rich .embed-author-name, .embed-field-value, .embed-footer,
 .invite-button-body,.divider *,
 .topic:not(.topic-expandable),
 .user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
 #voice-connection-popout A,
-.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span),
+.radio-theme:after, #pubs-footer SPAN{
     font-weight: normal !Important;}
 .system-message A{
 font-weight: bold !Important;}

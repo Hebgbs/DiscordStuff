@@ -25,25 +25,20 @@ P.name, P.author, .form-header, .header *:not(INPUT),
 .user-name, .username, .nickname, #user-profile-modal .connected-accounts, .typing SPAN.text STRONG,
 .modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
 .empty-results-content *, .invite-button *, .divider *,
-.embed DIV:not(.embed-author) A:not(.embed-provider),
-.embed.embed-rich .embed-field-value,
+.embed DIV:not(.embed-author) A:not(.embed-provider), .embed.embed-rich .embed-field-value,
 .edit-operation, .image-gif:after, .download-button,
 .user-popout .discord-tag *, .jump-button,
 .roles, .notes .label, .modal-inner .section-header,
 .messages-popout .bottom, .popout .guild-name,
 DIV#bda-gem *, .emoji-picker .category,
-.friends-header, .friends-empty *,
-.friends-table-header, .friends-row,
+.friends-header, .friends-empty *, .friends-table-header, .friends-row,
 #voice-connection-popout, .tab-bar *, * .bda-name,
-.connection, .authed-app .header,
-.user-settings-modal-keybinds .account-warning,
-.radio-theme:after,
-.item-game *:not(.last-played),
-.streamer-mode-enabled-btn,
+.connection, .authed-app .header, .user-settings-modal-keybinds .account-warning,
+.radio-theme:after, .item-game *:not(.last-played), .streamer-mode-enabled-btn,
 .change-log .markdown-modal-header, .changelog-margin-top,
 .server-row SPAN.server-name-span, .server-row.server-pinned,
 .keyboard-shortcuts-modal H1 .content, .quickswitcher-container .section-title,
-.quickswitcher-container .result-match, .quickswitcher-empty-state-not,
+.quickswitcher-container .result-match, .quickswitcher-empty-state-not, .qs-tutorial-messages,
 #app-mount:after{
     font-family: var(--headfam) !important;}
 
@@ -63,16 +58,13 @@ DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username
 .user-popout .discriminator, SPAN.discriminator, .account:after,
 .channel-activity, .channel-activity STRONG, DIV.activity,
 .activity STRONG, .member-activity,  .friends-table-body .status-text,
-DIV.creation-date-wrapper,
+DIV.creation-date-wrapper, *::-webkit-input-placeholder,
 .note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
 .need-help-modal *:not(H1), .quickswitcher-empty-state-cta,
-*::-webkit-input-placeholder,
 .friend-table-add-description, .quickswitcher-container .list-nav,
 .user-settings-avatar-upload .remove-button,
-.user-settings-modal-accounts-list,
-.authed-app .body, .authed-app LI,
-.control-group A,
-DIV#overlay-explanation,
+.user-settings-modal-accounts-list, .authed-app .body, .authed-app LI,
+.control-group A, DIV#overlay-explanation,
 .item-game .last-played *, .now-playing, .now-playing-add,
 .change-log LI, .change-log .markdown-modal-footer,
 .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
@@ -87,7 +79,7 @@ CODE, CODE.inline, .keyboard-shortcuts-modal .keybind-shortcut SPAN,
 DIV.attachment-inner A, .accessory .embed-provider, .embed-footer,
 .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
 .CodeMirror, .quickswitcher-container .misc-controls SPAN{
-    font-family: var(--monofam) !important;
+    font-family: var(--monofam) !important;	
     font-size: 10pt !important;}
 
 /* > Some comments in here are for the author as reminders
@@ -125,17 +117,17 @@ DIV.attachment-inner A, .accessory .embed-provider, .embed-footer,
        > Use the built-in inspector to poke at bits and
          correlate with contents of the imported style sheet. */
         /* Font weight */
-.title *, .accessory .embed-provider,
+.title *, .embed-provider,
 .tab-bar.TOP *, .guild-header *,
 .badge, .reaction-count, .more-mutual-guilds-btn,
-.radio-theme:after,
-.embed-field-name, .embed-footer,
+.embed-rich .embed-author-name, .embed-field-value, .embed-footer,
 .invite-button-body,.divider *,
 .topic:not(.topic-expandable),
 .user-name, .username, .channel-members *:not(H2),
 .alert-actions *, .btn-close-forever,
 #voice-connection-popout A,
-.server-row DIV:not(.server-name) SPAN:not(.server-name-span), #pubs-footer SPAN{
+.server-row DIV:not(.server-name) SPAN:not(.server-name-span),
+.radio-theme:after, #pubs-footer SPAN{
     font-weight: normal !Important;}
 .system-message A{
 font-weight: bold !Important;}
