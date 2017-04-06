@@ -60,7 +60,7 @@ DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer,
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
 CODE, CODE.inline, .keyboard-shortcuts-modal,
-.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN,
+.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN, .upload .filename,
 DIV.attachment-inner A, .accessory .embed-provider, .embed-footer,
 .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
 .CodeMirror, .quickswitcher-container .misc-controls SPAN{

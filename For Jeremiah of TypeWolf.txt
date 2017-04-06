@@ -21,7 +21,7 @@ Since I prefer BetterDiscord (for good reason), I'll walk you through what to do
 
 Subsequent installations require you to reload Discord. You can do this easily with <Ctrl> + R.
 
-The Custom CSS tab is also pretty nice. If you choose to detach the editor, it hangs out at the right side of the Discord interface. Since the inspector tools (<Ctrl> + <Shift> + I) also reise there by default, those should be docked to the bottom while the CSS editor BetterDiscord provides is detached.
+The Custom CSS tab is also pretty nice. If you choose to detach the editor, it hangs out at the right side of the Discord interface. Since the inspector tools (<Ctrl> + <Shift> + I) also reside there by default, those should be docked to the bottom while the CSS editor BetterDiscord provides is detached.
 
 This matters specifically for this theme; https://github.com/Hebgbs/DiscordStuff/blob/master/Fonts/Triple_Font.theme.css
 That theme leaves the variables --headfam, --bodyfam and --monofam open to interpertation by an import or in Custom CSS. The Custom CSS editor makes it easy to play about without neding to restart Discord all the time for every litle change you make, and accepts imports (though I have seen in the past, font imports need to be the first active line or they simply won't work.)
