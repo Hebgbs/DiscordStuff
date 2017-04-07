@@ -60,7 +60,7 @@ DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username
 .note *, .protip *, .keyboard-shortcuts-modal .keybind-description,
 .need-help-modal *:not(H1), .quickswitcher-empty-state-cta,
 .friend-table-add-description, .quickswitcher-container .list-nav,
-.user-settings-avatar-upload .remove-button,
+.user-settings-avatar-upload .remove-button, .upload DIV.speed,
 .user-settings-modal-accounts-list, .authed-app .body, .authed-app LI,
 .control-group A, DIV#overlay-explanation,
 .item-game .last-played *, .now-playing, .now-playing-add,
@@ -74,7 +74,7 @@ BUTTON:not(.guilds-add), DIV.btn, .badge, .reaction-count{
 /* Monospace fonts */
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1),
 CODE, CODE.inline, .keyboard-shortcuts-modal
-.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN,
+.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN, .upload DIV.filename,
 DIV.attachment-inner A, .accessory .embed-provider, .embed-footer,
 .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN,
 .CodeMirror, .quickswitcher-container .misc-controls SPAN{
