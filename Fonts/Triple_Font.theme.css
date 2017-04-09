@@ -17,7 +17,8 @@
 :root{
     --headfam: [Heading font goes here];
     --bodyfam: [Content font goes here];
-    --monofam: [Monospace font goes here];}
+    --monofam: [Monospace font goes here];
+	--listfix: [How many pixels to move BD list toggles];}
 
    > Changes should be immediate, but the theme needs to be enabled for this to wotk.
    > See other font themes in https://github.com/Hebgbs/DiscordStuff for other changes
