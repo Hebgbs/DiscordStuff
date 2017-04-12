@@ -1268,11 +1268,11 @@ textarea {
 }
 .chat >. content .messages .message-group:not(.has-divider) {
     border-bottom-color: hsla(0, 0%, 100%, .04) !important;
-}
+}/*
 .mention:hover,
 .chat > .content .messages .message-group .markup .mention:hover {
     color: #fff !important;
-}
+}*/
 .chat > .content .messages .message-group .markup {
     line-height: 1em;
 }
@@ -2934,6 +2934,7 @@ div#bd-pub-button:hover {
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
     background-color: var(--main-color) !important;
+  /*color: #fff !important;*/
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -3226,6 +3227,7 @@ div#bd-pub-button:hover {
 }
 #friends .friends-header .tab-bar .tab-bar-item .badge {
     background-color: var(--main-color) !important;
+  /*color: #fff !important;*/
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -4543,7 +4545,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     margin: 0 5px 0 10px;
 }
 .account .discriminator {
-    color: #fff !important;
+  /*color: #fff !important;*/
     border: none !important;
     padding: 3px;
     opacity: .3 !important;
@@ -5715,11 +5717,11 @@ pre:hover .copybutton {
     color: #ccc !important;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-}
+}/*
 .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
 .search-results-wrap .action-buttons .jump-button:hover {
     color: #fff !important;
-}
+}*/
 .messages-popout-wrap .messages-popout .message-group .action-buttons .close-button {
     background-color: rgba(0, 0, 0, .3);
     border-radius: 3px;
@@ -6072,7 +6074,7 @@ pre:hover .copybutton {
     background: rgba(0, 0, 0, 0.7) !important;
     border-color: transparent !important;
     border-bottom-color: hsla(0, 0%, 100%, .1) !important;
-    color: #fff !important;
+  /*color: #fff !important;*/
     border-radius: 3px !important;
     -webkit-transition: border-color .3s ease-in-out;
     transition: border-color .3s ease-in-out;
@@ -6095,7 +6097,7 @@ pre:hover .copybutton {
     background: var(--main-color) !important;
     border-color: transparent !important;
     padding: 3px 6px;
-    color: #fff !important;
+  /*color: #fff !important;*/
     font-weight: 600;
     text-transform: capitalize;
     text-shadow: none;
@@ -6339,7 +6341,7 @@ pre:hover .copybutton {
     transition: all .1s ease-in-out;
 }
 .popout-menu .popout-menu-item:hover {
-    color: #fff !important;
+  /*color: #fff !important;*/
     background-color: rgba(0, 0, 0, 0.7);
 }
 .popout-menu .popout-menu-item.invite {
@@ -7827,7 +7829,7 @@ img:not(.emote):not(.emoji)::before {
     opacity: 1;
 }
 .change-log-button-container:hover .change-log-button {
-    color: #fff !important;
+  /*color: #fff !important;*/
 }
 .change-log-button-container .change-log-button:hover {
     text-shadow: none;
