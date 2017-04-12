@@ -8,10 +8,10 @@
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
-.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *, DIV.jump-button,
-#friends DIV.friends-header .tab-bar .tab-bar-item .badge,
-DIV.chat .divider.divider-red > span,
-#friends DIV.friends-header .tab-bar .tab-bar-item.selected{
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *, DIV.jump-button SPAN,
+#friends DIV.friends-header DIV.tab-bar DIV.tab-bar-item DIV.badge,
+DIV.chat DIV.divider.divider-red > SPAN,
+#friends DIV.friends-header DIV.tab-bar DIV.tab-bar-item.selected{
     color: #000 !important;}
 	
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
