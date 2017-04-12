@@ -2934,7 +2934,6 @@ div#bd-pub-button:hover {
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
     background-color: var(--main-color) !important;
-    color: #fff !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
