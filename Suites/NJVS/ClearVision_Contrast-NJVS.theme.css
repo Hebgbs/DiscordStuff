@@ -8,11 +8,16 @@
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
-.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *{
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *, DIV.jump-button,
+#friends DIV.friends-header .tab-bar .tab-bar-item .badge,
+DIV.chat .divider.divider-red > span,
+#friends DIV.friends-header .tab-bar .tab-bar-item.selected{
     color: #000 !important;}
+	
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
 .modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer BUTTON.button:not(.button-primary){
     color: #fff !Important;}
+	
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel DIV.icon-friends:after,
 .popout-menu-item.invite DIV.popout-menu-icon, .status-deafened:after,
@@ -30,24 +35,6 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     transition: .3s ease-in-out !important;}
 
 /* Stuff wasn't beng too kind so I used the nuclear option to fix it. */
-    /* Jump button */
-.jump-button:after{
-    content: "Jump";
-    background-color: transparent;
-    color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 2px);
-    padding-top: 2px;
-    border-radius: 3px;
-    transition: .1s ease-in-out;}
-
-.jump-button:hover:after{
-    background-color: var(--main-color);
-    color: #000;}
-
     /* Friend icon */
 .channel DIV.icon-friends{
     background-image: none !important;}
