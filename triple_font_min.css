@@ -4,15 +4,15 @@
    Copyleft 2017, CC0. Do whatever you may please, use and modify at your own peril. */
 
 /* Headings and titles */
-BUTTON:not(.guilds-add), H2, H3, H4, FORM HEADER, LABEL:not(A),
-DIV.btn, P.name, P.author, .form-header, .header *:not(INPUT),
+BUTTON:not(.guilds-add), H1, H2, H3, H4, FORM HEADER, LABEL:not(A),
+DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .badge, .reaction-count, .new-messages-indicator, .channels-wrap *, 
 .channel-name, .private-channel-call-actions *, .alert-actions *, .btn-close-forever,
 .channel-name.focus *, .channel-members SPAN, #user-profile-modal .guild,
 .user-name, .username, .nickname, #user-profile-modal .connected-accounts, .typing SPAN.text STRONG,
 .modal-inner .markdown-modal-header, .title, .topic:not(.topic-expandable), .aka, .search-popout DIV.header,
 .search-header *, .empty-results-content *, .invite-button *, .divider *,
-.embed-author, .embed-title,
+.embed-author, .embed-title, .mention-filter, .jump-button .text,
 .edit-operation, .image-gif:after, .download-button,
 .user-popout .discord-tag *, .jump-button, .emoji-picker .category,
 .roles, .notes .label, .modal-inner .section-header,
@@ -50,6 +50,7 @@ DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username
 .user-settings-avatar-upload .remove-button, .upload DIV.speed,
 .user-settings-modal-accounts-list, .authed-app .body, .authed-app LI,
 .control-group A, DIV#overlay-explanation,
+.premium-free-months, .premium-feature .style-description, .premium-description .style-default,
 .item-game .last-played *, .now-playing, .now-playing-add,
 .change-log LI, .change-log .markdown-modal-footer,
 .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
