@@ -42,8 +42,10 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 /* Icon replacement
     /* Disappear */
 .channel DIV.icon-friends,
-.friends-column-actions DIV,
-.friends-column-actions-visible DIV{
+.friends-column-actions .friends-action,
+#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
+#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
+#friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
     background-image: none !important;}
 
     /* Friends / Friends icon */
