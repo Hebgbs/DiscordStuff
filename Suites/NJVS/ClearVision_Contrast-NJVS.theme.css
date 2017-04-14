@@ -7,10 +7,11 @@
 .react-datepicker__day:hover, .date-picker-hint .hint-value,
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
-.Select-menu .is-selected DIV DIV.primary, .Select-menu .is-selected DIV DIV.localized,
-.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *, .jump-button SPAN,
+.Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
+#app-mount DIV DIV.theme-light DIV DIV DIV.scroller-wrap DIV DIV DIV.action-buttons .jump-button:hover .text,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
-DIV.chat .divider.divider-red > SPAN,
+.chat .divider.divider-red > SPAN,
 #friends DIV.friends-header .tab-bar .tab-bar-item.selected{
     color: #000 !important;}
 
@@ -20,14 +21,14 @@ DIV.chat .divider.divider-red > SPAN,
 }
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer BUTTON.button:not(.button-primary){
+.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
     color: #fff !Important;}
     
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
-.guild:first-child.active .friends-icon:after, .channel DIV.icon-friends:after,
-.popout-menu-item.invite DIV.popout-menu-icon, .status-deafened:after,
+.guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
+.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after,
-.search-popout DIV:hover:before, .search-popout DIV.selected:before,
+.search-popout DIV:hover:before, .search-popout .selected:before,
 .status-deafened:after{
     filter: brightness(0) !important;}
 
@@ -41,11 +42,11 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 
 /* Icon replacement
     /* Disappear */
-.channel DIV.icon-friends,
+.channel .icon-friends,
 .friends-column-actions .friends-action,
-#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
-#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
-#friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
+#friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
+#friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
+#friends DIV.friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
     background-image: none !important;}
 
     /* Friends / Friends icon */
@@ -61,10 +62,10 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .friends-column-actions DIV:after,
 .friends-column-actions-visible DIV:after{
     content: '';
-    position: absolute;
+    display: inline-block;
     width: 36px;
     height: 36px;
-    filter: brightness(0) !Important;}
+    filter: brightness(0) !important;}
 
 .friends-column-actions .friends-action-voice-call:after{
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat center center/24px;}
