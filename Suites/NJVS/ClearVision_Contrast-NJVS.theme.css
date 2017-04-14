@@ -13,11 +13,16 @@
 DIV.chat .divider.divider-red > SPAN,
 #friends DIV.friends-header .tab-bar .tab-bar-item.selected{
     color: #000 !important;}
-	
+
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary .badge,
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected .badge{
+    background-color: #000 !Important;}
+}
+
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
 .modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer BUTTON.button:not(.button-primary){
     color: #fff !Important;}
-	
+    
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel DIV.icon-friends:after,
 .popout-menu-item.invite DIV.popout-menu-icon, .status-deafened:after,
@@ -38,10 +43,10 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     /* Disappear */
 .channel DIV.icon-friends,
 .friends-column-actions DIV,
-.friends-column-actions DIV{
+.friends-column-actions-visible DIV{
     background-image: none !important;}
 
-	/* Friends / Friends icon */
+    /* Friends / Friends icon */
 .channel DIV.icon-friends:after{
     content: "";
     display: block;
@@ -50,15 +55,21 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
     filter: brightness(0) !important;}
 
-	/* Friends / Friend actions */
-.friends-column-actions DIV:after{
+    /* Friends / Friend actions */
+.friends-column-actions DIV:after,
+.friends-column-actions-visible DIV:after{
     content: '';
     position: absolute;
     width: 36px;
     height: 36px;
-	filter: brightness(0) !Important;}
+    filter: brightness(0) !Important;}
 
 .friends-column-actions .friends-action-voice-call:after{
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat center center/24px;}
-.friends-column-actions .friends-action-remove:after{
+.friends-column-actions-visible .friends-action-add{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person_add.svg) no-repeat center center/24px;}
+.friends-column-actions .friends-action-accept:after{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMSA3TDkgMTlsLTUuNS01LjUgMS40MS0xLjQxTDkgMTYuMTcgMTkuNTkgNS41OSIvPgogIDwvZz4KPC9zdmc+) no-repeat center center/24px;}
+.friends-column-actions .friends-action-remove:after,
+.friends-column-actions-visible .friends-action-ignore{
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) no-repeat center center/24px;}
