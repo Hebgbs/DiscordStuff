@@ -84,5 +84,6 @@ DIV.titlebar .win-close:hover:after{
 .friends-column-actions .friends-action-accept:after{
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMSA3TDkgMTlsLTUuNS01LjUgMS40MS0xLjQxTDkgMTYuMTcgMTkuNTkgNS41OSIvPgogIDwvZz4KPC9zdmc+) no-repeat center center/24px;}
 .friends-column-actions .friends-action-remove:after,
+.friends-column-actions .friends-action-ignore:after,
 .friends-column-actions-visible .friends-action-ignore:after{
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) no-repeat 50% 50%/24px;}
