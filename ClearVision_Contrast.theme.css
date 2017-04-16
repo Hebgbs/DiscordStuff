@@ -8,10 +8,11 @@
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *,
 #overlay-explanation, #overlay-explanation A, .need-help-modal H1,
 .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
-.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *, .jump-button,
-#friends .friends-header .tab-bar .tab-bar-item .badge,
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
+#app-mount DIV DIV.theme-light DIV DIV DIV.scroller-wrap DIV DIV DIV.action-buttons .jump-button:hover .text,
+#friends DIV.friends-header .tab-bar .tab-bar-item .badge,
 .chat .divider.divider-red > SPAN,
-#friends .friends-header .tab-bar .tab-bar-item.selected{
+#friends DIV.friends-header .tab-bar .tab-bar-item.selected{
     color: #000 !important;}
 
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary .badge,
@@ -43,9 +44,9 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     /* Disappear */
 .channel .icon-friends,
 .friends-column-actions .friends-action,
-#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
-#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
-#friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
+#friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
+#friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
+#friends DIV.friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
     background-image: none !important;}
 
     /* Friends / Friends icon */
@@ -61,10 +62,10 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .friends-column-actions DIV:after,
 .friends-column-actions-visible DIV:after{
     content: '';
-    position: absolute;
+    display: inline-block;
     width: 36px;
     height: 36px;
-    filter: brightness(0) !Important;}
+    filter: brightness(0) !important;}
 
 .friends-column-actions .friends-action-voice-call:after{
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat center center/24px;}

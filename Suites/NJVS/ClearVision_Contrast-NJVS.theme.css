@@ -1,4 +1,4 @@
-//META{"name":"ClearVision_Contrast_Improvements-NJVS","description":"<br><b>This is intended to be used as part of the NJVS theme suite.</b><br>Black text and objects for places in the ClearVision theme which are otherwise difficult to see as white with brighter colours.","author":"Hebgbs","version":"1.0~NJVS"}*//{}
+//META{"name":"ClearVision_Contrast_Improvements-NJVS","description":"<br><b>This is intended to be used as part of the NJVS theme suite.</b><br>Black text and objects for places in the ClearVision theme which are otherwise difficult to see as white with brighter colours.","author":"Hebgbs","version":"1.1~NJVS"}*//{}
 
 .tooltip, BUTTON:not(.outlined), .badge, .changelog-margin-top,
 .channel-textarea-autocomplete-inner .active *,
@@ -18,7 +18,6 @@
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary .badge,
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected .badge{
     background-color: #000 !Important;}
-}
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
 .modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
