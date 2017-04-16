@@ -1,0 +1,5 @@
+//META{"name":"ClearVision - White Suite","description":"<br>A cool, smooth white theme by <a href='https://github.com/Hebgbs' target='_blank'>@Hebgbs</a> using <a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a>'s ClearVision v5 as a base with ClearVision contrast improvements, released to make contrast improvements meaningful.","author":"Hebgbs","version":"1.0"}*//{}
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/ClearVision_Contrast.theme.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/ClearVision_White.theme.css);
+
+/* Nothing else should be in here. If anything is to be adjusted, it should be for the customized versions of these themes only. */
