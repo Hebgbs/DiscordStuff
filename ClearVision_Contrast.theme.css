@@ -31,8 +31,7 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
     filter: brightness(0) !important;}
 
 .channel-textarea-autocomplete-inner .active *,
-.guild:first-child:hover .friends-icon:after,
-{
+.guild:first-child:hover .friends-icon:after{
     transition: .3s ease-in-out !important;}
 
 /* Icon replacement
