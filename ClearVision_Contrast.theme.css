@@ -45,7 +45,7 @@ DIV.titlebar .win-buttons BUTTON:hover,
 
 	/* Titlebar
 	   Close excluded because it is made to be red and white on hover. */
-DIV.titlebar .win-buttons BUTTON:not(.win-close):hover:after{
+DIV.titlebar .win-buttons BUTTON:hover:after{
 	content: '';
 	display: block;
 	width: 26px;
