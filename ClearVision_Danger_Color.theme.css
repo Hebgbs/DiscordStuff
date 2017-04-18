@@ -1,5 +1,5 @@
 //META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.0"}*//{}
-
+    x
 /* Colour; Changing the value below affects only the hue.
            Other values for sat and value are defined below. */
 :root{
@@ -15,12 +15,12 @@ DIV.titlebar .win-close{
 
 /* Titlebar / Close */
 DIV.titlebar .win-buttons .win-close:hover:after{
-	content: '';
-	display: block;
-	width: 26px;
-	height: 26px;
-	filter: brightness(1) !important;
-	transition: .1s ease-in-out !important;}
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    filter: brightness(1) !important;
+    transition: .1s ease-in-out !important;}
 
 /* Friends / Actions */
 #friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore:after
@@ -34,6 +34,9 @@ DIV.titlebar .win-buttons .win-close:hover:after{
 /* Colour settings
    Change value in :root to suit; Don't touch
    this unless values are too muted or too dark. */
+
+.btn-primary.red{
+    color: #fff !important;}
 
 DIV.titlebar .win-close:hover:after,
 .btn-primary.red, .modal-container .decline-call, .btn-danger,
