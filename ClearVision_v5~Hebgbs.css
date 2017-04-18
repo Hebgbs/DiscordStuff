@@ -3227,6 +3227,7 @@ div#bd-pub-button:hover {
 }
 #friends .friends-header .tab-bar .tab-bar-item .badge {
     background-color: var(--main-color) !important;
+    color: #fff !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
