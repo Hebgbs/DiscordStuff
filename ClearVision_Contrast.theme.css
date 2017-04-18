@@ -19,8 +19,8 @@ DIV.chat .divider.divider-red > SPAN, #friends DIV.friends-header .tab-bar .tab-
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected .badge{
     background-color: #000 !Important;}
 
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .btn-primary.red,
+BUTTON:not(.btn-primary), .modal-content .form-actions .upload-modal .footer .button:not(.button-primary){
     color: #fff !Important;}
     
 SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
