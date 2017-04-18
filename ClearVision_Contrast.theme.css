@@ -20,7 +20,7 @@ DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-ba
     background-color: #000 !Important;}
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.modal-content .form-actions BUTTON:not(.btn-primary):not(.red), .upload-modal .footer .button:not(.button-primary){
+.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
     color: #fff !Important;}
 
 .is-local-bot-message A{
