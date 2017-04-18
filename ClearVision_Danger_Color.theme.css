@@ -34,15 +34,14 @@ DIV.titlebar .win-buttons .win-close:hover:after{
    Change value in :root to suit; Don't touch
    this unless values are too muted or too dark. */
 
-.btn-primary.red, DIV.connection .btn-delete:hover{
+.btn-primary.red, DIV.user-settings-modal-connections-list .btn-delete:hover{
     color: #fff !important;}
 
 DIV.titlebar .win-close:hover:after,
 .btn-primary.red, .modal-container .decline-call, .btn-danger,
 .popout-menu-item.leave, .btn-confirm:hover .btn, .btn-confirm.active .btn,
 #friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore:hover:after,
-.friends-column-actions .friends-action-cancel:after,
-DIV.connection .btn-delete:hover{
+.friends-column-actions .friends-action-cancel:after, DIV.user-settings-modal-connections-list .btn-delete:hover{
     background-color: hsl(var(--danger-color), 97%, 36%) !important;}
 
 .btn-confirm.active .btn:nth-child(2):not(:hover){
