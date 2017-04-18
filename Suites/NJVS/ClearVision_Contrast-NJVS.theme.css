@@ -15,7 +15,7 @@ DIV.guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 #app-mount DIV DIV.theme-light DIV DIV DIV.scroller-wrap DIV DIV DIV.action-buttons .jump-button:hover .text,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
-DIV.chat .divider.divider-red > SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
+DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
 
