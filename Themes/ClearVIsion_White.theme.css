@@ -3,6 +3,7 @@
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* IMPORT CSS FROM GITHUB */
+@Import url(https://rawgit.com/Hebgbs/DiscordStuff/master/ClearVision_Danger_Color.theme.css); /* ClearVision Danger Colors */
 @import url(https://rawgit.com/Hebgbs/DiscordStuff/master/ClearVision_Contrast.theme.css); /* Contrast improvements */
 @import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css); /* ClearVision theme base */
 /*
