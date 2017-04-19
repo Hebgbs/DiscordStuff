@@ -6,9 +6,9 @@
 
 /* Disappear */
 DIV.titlebar .win-close:hover,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover{
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover{
     background-image: none !important;}
 DIV.titlebar .win-close{
     background-color: transparent !Important;}
@@ -23,9 +23,9 @@ DIV.titlebar .win-buttons .win-close:hover:after{
     transition: .1s ease-in-out !important;}
 
 /* Friends / Actions */
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover:after,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover:after,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover:after{
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover:after,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover:after,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover:after{
     content: '';
     display: inline-block;
     width: 36px;
@@ -42,9 +42,9 @@ DIV.titlebar .win-buttons .win-close:hover:after{
 DIV.titlebar .win-close:hover:after,
 .btn-primary.red, .modal-container .decline-call, .btn-danger,
 .popout-menu-item.leave, .btn-confirm:hover .btn, .btn-confirm.active .btn,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
 DIV.user-settings-modal-connections-list .btn-delete:hover{
     background-color: hsl(var(--danger-color), 97%, 36%) !important;}
 
