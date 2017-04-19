@@ -8,7 +8,7 @@
 DIV.titlebar .win-close:hover,
 #friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore:hover,
 #friends DIV.friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove:hover
-.friends-column-actions .friends-action-cancel:hover{
+.friends-column-actions .friends-action-cancel:h	over{
     background-image: none !important;}
 DIV.titlebar .win-close{
     background-color: transparent !Important;}
@@ -44,7 +44,7 @@ DIV.titlebar .win-close:hover:after,
 .popout-menu-item.leave, .btn-confirm:hover .btn, .btn-confirm.active .btn,
 #friends DIV.friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore:hover,
 #friends DIV.friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove:hover,
-.friends-column-actions .friends-action-cancel:after, DIV.user-settings-modal-connections-list .btn-delete:hover{
+.friends-column-actions .friends-action-cancel:hover, DIV.user-settings-modal-connections-list .btn-delete:hover{
     background-color: hsl(var(--danger-color), 97%, 36%) !important;}
 
 .btn-confirm.active .btn:nth-child(2):not(:hover){
