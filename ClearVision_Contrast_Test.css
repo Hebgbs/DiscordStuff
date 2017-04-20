@@ -1,0 +1,5 @@
+.Select-option.is-selected,
+DIV.chat .jump-to-present-bar:hover BUTTON,
+::selection, .note textarea::selection,
+.clipboard-input-inner input::selection{
+    color: #000 !important;}
