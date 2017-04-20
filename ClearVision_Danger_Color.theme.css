@@ -1,8 +1,9 @@
 //META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.0"}*//{}
-/* Colour; Changing the value below affects only the hue.
-           Other values for sat and value are defined below. */
-:root{
-	--danger-color: 0; /* Hue */}
+/* Colour */
+:root{ /* hue: Colour only; main / hover; Brightness / contrast */
+	--danger-hue: 0; /* Hue */;
+	--danger-main: hsl(var(--danger-hue), 97%, 36%);
+	--danger-hover: hsl(var(--danger-hue), 57%, 49%)}
 
 /* Disappear */
 DIV.titlebar .win-close:hover,
@@ -36,7 +37,7 @@ DIV.titlebar .win-buttons .win-close:hover:after{
    Change value in :root to suit; Don't touch
    this unless values are too muted or too dark. */
 
-.btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover{
+DIV.tooltip.tooltip-error, .btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover{
     color: #fff !important;}
 
 DIV.titlebar .win-close:hover:after,
@@ -46,7 +47,16 @@ DIV.titlebar .win-close:hover:after,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
 DIV.user-settings-modal-connections-list .btn-delete:hover{
-    background-color: hsl(var(--danger-color), 97%, 36%) !important;}
+    background-color: var(--danger-main) !important;}
 
 .btn-confirm.active .btn:nth-child(2):not(:hover){
-    background-color: hsl(var(--danger-color), 57%, 49%) !important;}
+    background-color: var(--danger-hover) !important;}
+
+DIV.tooltip.tooltip-top.tooltip-error::after{
+	border-top-color: var(--danger-main) !important;}
+DIV.tooltip.tooltip-right.tooltip-error::after{
+	border-right-color: var(--danger-main) !important;}
+DIV.tooltip.tooltip-bottom.tooltip-error::after{
+	border-bottom-color: var(--danger-main) !important;}
+DIV.tooltip.tooltip-left.tooltip-error::after{
+	border-left-color: var(--danger-main) !important;}
