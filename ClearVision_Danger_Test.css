@@ -6,7 +6,9 @@ DIV.tooltip.tooltip-error{
 
 DIV.tooltip.tooltip-top.tooltip-error::after{
 	border-top-color: hsl(var(--danger-color), 97%, 36%) !important;}
-DIV.tooltip.tooltip-left.tooltip-error::after{
-	border-left-color: hsl(var(--danger-color), 97%, 36%) !important;}
+DIV.tooltip.tooltip-right.tooltip-error::after{
+	border-right-color: hsl(var(--danger-color), 97%, 36%) !important;}
 DIV.tooltip.tooltip-bottom.tooltip-error::after{
 	border-bottom-color: hsl(var(--danger-color), 97%, 36%) !important;}
+DIV.tooltip.tooltip-left.tooltip-error::after{
+	border-left-color: hsl(var(--danger-color), 97%, 36%) !important;}
