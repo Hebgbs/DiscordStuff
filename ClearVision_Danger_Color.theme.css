@@ -1,4 +1,4 @@
-//META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.0"}*//{}
+//META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.1"}*//{}
 /* Colour */
 :root{ /* hue: Colour only; main / hover; Brightness / contrast */
 	--danger-hue: 0; /* Hue */;
@@ -6,7 +6,7 @@
 	--danger-hover: hsl(var(--danger-hue), 57%, 49%)}
 
 /* Disappear */
-DIV.titlebar .win-close:hover,
+DIV.rooltip.tooltip-error, DIV.titlebar .win-close:hover, .guilds-wrapper .guilds-error:hover,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover{
