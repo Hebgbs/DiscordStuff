@@ -1,9 +1,9 @@
 //META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.1"}*//{}
 /* Colour */
-:root{ /* hue: Colour only; main / hover; Brightness / contrast */
+:root{ /* hue: Colour only; main / primary / secondary; Contrast / brightness */
 	--danger-hue: 0; /* Hue */;
-	--danger-main: hsl(var(--danger-hue), 97%, 36%);
-	--danger-hover: hsl(var(--danger-hue), 57%, 49%)}
+	--danger-primary: hsl(var(--danger-hue), 97%, 36%);
+	--danger-secondary: hsl(var(--danger-hue), 57%, 49%)}
 
 /* Disappear */
 DIV.rooltip.tooltip-error, DIV.titlebar .win-close:hover, .guilds-wrapper .guilds-error:hover,
@@ -47,16 +47,16 @@ DIV.titlebar .win-close:hover:after,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
 DIV.user-settings-modal-connections-list .btn-delete:hover{
-    background-color: var(--danger-main) !important;}
+    background-color: var(--danger-primary) !important;}
 
 .btn-confirm.active .btn:nth-child(2):not(:hover){
-    background-color: var(--danger-hover) !important;}
+    background-color: var(--danger-secondary) !important;}
 
 DIV.tooltip.tooltip-top.tooltip-error::after{
-	border-top-color: var(--danger-main) !important;}
+	border-top-color: var(--danger-primary) !important;}
 DIV.tooltip.tooltip-right.tooltip-error::after{
-	border-right-color: var(--danger-main) !important;}
+	border-right-color: var(--danger-primary) !important;}
 DIV.tooltip.tooltip-bottom.tooltip-error::after{
-	border-bottom-color: var(--danger-main) !important;}
+	border-bottom-color: var(--danger-primary) !important;}
 DIV.tooltip.tooltip-left.tooltip-error::after{
-	border-left-color: var(--danger-main) !important;}
+	border-left-color: var(--danger-primary) !important;}
