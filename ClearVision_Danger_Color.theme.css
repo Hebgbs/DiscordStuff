@@ -40,7 +40,7 @@ DIV.titlebar .win-buttons .win-close:hover:after{
 DIV.tooltip.tooltip-error, .btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover{
     color: #fff !important;}
 
-DIV.titlebar .win-close:hover:after, .guilds-wrapper .guilds-error:hover, DIV.rooltip.tooltip-error,
+DIV.titlebar .win-close:hover:after, .guilds-wrapper .guilds-error:hover, .tooltip.tooltip-error,
 .btn-primary.red, .modal-container .decline-call, .btn-danger,
 .popout-menu-item.leave, .btn-confirm:hover .btn, .btn-confirm.active .btn,
 #friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
