@@ -1,14 +1,66 @@
-.guilds-wrapper .guilds-error:hover{
-    background-color: hsl(var(--danger-color), 97%, 36%) !important;}
+//META{"name":"ClearVision_Danger_Color","description":"Bring consistiency to buttons that are red, as well, other buttons where the change makes sense.","author":"Hebgbs","version":"1.1"}*//{}
+/* Colour */
+:root{ /* hue: Colour only; main / primary / secondary; Contrast / brightness */
+	--danger-hue: 0; /* Hue */;
+	--danger-primary: hsl(var(--danger-hue), 97%, 36%);
+	--danger-secondary: hsl(var(--danger-hue), 57%, 49%)}
 
-DIV.tooltip.tooltip-error{
+/* Disappear */
+DIV.titlebar .win-close:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover{
+    background-image: none !important;}
+DIV.titlebar .win-close{
+    background-color: transparent !Important;}
+
+/* Titlebar / Close */
+DIV.titlebar .win-buttons .win-close:hover:after{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    filter: brightness(1) !important;
+    transition: .1s ease-in-out !important;}
+
+/* Friends / Actions */
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover:after,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover:after,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover:after{
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    filter: brightness(1) !important;}
+
+/* Colour settings
+   Change value in :root to suit; Don't touch
+   this unless values are too muted or too dark. */
+
+DIV.tooltip.tooltip-error, .btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover{
     color: #fff !important;}
 
-.tooltip.tooltip-top.tooltip-error::after{
-	border-top-color: hsl(var(--danger-color), 97%, 36%) !important;}
-.tooltip.tooltip-right.tooltip-error::after{
-	border-right-color: hsl(var(--danger-color), 97%, 36%) !important;}
-.tooltip.tooltip-bottom.tooltip-error::after{
-	border-bottom-color: hsl(var(--danger-color), 97%, 36%) !important;}
-.tooltip.tooltip-left.tooltip-error::after{
-	border-left-color: hsl(var(--danger-color), 97%, 36%) !important;}
+.notice-danger .btn:hover{
+	color: var(--danger-primary) !important;}
+
+.notice-danger, .context-menu .item.danger,
+DIV.titlebar .win-close:hover:after, .guilds-wrapper .guilds-error:hover, .tooltip.tooltip-error,
+.btn-primary.red, .modal-container .decline-call, .btn-danger,
+.popout-menu-item.leave, .btn-confirm:hover .btn, .btn-confirm.active .btn,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
+#friends DIV.friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
+DIV.user-settings-modal-connections-list .btn-delete:hover{
+    background-color: var(--danger-primary) !important;}
+
+.btn-confirm.active .btn:nth-child(2):not(:hover){
+    background-color: var(--danger-secondary) !important;}
+
+DIV.tooltip.tooltip-top.tooltip-error::after{
+	border-top-color: var(--danger-primary) !important;}
+DIV.tooltip.tooltip-right.tooltip-error::after{
+	border-right-color: var(--danger-primary) !important;}
+DIV.tooltip.tooltip-bottom.tooltip-error::after{
+	border-bottom-color: var(--danger-primary) !important;}
+DIV.tooltip.tooltip-left.tooltip-error::after{
+	border-left-color: var(--danger-primary) !important;}
