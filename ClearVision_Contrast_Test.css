@@ -9,10 +9,10 @@
 .user-settings-modal-connections-list .btn-delete:hover, #overlay-explanation, #overlay-explanation A,
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
-.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
+DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
 .recent-mentions-popout .mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .jump-to-present-bar:hover BUTTON, #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
-DIV.chat .divider.divider-red SPAN, #friends .friends-header .tab-bar DIV.tab-bar-item.selected,
+DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
 
