@@ -10,8 +10,8 @@
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
-.recent-mentions-popout .mention:hover, .search-results-wrap .action-buttons .jump-button:hover,
-.chat .jump-to-present-bar:hover BUTTON, #friends .friends-header .tab-bar .tab-bar-item .badge,
+.recent-mentions-popout .mention:hover, .search-results-wrap .action-buttons DIV.jump-button:hover,
+DIV.chat .jump-to-present-bar:hover BUTTON, #friends .friends-header .tab-bar .tab-bar-item DIV.badge,
 DIV.chat .divider.divider-red SPAN, #friends .friends-header .tab-bar DIV.tab-bar-item.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
