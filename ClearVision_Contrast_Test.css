@@ -1,8 +1,3 @@
-/* Contrast Improvements v1.2.1 by Hebgbs (@w/ :heart:)
-   Black text and objects where it is otherwise difficult to see with brighter colours.
-   
-   This code must be the first import to be fully effective. */
-
 .tooltip, BUTTON:not(.outlined), .badge, .is-local-bot-message *:not(A):not(.bot-tag),
 ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
@@ -15,7 +10,7 @@
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
-.mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
+SPAN.mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .jump-to-present-bar:hover BUTTON, #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
 DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
