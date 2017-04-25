@@ -12,7 +12,7 @@
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
-.recent-mentions-popout .mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
+DIV .mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .jump-to-present-bar:hover BUTTON, #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
 DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
@@ -31,10 +31,9 @@ DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-ba
 
 .icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
-.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
+.popout-menu-item.invite .popout-menu-icon, .avatar-xxlarge SPAN DIV:after,
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after,
-.search-popout DIV:hover:before, .search-popout .selected:before,
-.avatar-xxlarge SPAN DIV:after{
+.search-popout DIV:hover:before, .search-popout .selected:before{
     filter: brightness(0) !important;}
 
 .connection-options .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
