@@ -33,7 +33,7 @@ SPAN.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
 .popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
 .search-popout DIV:hover:before, .search-popout .selected:before,
-.status-deafened:after{
+.avatar-xxlarge SPAN DIV:after{
     filter: brightness(0) !important;}
 
 .channel-textarea-autocomplete-inner .active *,
