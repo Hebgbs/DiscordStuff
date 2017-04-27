@@ -36,7 +36,9 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
     color: #00b0f4 !important;}
 
 .ui-guild-nsfw .description{
-	text-shadow: 0px 0px 6px #000;}
+	text-shadow: 0px 0px 6px #000,
+	             0px 0px 6px #000,
+				 0px 0px 6px #000;}
 
 .icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
