@@ -11,7 +11,7 @@
 .search-popout .user:hover .display-username, .search-popout .user.selected .display-username,
 .react-datepicker__day:hover, .date-picker-hint .hint-value, .need-help-modal H1,
 .user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *, DIV#voice-connection-popout HEADER,
-.user-settings-modal-connections-list .btn-delete:hover, #overlay-explanation, #overlay-explanation A,
+.user-settings-modal-connections-list .btn-delete:hover, #overlay-explanation, #overlay-explanation A, .change-nickname-warning,
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
@@ -27,7 +27,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
     background-color: #000 !important;}
 
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select BUTTON:not(:hover),
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select:not:hover BUTTON,
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary){
     color: #fff !important;}
