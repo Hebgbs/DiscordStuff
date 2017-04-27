@@ -29,7 +29,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
     background-color: #000 !important;}
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.modal-content * BUTTON:not(.btn-primary), .modal-inner * BUTTON:not(.btn-primary){
+.modal-content * .btn:not(.btn-primary), .modal-inner * .button:not(.btn-primary){
     color: #fff !important;}
 
 .is-local-bot-message A{
