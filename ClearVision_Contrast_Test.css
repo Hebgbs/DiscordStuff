@@ -3,7 +3,7 @@
    
    This code must be the first import to be fully effective. */
 
-.tooltip, BUTTON:not(.outlined):not(.dark-red), .badge, .alert-actions .btn, .settings-actions .btn,
+.tooltip, BUTTON:not(.outlined):not(.dark-red), .badge, .alert-actions .btn,
 .is-local-bot-message *:not(A):not(.bot-tag), ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
 .guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner .active *,
@@ -29,13 +29,13 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select BUTTON:not(:hover),
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
-.alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary){
+.alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary), .settings-actions .btn-default{
     color: #fff !important;}
 
 .is-local-bot-message A{
     color: #00b0f4 !important;}
 
-.ui-guild-nsfw .description{
+.ui-guild-nsfw DIV:not(.ui-button-contents){
 	text-shadow: 0px 0px 6px #000,
 	             0px 0px 6px #000,
 				 0px 0px 6px #000;}
