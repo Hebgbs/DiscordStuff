@@ -28,8 +28,8 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
     background-color: #000 !important;}
 
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary),
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select BUTTON:not(:hover)
+.form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary){
     color: #fff !important;}
 
