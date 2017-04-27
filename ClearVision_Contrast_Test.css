@@ -17,7 +17,7 @@
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
 /* Allow me to remark how much I hate it has to be this stupidly long selector. I hate it. */
 .flex-spacer.flex-vertical .comment .message:not(.mentioned) .body DIV.markup .mention:hover, .recent-mentions-popout .mention:hover,
-.quickswitcher .result.selected, DIV.search-results-wrap .action-buttons .jump-button:hover,
+.quickswitcher-container .result .selected, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
 #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
@@ -29,7 +29,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
     background-color: #000 !important;}
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.form-actions .btn:not(.btn-primary), .modal-inner * .btn:not(.btn-primary), .modal-inner * .button:not(.button-primary){
+.modal-content * BUTTON:not(.btn-primary), .modal-inner * BUTTON:not(.btn-primary){
     color: #fff !important;}
 
 .is-local-bot-message A{
