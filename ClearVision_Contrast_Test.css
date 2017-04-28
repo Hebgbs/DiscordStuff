@@ -31,7 +31,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary),
 /* Yet another selector I hate. Probably my fault, not certain.  Oh well. */
-.settings-panel .control-group:nth-child(2) .region-select button:not(:hover){
+.settings-panel .control-group:nth-child(2) .region-select:not(:hover) button{
     color: #fff !important;}
 
 .is-local-bot-message A{
