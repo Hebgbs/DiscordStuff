@@ -3,7 +3,7 @@
    
    This code must be the first import to be fully effective. */
 
-.tooltip, BUTTON:not(.outlined):not(.dark-red):not(.btn-default), .badge, .alert-actions .btn,,
+.tooltip, BUTTON:not(.outlined):not(.dark-red):not(.btn-default), .badge, .alert-actions .btn,
 .settings-panel .control-group:nth-child(2) .region-select:hover BUTTON,
 .is-local-bot-message *:not(A):not(.bot-tag), ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
