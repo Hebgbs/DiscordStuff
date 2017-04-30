@@ -3,9 +3,8 @@
    
    This code must be the first import to be fully effective. */
 
-.tooltip, BUTTON:not(.outlined):not(.dark-red), .badge, .alert-actions .btn,
-.settings-panel .control-group:nth-child(2) .region-select:hover BUTTON, .theme-dark .is-local-bot-message *:not(A):not(.bot-tag),
-::selection, .note TEXTAREA::selection, .clipboard-input-inner INPUT::selection,
+.tooltip, BUTTON:not(.outlined):not(.dark-red):not(.btn-default), .badge, .alert-actions .btn, .is-local-bot-message *:not(A):not(.bot-tag),
+::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
 .guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner .active *,
 .search-popout .search-option:hover .answer, .search-popout .search-option.selected .answer,
@@ -27,10 +26,9 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
     background-color: #000 !important;}
 
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select BUTTON:not(:hover),
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
-.alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary),
-.settings-panel .control-group:nth-child(2) .region-select:not(:hover) BUTTON{
+.alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary){
     color: #fff !important;}
 
 .is-local-bot-message A{
