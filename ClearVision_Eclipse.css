@@ -1,4 +1,4 @@
-/* Eclipsing Avatars 2.0
+/* Eclipsing Avatars 2.1
    User status enhancer to make avatars fit in with a lunar-style theme.
    
    Ideally, this should be imported before the ClearVision base theme. */
@@ -18,7 +18,8 @@
 .avatar-profile .status{
     left: 0px !important;
     top: 0px !important;
-    border: none !important;}
+    border: none !important;
+	background: transparent;}
     
 /* Typing indicator */
 .member .status-typing .spinner{
