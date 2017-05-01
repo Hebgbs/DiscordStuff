@@ -1,0 +1,96 @@
+//META{"name":"Eclipsing_Avatars","description":"A quick and dirty idea which is intended to enhance the appearance of avatar statuses so they fit in more with a lunar-style theme.","author":"Hebgbs","version":"1.0"}*//{}
+
+/* Colours; Adjust to preference */
+:root{
+	--ecl-online: #43b581;
+	--ecl-idle: #faa61a;
+	--ecl-dnd: #f04747;
+	--ecl-streaming: #593695;}
+
+/* Preparation for pseudochildren */
+.channel.private .status,
+.account .status,
+.member .status,
+.popout .header .status,
+.avatar-profile .status{
+    left: 0px !Important;
+    top: 0px !important;
+	height: 0px; !Important;
+    width: 0px !Important;
+	border: none !Important;}
+
+/* Pseudochildren / general */
+.channel.private .status:after,
+.account .status:after,
+.member .status:after,
+.popout .header .status:after,
+.avatar-profile .status:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;}
+
+.channel.private .status:after,
+.account .status:after,
+.member .status:after{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;}
+
+.popout .header .status:after{
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;}
+
+.avatar-profile .status:after{
+    height: 128px;
+    width: 128px;
+    border-radius: 64px;}
+
+.channel.private .status.status-online:after,
+.account .status.status-online:after,
+.member .status.status-online:after{
+    box-shadow: 0px 0px 6px var(--ecl-online),
+                0px 0px 2px 1px var(--ecl-online);}
+.popout .header .status.status-online:after{
+    box-shadow: 0px 0px 18px var(--ecl-online),
+                0px 0px 6px 3px var(--ecl-online);}
+.avatar-profile .status.status-online:after{
+    box-shadow: 0px 0px 24px var(--ecl-online),
+                0px 0px 8px 4px var(--ecl-online);}
+
+.channel.private .status.status-idle:after,
+.account .status.status-idle:after,
+.member .status.status-idle:after{
+    box-shadow: 0px 0px 6px var(--ecl-idle),
+                0px 0px 2px 1px var(--ecl-idle);}
+.popout .header .status.status-idle:after{
+    box-shadow: 0px 0px 18px var(--ecl-idle),
+                0px 0px 6px 3px var(--ecl-idle);}
+.avatar-profile .status.status-idle:after{
+    box-shadow: 0px 0px 24px var(--ecl-idle),
+                0px 0px 8px 4px var(--ecl-idle);}
+
+.channel.private .status.status-dnd:after,
+.account .status.status-dnd:after,
+.member .status.status-dnd:after{
+    box-shadow: 0px 0px 6px var(--ecl-dnd),
+                0px 0px 2px 1px var(--ecl-dnd);}
+.popout .header .status.status-dnd:after{
+    box-shadow: 0px 0px 18px var(--ecl-dnd),
+                0px 0px 6px 3px var(--ecl-dnd);}
+.avatar-profile .status.status-dnd:after{
+    box-shadow: 0px 0px 24px var(--ecl-dnd),
+                0px 0px 8px 4px var(--ecl-dnd);}
+
+.channel.private .status.status-streaming:after,
+.account .status.status-streaming:after,
+.member .status.status-streaming:after{
+    box-shadow: 0px 0px 6px var(--ecl-streaming),
+                0px 0px 2px 1px var(--ecl-streaming);}
+.popout .header .status.status-streaming:after{
+    box-shadow: 0px 0px 18px var(--ecl-streaming),
+                0px 0px 6px 3px var(--ecl-streaming);}
+.avatar-profile .status.status-streaming:after{
+    box-shadow: 0px 0px 24px var(--ecl-streaming),
+                0px 0px 8px 4px var(--ecl-streaming);}
