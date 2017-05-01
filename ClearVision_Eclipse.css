@@ -5,10 +5,10 @@
 
 /* Colours; Adjusted for ClearVision */
 :root{
-	--ecl-online: #43b581;
-	--ecl-idle: #faa61a;
-	--ecl-dnd: #982929;
-	--ecl-streaming: #979faa;}
+    --ecl-online: #43b581;
+    --ecl-idle: #faa61a;
+    --ecl-dnd: #982929;
+    --ecl-streaming: #979faa;}
 
 /* Preparation for pseudochildren */
 .channel.private .status,
@@ -16,11 +16,17 @@
 .member .status,
 .popout .header .status,
 .avatar-profile .status{
-    left: 0px !Important;
+    left: 0px !important;
     top: 0px !important;
-	height: 0px; !Important;
-    width: 0px !Important;
-	border: none !Important;}
+    height: 0px; !important;
+    width: 0px !important;
+    border: none !important;}
+
+/* Typing indicator */
+.member .status-typing .spinner{
+    position: absolute !important;
+    left: 2px !important;
+    top: 13px !important;}
 
 /* Pseudochildren / general */
 .channel.private .status:after,
