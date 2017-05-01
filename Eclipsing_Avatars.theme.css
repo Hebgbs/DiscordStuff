@@ -1,4 +1,4 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"1.0"}*//{}
+//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.0"}*//{}
 
 /* Colours; Adjust to preference */
 :root{
@@ -15,8 +15,6 @@
 .avatar-profile .status{
     left: 0px !important;
     top: 0px !important;
-    height: 0px; !important;
-    width: 0px !important;
     border: none !important;}
     
 /* Typing indicator */
@@ -26,77 +24,75 @@
     top: 13px !important;}
 
 /* Pseudochildren / general */
-.channel.private .status:after,
-.account .status:after,
-.member .status:after,
-.popout .header .status:after,
-.avatar-profile .status:after{
-    content: "";
-    position: absolute;
+.channel.private .status,
+.account .status,
+.member .status,
+.popout .header .status,
+.avatar-profile .status{
     top: 0px;
     left: 0px;}
 
-.channel.private .status:after,
-.account .status:after,
-.member .status:after{
+.channel.private .status,
+.account .status,
+.member .status{
     height: 30px;
     width: 30px;
-    border-radius: 15px;}
+    border-radius: 30px;}
 
-.popout .header .status:after{
+.popout .header .status{
     height: 90px;
     width: 90px;
-    border-radius: 45px;}
+    border-radius: 90px;}
 
-.avatar-profile .status:after{
+.avatar-profile .status{
     height: 128px;
     width: 128px;
-    border-radius: 64px;}
+    border-radius: 128px;}
 
-.channel.private .status.status-online:after,
-.account .status.status-online:after,
-.member .status.status-online:after{
+.channel.private .status.status-online,
+.account .status.status-online,
+.member .status.status-online{
     box-shadow: 0px 0px 6px var(--ecl-online),
                 0px 0px 2px 1px var(--ecl-online);}
-.popout .header .status.status-online:after{
+.popout .header .status.status-online{
     box-shadow: 0px 0px 18px var(--ecl-online),
                 0px 0px 6px 3px var(--ecl-online);}
-.avatar-profile .status.status-online:after{
+.avatar-profile .status.status-online{
     box-shadow: 0px 0px 24px var(--ecl-online),
                 0px 0px 8px 4px var(--ecl-online);}
 
-.channel.private .status.status-idle:after,
-.account .status.status-idle:after,
-.member .status.status-idle:after{
+.channel.private .status.status-idle,
+.account .status.status-idle,
+.member .status.status-idle{
     box-shadow: 0px 0px 6px var(--ecl-idle),
                 0px 0px 2px 1px var(--ecl-idle);}
-.popout .header .status.status-idle:after{
+.popout .header .status.status-idle{
     box-shadow: 0px 0px 18px var(--ecl-idle),
                 0px 0px 6px 3px var(--ecl-idle);}
-.avatar-profile .status.status-idle:after{
+.avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--ecl-idle),
                 0px 0px 8px 4px var(--ecl-idle);}
 
-.channel.private .status.status-dnd:after,
-.account .status.status-dnd:after,
-.member .status.status-dnd:after{
+.channel.private .status.status-dnd,
+.account .status.status-dnd,
+.member .status.status-dnd{
     box-shadow: 0px 0px 6px var(--ecl-dnd),
                 0px 0px 2px 1px var(--ecl-dnd);}
-.popout .header .status.status-dnd:after{
+.popout .header .status.status-dnd{
     box-shadow: 0px 0px 18px var(--ecl-dnd),
                 0px 0px 6px 3px var(--ecl-dnd);}
-.avatar-profile .status.status-dnd:after{
+.avatar-profile .status.status-dnd{
     box-shadow: 0px 0px 24px var(--ecl-dnd),
                 0px 0px 8px 4px var(--ecl-dnd);}
 
-.channel.private .status.status-streaming:after,
-.account .status.status-streaming:after,
-.member .status.status-streaming:after{
+.channel.private .status.status-streaming,
+.account .status.status-streaming,
+.member .status.status-streaming{
     box-shadow: 0px 0px 6px var(--ecl-streaming),
                 0px 0px 2px 1px var(--ecl-streaming);}
-.popout .header .status.status-streaming:after{
+.popout .header .status.status-streaming{
     box-shadow: 0px 0px 18px var(--ecl-streaming),
                 0px 0px 6px 3px var(--ecl-streaming);}
-.avatar-profile .status.status-streaming:after{
+.avatar-profile .status.status-streaming{
     box-shadow: 0px 0px 24px var(--ecl-streaming),
                 0px 0px 8px 4px var(--ecl-streaming);}
