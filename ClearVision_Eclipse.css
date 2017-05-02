@@ -29,6 +29,11 @@
     width: 30px !important;
     border-radius: 30px !important;}
 
+.account:hover .status{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;}
+
 .popout .header .status{
     height: 90px !important;
     width: 90px !important;
@@ -45,7 +50,7 @@
     left: 2px !important;
     top: 13px !important;}
 
-/* ppearance settings; change colours in :root */
+/* Appearance settings; change colours in :root */
 .avatar-xxlarge.speaking{
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}
