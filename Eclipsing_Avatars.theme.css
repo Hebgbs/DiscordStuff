@@ -51,7 +51,8 @@
 .popout .header .status.status-online{
     box-shadow: 0px 0px 18px var(--ecl-online),
                 0px 0px 6px 3px var(--ecl-online) !important;}
-.avatar-profile .status.status-online{
+.avatar-profile .status.status-online,
+.avatar-xxlarge.speaking{
     box-shadow: 0px 0px 24px var(--ecl-online),
                 0px 0px 8px 4px var(--ecl-online) !important;}
 
