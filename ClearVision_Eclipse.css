@@ -1,4 +1,4 @@
-/* Eclipsing Avatars 2.4
+/* Eclipsing Avatars 2.5
    User status enhancer to make avatars fit in with a lunar-style theme.
    
    Ideally, this should be imported before the ClearVision base theme. */
@@ -12,7 +12,7 @@
 
 /* General */
 .channel.private .status,
-.account .status,
+.account .avatar-small .status,
 .member .status,
 .popout .header .status,
 .avatar-profile .status{
@@ -29,7 +29,7 @@
     width: 30px !important;
     border-radius: 30px !important;}
 
-.account:hover .status{
+.account .avatar-small:hover .status{
 	height: 50px;
 	width: 50px;
 	border-radius: 50px;}
@@ -51,7 +51,7 @@
     top: 13px !important;}
 
 /* Appearance settings; change colours in :root */
-.avatar-xxlarge.speaking{
+.private-channel-call .speaking{
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}
 

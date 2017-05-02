@@ -1,4 +1,4 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.2"}*//{}
+//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.4"}*//{}
 
 /* Colours; Adjust to preference */
 :root{
@@ -13,7 +13,7 @@
 .member .status,
 .popout .header .status,
 .avatar-profile .status{
-    left: 0px !important;
+    left: 0px !important
     top: 0px !important;
     border: none !important;
 	background: transparent !important;}
@@ -25,11 +25,6 @@
     height: 30px !important;
     width: 30px !important;
     border-radius: 30px !important;}
-
-.account:hover .status{
-	height: 50px;
-	width: 50px;
-	border-radius: 50px;}
 
 .popout .header .status{
     height: 90px !important;
@@ -57,7 +52,7 @@
     box-shadow: 0px 0px 18px var(--ecl-online),
                 0px 0px 6px 3px var(--ecl-online) !important;}
 .avatar-profile .status.status-online,
-.avatar-xxlarge.speaking{
+.private-channel-call .speaking{
     box-shadow: 0px 0px 24px var(--ecl-online),
                 0px 0px 8px 4px var(--ecl-online) !important;}
 
