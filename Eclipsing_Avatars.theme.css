@@ -1,4 +1,4 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.4"}*//{}
+//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.5"}*//{}
 
 /* Colours; Adjust to preference */
 :root{
@@ -29,7 +29,8 @@
 .account .avatar-small:hover .status{
     height: 50px !important;
     width: 50px !important;
-    border-radius: 50px !important;}
+    border-radius: 50px !important;
+	transition: all .15s ease-in-out !important;}
 
 .popout .header .status{
     height: 90px !important;
