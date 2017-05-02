@@ -13,7 +13,7 @@
 .member .status,
 .popout .header .status,
 .avatar-profile .status{
-    left: 0px !important
+    left: 0px !important;
     top: 0px !important;
     border: none !important;
 	background: transparent !important;}
