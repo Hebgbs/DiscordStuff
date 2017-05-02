@@ -29,7 +29,7 @@
     width: 30px !important;
     border-radius: 30px !important;}
 
-.account .avatar-small:hover .status{
+.account:hover .avatar-small .status{
 	height: 50px !important;
 	width: 50px !important;
 	border-radius: 50px !important;}
