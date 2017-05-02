@@ -16,7 +16,7 @@
     left: 0px !important;
     top: 0px !important;
     border: none !important;
-	background: transparent !important;}
+    background: transparent !important;}
 
 /* Size */
 .channel.private .status,
@@ -25,6 +25,11 @@
     height: 30px !important;
     width: 30px !important;
     border-radius: 30px !important;}
+
+.account .avatar-small:hover .status{
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50px !important;}
 
 .popout .header .status{
     height: 90px !important;
@@ -48,6 +53,9 @@
 .member .status.status-online{
     box-shadow: 0px 0px 6px var(--ecl-online),
                 0px 0px 2px 1px var(--ecl-online) !important;}
+.account .avatar-small:hover .status.online{
+    box-shadow: 0px 0px 12px var(--ecl-online),
+                0px 0px 4px 2px var(--ecl-online) !important;}
 .popout .header .status.status-online{
     box-shadow: 0px 0px 18px var(--ecl-online),
                 0px 0px 6px 3px var(--ecl-online) !important;}
@@ -61,18 +69,24 @@
 .member .status.status-idle{
     box-shadow: 0px 0px 6px var(--ecl-idle),
                 0px 0px 2px 1px var(--ecl-idle) !important;}
+.account .avatar-small:hover .status.idle{
+    box-shadow: 0px 0px 12px var(--ecl-idle),
+                0px 0px 4px 2px var(--ecl-idle) !important;}
 .popout .header .status.status-idle{
     box-shadow: 0px 0px 18px var(--ecl-idle),
                 0px 0px 6px 3px var(--ecl-idle) !important;}
 .avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--ecl-idle),
                 0px 0px 8px 4px var(--ecl-idle) !important;}
-
+                
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
 .member .status.status-dnd{
     box-shadow: 0px 0px 6px var(--ecl-dnd),
                 0px 0px 2px 1px var(--ecl-dnd) !important;}
+.account .avatar-small:hover .status.dnd{
+    box-shadow: 0px 0px 12px var(--ecl-dnd),
+                0px 0px 4px 2px var(--ecl-dnd) !important;}
 .popout .header .status.status-dnd{
     box-shadow: 0px 0px 18px var(--ecl-dnd),
                 0px 0px 6px 3px var(--ecl-dnd) !important;}
