@@ -23,7 +23,7 @@
 
 /* Size */
 .channel.private .status,
-.account .status,
+.account .avatar-small .status:not(:hover),
 .member .status{
     height: 30px !important;
     width: 30px !important;
