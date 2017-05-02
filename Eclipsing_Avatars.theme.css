@@ -85,9 +85,3 @@
 .member .status.status-streaming{
     box-shadow: 0px 0px 6px var(--ecl-streaming),
                 0px 0px 2px 1px var(--ecl-streaming) !important;}
-.popout .header .status.status-streaming{
-    box-shadow: 0px 0px 18px var(--ecl-streaming),
-                0px 0px 6px 3px var(--ecl-streaming) !important;}
-.avatar-profile .status.status-streaming{
-    box-shadow: 0px 0px 24px var(--ecl-streaming),
-                0px 0px 8px 4px var(--ecl-streaming) !important;}
