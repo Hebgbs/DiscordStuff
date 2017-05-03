@@ -37,8 +37,7 @@ DIV.titlebar .win-buttons .win-close:hover:after{
    Change value in :root to suit; Don't touch
    this unless values are too muted or too dark. */
 
-DIV.tooltip.tooltip-error, .btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover,
-.member-buttons .btn-danger{
+DIV.tooltip.tooltip-error, .btn-primary.red, DIV.user-settings-modal-connections-list BUTTON.btn-delete:hover, .btn-danger{
     color: #fff !important;}
 
 .notice-danger .btn:hover{
