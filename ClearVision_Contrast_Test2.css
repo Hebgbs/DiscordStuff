@@ -2,6 +2,8 @@
    
    This code must be the first import to be fully effective. */
 
+/* Text colour */
+	/* Black */
 .tooltip, BUTTON:not(.outlined), .badge, .alert-actions .btn, .settings-panel .control-group:nth-child(2) .region-select:hover BUTTON
 .theme-light .is-local-bot-message *:not(A):not(.bot-tag), ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
@@ -21,39 +23,42 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 #bd-pub-button:hover{
     color: #000 !important;}
 
-#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
-#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
-    background-color: #000 !important;}
-
+	/* White */
 .btn-confirm BUTTON, .btn.btn-default, .user-settings-modal-connections-list .btn-delete, .guilds-wrapper .guilds-error:hover,
-.form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
+.form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear), .notice .btn,
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary), .ui-guild-nsfw .ui-button-contents,
 .settings-panel .control-group:nth-child(2) .region-select:not(:hover) BUTTON{
     color: #fff !important;}
 
+	/* ClearVision defaults */
+.guilds-wrapper .guilds-add:hover{
+    color: var(--main-color) !Important;}
+
+.notice.notice-info .btn:hover{
+	color: #2883eb !Important;}
+.notice.notice-streamer-mode .btn:hover{
+	color: #643da7 !Important;}
+.notice .btn:hover{
+	color: #fb5100 !Important;}
+
 .is-local-bot-message A{
     color: #00b0f4 !important;}
 
-.notice BUTTON, .guilds-wrapper .guilds-add:hover{
-    color: initial !Important;}
-
+/* Text shadow for highlight */
 .ui-guild-nsfw DIV:not(.ui-button-contents){
     text-shadow: 0px 0px 6px #932b2b,
                  0px 0px 6px #932b2b,
                  0px 0px 6px #932b2b;}
 
-.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
-.guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
-.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
-.search-popout DIV:hover:before, .search-popout .selected:before,
-.avatar-xxlarge SPAN DIV:after{
-    filter: brightness(0) !important;}
-
 .channel-textarea-autocomplete-inner .active *,
 .guild:first-child:hover .friends-icon:after{
     transition: .3s ease-in-out !important;}
 
-/* Icon replacement
+/* background colour */
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
+    background-color: #000 !important;}
+/* Icon replacement and object brightness */
     /* Disappear */
 .titlebar .win-buttons BUTTON:hover,
 .channel .icon-friends, .friends-column-actions .friends-action,
@@ -61,6 +66,14 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 #friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
 #friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
     background-image: none !important;}
+
+	/* Darken */
+.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
+.guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
+.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
+.search-popout DIV:hover:before, .search-popout .selected:before,
+.avatar-xxlarge SPAN DIV:after{
+    filter: brightness(0) !important;}
 
     /* Titlebar */
 .titlebar .win-buttons BUTTON:hover:after{
