@@ -51,7 +51,7 @@ DIV.friends-online, DIV#bd-pub-button, .quickswitcher-container .result-username
 .topic.topic-expandable, .search-bar *, .quickswitcher-container .result-note,
 .empty-message H1, .system-message DIV, .quick-region-select,
 .channel-textarea-inner *, .typing SPAN.text,
-.message-group .body .markup:not(.user-name):not(CODE):not(PRE),
+.message-group .body .markup:not(.user-name):not(CODE):not(PRE), .message-content,
 .user-popout .discriminator, SPAN.discriminator, .account:after,
 .embed-rich .embed-fields *,
 .search-popout DIV:not(.header), .channel-activity, .channel-activity STRONG, DIV.activity,
