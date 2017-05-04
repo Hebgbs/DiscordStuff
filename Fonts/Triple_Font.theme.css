@@ -1,4 +1,4 @@
-//META{"name":"Triple_font_theme","description":"Play with fonts in Custom CSS! Use any imports and any fonts you please. Root block necessary in this CSS file.<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.3"}*//{}
+//META{"name":"Triple_font_theme","description":"Play with fonts in Custom CSS! Use any imports and any fonts you please. Root block necessary in this CSS file.<br><br>This should override any fonts in other themes, if applicable.<br><b>See code for details about additional changes</b>","author":"Hebgbs","version":"1.4"}*//{}
 
 /* > This is an example of how different fonts could be applied to the Discord interface.
      Purpose this as you like, though keep me in the back of your mind for due credit. Thanks!
@@ -14,12 +14,19 @@
     /* ###########################################
        # Use this block in your Custom CSS pane; #
        ###########################################
+@import url([Replace this with import location (HTTPS), else delete this line]);
 :root{
-    --headfam: [Heading font goes here];
-    --bodyfam: [Content font goes here];
-    --monofam: [Monospace font goes here];
-	--listfix: [How many pixels to move BD list toggles];}
+    --headfam: [Preferred heading font],Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --bodyfam: [Preferred body font],"Indie Flower",Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --monofam: [Preferred monospace font],Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	--listfix: [How many pixels to move BD list toggles];
+	--descfix: [How many pixels to expand title text height];}
 
+   > Due to prior confusion; + *do not* include the brackets; only values (integer or string)
+                             + First three string variables can have the bracketed text removed
+							   and used on their own (also remove trailing comma)
+							 + Last two integer variables resolve appearance issues with certain fonts;
+							   experiment and play with these as necessary.
    > Changes should be immediate, but the theme needs to be enabled for this to wotk.
    > See other font themes in https://github.com/Hebgbs/DiscordStuff for other changes
      you can do, including other import examples that can be used in your Custom CSS code! */
@@ -30,12 +37,12 @@
 
 /* > These can (and should) be modified or removed as necessary.
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
-   > Any fixes applied, removed or to be modified requires Discord to be restarted. */
+   > Any fixes applied, removed or to be modified here requires Discord to be restarted. */
 
     /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
-       > Change this integer if necessary; Make the checkboxes line up with default position.
-       > This can easily be done in a raster editor or capture software with grid overlay.
-:root{--listfix: /*Move the checkboxes by*/ 0px;}
+       > Change this integer in root block if necessary;
+	     Make the checkboxes line up with default position.
+       > This can easily be done in a raster editor or capture software with grid overlay. */
 .bda-slist .bda-left{
     width: calc(80% - var(--listfix)) !Important;}
 .bda-slist .bda-right{
@@ -45,13 +52,13 @@
     /* Resolve spacing issues with some parts of the interface */
         /* Search results "Empty" placeholder */
 .empty-results-text{
-    width: calc(280px +/*Expand by an additional*/ 26px) !Important;}
+    width: calc(280px + 26px) !Important;}
     
     /* Resolve descender cutoff
        > It may be "Inherit" by default but integer values are accepted. 
        > For longer descenders, normally 26px or 28px is enough. */
 .title .channel-name{
-    line-height: inherit;}
+    line-height: var(--descfix);}
 
     /* Other Font tweaks 
        > Feel free to play with these!
