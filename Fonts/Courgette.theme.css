@@ -29,16 +29,6 @@
      Best adjusted by taking desired fixes out and tweaking them in Custom CSS.
    > Any fixes applied, removed or to be modified requires Discord to be restarted. */
 
-    /* BetterDiscord layout for tabs "Plugins" and  "Themes" list items
-       > Change this integer if necessary; Make the checkboxes line up with default position.
-       > This can easily be done in a raster editor or capture software with grid overlay. */
-:root{--listfix: /*Move the checkboxes by*/ 4px;}
-.bda-slist .bda-left{
-    width: calc(80% - var(--listfix)) !Important;}
-.bda-slist .bda-right{
-    width: 20% !important;
-    margin-right: var(--listfix) !Important;}
-    
     /* Resolve spacing issues with some parts of the interface */
         /* Search results "Empty" placeholder */
 .empty-results-text{
