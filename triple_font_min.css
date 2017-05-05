@@ -53,4 +53,9 @@ DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer, #pubs
 .embed-footer, .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN, .CodeMirror, .quickswitcher-container .misc-controls SPAN,
 #bd-settings-sidebar SPAN, #pubslayer SPAN{
     font-family: var(--monofam) !important;
-	font-size: 10pt !important;}
+    font-size: 10pt !important;}
+
+/* Universal fixes
+   These apply to every font style, no matter what. */
+.ui-popout-list{    
+    width: auto !important;}
