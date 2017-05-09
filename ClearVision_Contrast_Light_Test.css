@@ -1,0 +1,21 @@
+.ui-button.brand.filled:not(:hover){
+    background: var(--main-color);}
+
+.theme-light .sidebar .ui-tab-bar-header, .theme-light .content-column H2,
+.theme-light .content-column H3, .theme-light .content-column H5{
+    text-shadow: 0px 0px 6px #000,
+                 0px 0px 6px #000 !important;}
+.theme-light .ui-form-section:not(.user-settings-voice) H5.margin-bottom-4, .theme-light .ui-card H5.margin-bottom-8,
+.theme-light .connection H3{
+    text-shadow: none !important;}
+
+.theme-light .content-column .desc{
+    color: #fff !Important}
+
+.premium-free-months, .premium-feature .style-default, .theme-light .ui-form-text .margin-top-4, .theme-light .ghost-pill{
+    color: #000 !important;}
+.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover){
+    color: rgba(0, 0, 0, 0.40) !important;}
+
+.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close, .btn-close:after{
+    filter: brightness(0) !important;}
