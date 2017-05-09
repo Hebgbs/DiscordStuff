@@ -20,6 +20,7 @@ DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-b
 .quickswitcher .result.selected, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
+.ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
 #bd-pub-button:hover{
     color: #000 !important;}
 
@@ -69,14 +70,13 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
     background-image: none !important;}
 
     /* Darken */
-.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
-.guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
-.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
-.search-popout DIV:hover:before, .search-popout .selected:before,
-.avatar-xxlarge SPAN DIV:after{
+.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after, .guild:first-child.active .friends-icon:after,
+.channel .icon-friends:after, .popout-menu-item.invite .popout-menu-icon, .status-deafened:after, .search-popout DIV:hover:before,
+.search-popout .selected:before, .avatar-xxlarge SPAN DIV:after, .ui-radiogroup .ui-card .ui-icon-check-mark,
+.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV{
     filter: brightness(0) !important;}
 
-    /* Titlebar */
+        /* Titlebar */
 .titlebar .win-buttons BUTTON:hover:after{
     content: '';
     display: block;
@@ -91,7 +91,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 .titlebar .win-close:hover:after{
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) 50% 50%/24px;}
 
-    /* Friends / Friends icon */
+        /* Friends / Friends icon */
 .channel DIV.icon-friends:after{
     content: "";
     display: block;
@@ -100,7 +100,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
     filter: brightness(0) !important;}
 
-    /* Friends / Friend actions */
+        /* Friends / Friend actions */
 .friends-column-actions DIV:after,
 .friends-column-actions-visible DIV:after{
     content: '';
@@ -118,3 +118,9 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 .friends-column-actions .friends-action-cancel:after,
 .friends-column-actions-visible .friends-action-ignore:after{
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) no-repeat 50% 50%/24px;}
+    
+    /* Brighten */
+.ui-radiogroup .ui-card[style*="rgb(67, 181, 129)"] .ui-icon-check-mark,
+.ui-radiogroup .ui-card[style*="rgb(250, 166, 26)"] .ui-icon-check-mark,
+.ui-radiogroup .ui-card[style*="rgb(240, 71, 71)"] .ui-icon-check-mark{
+    filter: brightness(1) !Important;}
