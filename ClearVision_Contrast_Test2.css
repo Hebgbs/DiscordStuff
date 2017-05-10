@@ -33,7 +33,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
     color: #fff !important;}
 
     /* ClearVision defaults */
-.scroller-messages .has-more BUTTON, .guilds-wrapper .guilds-add:hover{
+.messages-wrapper .scroller-messages .has-more BUTTON, .guilds-wrapper .guilds-add:hover{
     color: var(--main-color) !Important;}
 
 .notice.notice-info .btn:hover{
