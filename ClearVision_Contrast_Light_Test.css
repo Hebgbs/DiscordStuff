@@ -15,7 +15,7 @@
 	color: #999 !important;}
 .theme-light #bd-settingspane-container .ui-switch-item .margin-top-4,{
 	color: #d2d2d2 !important;}
-.theme-light .guild-settings-audit-logs .header .ui-flex-child :not(STRONG){
+.theme-light .guild-settings-audit-logs .ui-audit-log .header :not(STRONG){
 	color: #bdbdbd !Important;}
 	/* brighten */
 .theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name,
@@ -26,7 +26,7 @@
 .theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents,
 .theme-light .user-settings-games .last-played, .theme-light .user-settinga-appearance A, .theme-light .user-settings-streamer-mode .margin-bottom-20 A,
 .theme-light .guild-settings-audit-logs .timestamp, .theme-light .guild-settings-audit-logs .prefix,
-.theme-light .guild-settings-roles .ui-tab-bar-item.guild-role:last-child.selected, .theme-light .guild-settings-roles A,
+.theme-light .guild-settings-roles .ui-tab-bar-item:last-child, .theme-light .guild-settings-roles A,
 #bd-settings-sidebar A{
     color: #000 !important;}
 .theme-light .guild-settings-roles .ui-tab-bar-item:not(.selected):not(:hover){
