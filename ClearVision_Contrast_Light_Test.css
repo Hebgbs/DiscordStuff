@@ -1,18 +1,24 @@
-.ui-button.brand.filled:not(:hover){
-    background: var(--main-color);}
-
+/* Visibility improvements via text shadow */
+	/* Apply */
 .theme-light .sidebar .ui-tab-bar-header, .theme-light .content-column H2,
 .theme-light .content-column H3, .theme-light .content-column H5{
     text-shadow: 0px 0px 6px #000,
                  0px 0px 6px #000 !important;}
+	/* Deny */
 .theme-light .ui-form-section:not(.user-settings-voice) H5.margin-bottom-4, .theme-light .ui-card H5.margin-bottom-8,
 .theme-light .connection H3{
     text-shadow: none !important;}
-
-.theme-light .content-column .desc{
+/* Colours */
+	/* Grey */
+.theme-light .user-settings-games .now-playing-add{
+	color: #999 !important;}
+	/* brighten */
+.theme-light .content-column .desc, .theme-light .user-settings-games .game-name{
     color: #fff !Important}
-
-.premium-free-months, .premium-feature .style-default, .theme-light .ui-form-text .margin-top-4, .theme-light .ghost-pill{
+	/* Darken */
+.premium-free-months, .premium-feature .ui-form-text.style-default, .theme-light .ui-form-text .margin-top-4,
+.theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled):hover .ui-button-contents,
+.theeme-light .user-settings-games .last-played, .user-settings-games .overlay-status-text{
     color: #000 !important;}
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover){
     color: rgba(0, 0, 0, 0.40) !important;}
