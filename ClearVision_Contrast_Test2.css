@@ -29,11 +29,11 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 .btn-confirm BUTTON, .btn.btn-default, .user-settings-modal-connections-list .btn-delete, .guilds-wrapper .guilds-error:hover,
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear), .notice .btn,
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary), .ui-guild-nsfw .ui-button-contents,
-.settings-panel .control-group:nth-child(2) .region-select:not(:hover) BUTTON{
+.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-child(2) .region-select:not(:hover) BUTTON{
     color: #fff !important;}
 
     /* ClearVision defaults */
-.messages-wrapper .scroller-messages .has-more BUTTON, .guilds-wrapper .guilds-add:hover{
+.guilds-wrapper .guilds-add:hover{
     color: var(--main-color) !Important;}
 
 .notice.notice-info .btn:hover{
