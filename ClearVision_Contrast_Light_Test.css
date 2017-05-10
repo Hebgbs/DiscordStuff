@@ -1,7 +1,7 @@
 /* Visibility improvements via text shadow */
 	/* Apply */
 .theme-light .sidebar .ui-tab-bar-header, .theme-light .content-column H2, .theme-light .content-column H3, .theme-light .content-column H5,
-.theme-light .guild-settings-roles .sidebar-header{
+.theme-light .guild-settings-audit-logs H2, .theme-light .guild-settings-roles .sidebar-header{
     text-shadow: 0px 0px 6px #000,
                  0px 0px 6px #000 !important;}
 	/* Deny */
@@ -11,21 +11,23 @@
     text-shadow: none !important;}
 /* Colours */
 	/* Greys */
-.theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
+.theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text, .theme-light .guild-settings-audit-logs .header .ui-flex-child :not(STRONG),
+.theme-light .guild-settings-audit-logs .timestamp, .theme-light .guild-settings-audit-logs .prefix	{
 	color: #999 !important;}
 .theme-light #bd-settingspane-container .ui-switch-item .margin-top-4{
 	color: #d2d2d2 !important;}
 	/* brighten */
-.theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name{
+.theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name,
+.theme-light .guild-settings-audit-logs .ui-selectable-item:not(.selected):not(:hover){
     color: #fff !Important}
 	/* Darken */
 .theme-light .premium-free-months, .theme-light .premium-feature .ui-form-text.style-default, .theme-light .ui-form-text .margin-top-4,
 .theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents,
 .theme-light .user-settings-games .last-played, .theme-light .user-settinga-appearance A, .theme-light .user-settings-streamer-mode .margin-bottom-20 A,
-.theme-light guild-settings-roles A,
+.theme-light .guild-settings-roles .ui-tab-bar-item:last-child.guild-role.selected, .theme-light .guild-settings-roles A,
 #bd-settings-sidebar A{
     color: #000 !important;}
-.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), {
+.theme-light .guild-settings-roles .ui-tab-bar-item:not(.selected):not(:hover){
     color: rgba(0, 0, 0, 0.40) !important;}
 
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close, .btn-close:after{
