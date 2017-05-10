@@ -13,8 +13,10 @@
 	/* Greys */
 .theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
 	color: #999 !important;}
-.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4, .theme-light .guild-settings-audit-logs .header .ui-flex-child :not(STRONG){
+.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4,{
 	color: #d2d2d2 !important;}
+.theme-light .guild-settings-audit-logs .header .ui-flex-child :not(STRONG){
+	color: #bdbdbd !Important;}
 	/* brighten */
 .theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name,
 .theme-light .guild-settings-audit-logs .ui-selectable-item:not(.selected):not(:hover){
