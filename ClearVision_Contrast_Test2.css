@@ -21,6 +21,7 @@ DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-b
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 .ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
+.guild-settings-roles .ui-tab-bar.SIDE DIV:last-child.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
 
