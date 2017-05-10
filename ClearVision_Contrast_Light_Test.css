@@ -1,12 +1,12 @@
 /* Visibility improvements via text shadow */
 	/* Apply */
 .theme-light .sidebar .ui-tab-bar-header, .theme-light .content-column H2, .theme-light .content-column H3, .theme-light .content-column H5,
-.theme-light .ui-form-section .ui-form-section.margin-bottom-40, .theme-light .guild-settings-roles .sidebar-header{
+.theme-light .ui-form-section.margin-bottom-40 H5, .theme-light .guild-settings-roles .sidebar-header{
     text-shadow: 0px 0px 6px #000,
                  0px 0px 6px #000 !important;}
 	/* Deny */
 .theme-light .ui-form-section:not(.user-settings-voice):not(.user-settings-games) H5.margin-bottom-4, .theme-light .ui-card H5.margin-bottom-8,
-.theme-light .connection H3{
+.theme-light .ui-form-text.style-description, .theme-light .ui-card DIV, .theme-light .connection H3{
     text-shadow: none !important;}
 /* Colours */
 	/* Greys */
