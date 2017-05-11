@@ -12,7 +12,7 @@
     text-shadow: none !important;}
 /* Colours */
 	/* Greys */
-.theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
+.theme-light .style-description, .theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
 	color: #999 !important;}
 .theme-light #bd-settingspane-container .ui-switch-item .margin-top-4,{
 	color: #d2d2d2 !important;}
@@ -24,10 +24,10 @@
     color: #fff !Important}
 	/* Darken */
 .theme-light .premium-free-months, .theme-light .premium-feature .ui-form-text.style-default, .theme-light .ui-form-text .margin-top-4,
-.theme-light .style-description, .theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents,
+.theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents,
 .theme-light .user-settings-games .last-played, .theme-light .user-settinga-appearance A, .theme-light .user-settings-streamer-mode .margin-bottom-20 A,
-.theme-light .guild-settings-audit-logs .timestamp, .theme-light .guild-settings-audit-logs .prefix,
-.theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
+.theme-settings .guild-settings-security A, .theme-light .guild-settings-audit-logs .timestamp, .theme-light .guild-settings-audit-logs .prefix,
+.margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 #bd-settings-sidebar A{
     color: #000 !important;}
 
