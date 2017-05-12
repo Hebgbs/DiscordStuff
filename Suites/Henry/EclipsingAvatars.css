@@ -1,9 +1,9 @@
-/* Eclipsing Avatars 2.7-Henry
+/* Eclipsing Avatars 2.1
    User status enhancer to make avatars fit in with a lunar-style theme.
    
    Ideally, this should be imported before the ClearVision base theme. */
 
-/* Colours; Adjust to preference */
+/* Colours; Adjusted for ClearVision */
 :root{
     --status-online: #00bf60;
     --status-idle: #bf9030;
@@ -12,7 +12,7 @@
 
 /* General */
 .channel.private .status,
-.account .status,
+.account .avatar-small .status,
 .member .status,
 .popout .header .status,
 .avatar-profile .status{
@@ -20,12 +20,10 @@
     top: 0px !important;
     border: none !important;
     background: transparent !important;}
-	
-	background-color: var(--status-online) !important;}
 
 /* Size */
 .channel.private .status,
-.account .status,
+.account .avatar-small .status,
 .member .status{
     height: 30px !important;
     width: 30px !important;
@@ -36,7 +34,7 @@
     height: 50px !important;
     width: 50px !important;
     border-radius: 50px !important;
-	transition: all .15s ease-in-out !important;}
+	transition: all .15s ease-in-out;}
 
 .popout .header .status{
     height: 90px !important;
@@ -55,6 +53,10 @@
     top: 13px !important;}
 
 /* Appearance settings; change colours in :root */
+.private-channel-call DIV.speaking{
+    box-shadow: 0px 0px 24px var(--main-color),
+                0px 0px 8px 4px var(--main-color) !important;}
+
 .title .status.status-online,
 .friends-row .status.status-online{
 	background-color: var(--status-online) !important;}
@@ -69,8 +71,7 @@
 .popout .header .status.status-online{
     box-shadow: 0px 0px 18px var(--status-online),
                 0px 0px 6px 3px var(--status-online) !important;}
-.avatar-profile .status.status-online,
-.private-channel-call .speaking{
+.avatar-profile .status.status-online{
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
@@ -91,7 +92,7 @@
 .avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
-                
+				
 .title .status.status-dnd,
 .friends-row .status.status-dnd{
 	background-color: var(--status-dnd) !important;}
