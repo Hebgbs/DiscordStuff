@@ -67,7 +67,18 @@ font-weight: bold !Important;}
         /* PLacement fixes */
 .title .channel-name{
     line-height: 24px !Important;
-    margin-bottom: 8px !important;}
+	margin-bottom: 8px !important;}
 
 .channel-textarea TEXTAREA{
-    line-height: 22px !Important;
+    line-height: 22px !Important;}
+
+.scroller.guilds .friends-online{
+    font-size: 8px !Important;}
+
+.search-bar INPUT{
+    margin-bottom: 2px !Important;}
+.search-bar *{
+    line-height: 16px !Important;}
+
+.badge{
+    padding-bottom: 6px !Important;}
