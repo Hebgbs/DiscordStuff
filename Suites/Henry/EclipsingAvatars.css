@@ -5,7 +5,7 @@
 
 /* Colours; Adjusted for ClearVision */
 :root{
-    --status-online: #00bf60;
+    --status-online: #00bf90;
     --status-idle: #bf9030;
     --status-dnd: #bf3018;
     --status-streaming: #593695;}
