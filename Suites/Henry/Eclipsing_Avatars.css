@@ -1,11 +1,14 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.5"}*//{}
+/* Eclipsing Avatars 2.7-Henry
+   User status enhancer to make avatars fit in with a lunar-style theme.
+   
+   Ideally, this should be imported before the ClearVision base theme. */
 
 /* Colours; Adjust to preference */
 :root{
-    --ecl-online: #00bf60;
-    --ecl-idle: #bf9030;
-    --ecl-dnd: #bf3018;
-    --ecl-streaming: #593695;}
+    --status-online: #00bf60;
+    --status-idle: #bf9030;
+    --status-dnd: #bf3018;
+    --status-streaming: #593695;}
 
 /* General */
 .channel.private .status,
@@ -50,54 +53,60 @@
     top: 13px !important;}
 
 /* Appearance settings; change colours in :root */
+.status-status-online{
+	background-color: var(--status-online)}
 .channel.private .status.status-online,
 .account .status.status-online,
 .member .status.status-online{
-    box-shadow: 0px 0px 6px var(--ecl-online),
-                0px 0px 2px 1px var(--ecl-online) !important;}
+    box-shadow: 0px 0px 6px var(--status-online),
+                0px 0px 2px 1px var(--status-online) !important;}
 .account .avatar-small:hover .status.online{
-    box-shadow: 0px 0px 12px var(--ecl-online),
-                0px 0px 4px 2px var(--ecl-online) !important;}
+    box-shadow: 0px 0px 12px var(--status-online),
+                0px 0px 4px 2px var(--status-online) !important;}
 .popout .header .status.status-online{
-    box-shadow: 0px 0px 18px var(--ecl-online),
-                0px 0px 6px 3px var(--ecl-online) !important;}
+    box-shadow: 0px 0px 18px var(--status-online),
+                0px 0px 6px 3px var(--status-online) !important;}
 .avatar-profile .status.status-online,
 .private-channel-call .speaking{
-    box-shadow: 0px 0px 24px var(--ecl-online),
-                0px 0px 8px 4px var(--ecl-online) !important;}
+    box-shadow: 0px 0px 24px var(--status-online),
+                0px 0px 8px 4px var(--status-online) !important;}
 
+.status-status-idle{
+	background-color: var(--status-idle)}
 .channel.private .status.status-idle,
 .account .status.status-idle,
 .member .status.status-idle{
-    box-shadow: 0px 0px 6px var(--ecl-idle),
-                0px 0px 2px 1px var(--ecl-idle) !important;}
+    box-shadow: 0px 0px 6px var(--status-idle),
+                0px 0px 2px 1px var(--status-idle) !important;}
 .account .avatar-small:hover .status.idle{
-    box-shadow: 0px 0px 12px var(--ecl-idle),
-                0px 0px 4px 2px var(--ecl-idle) !important;}
+    box-shadow: 0px 0px 12px var(--status-idle),
+                0px 0px 4px 2px var(--status-idle) !important;}
 .popout .header .status.status-idle{
-    box-shadow: 0px 0px 18px var(--ecl-idle),
-                0px 0px 6px 3px var(--ecl-idle) !important;}
+    box-shadow: 0px 0px 18px var(--status-idle),
+                0px 0px 6px 3px var(--status-idle) !important;}
 .avatar-profile .status.status-idle{
-    box-shadow: 0px 0px 24px var(--ecl-idle),
-                0px 0px 8px 4px var(--ecl-idle) !important;}
+    box-shadow: 0px 0px 24px var(--status-idle),
+                0px 0px 8px 4px var(--status-idle) !important;}
                 
+.status-status-dnd{
+	background-color: var(--status-dnd)}
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
 .member .status.status-dnd{
-    box-shadow: 0px 0px 6px var(--ecl-dnd),
-                0px 0px 2px 1px var(--ecl-dnd) !important;}
+    box-shadow: 0px 0px 6px var(--status-dnd),
+                0px 0px 2px 1px var(--status-dnd) !important;}
 .account .avatar-small:hover .status.dnd{
-    box-shadow: 0px 0px 12px var(--ecl-dnd),
-                0px 0px 4px 2px var(--ecl-dnd) !important;}
+    box-shadow: 0px 0px 12px var(--status-dnd),
+                0px 0px 4px 2px var(--status-dnd) !important;}
 .popout .header .status.status-dnd{
-    box-shadow: 0px 0px 18px var(--ecl-dnd),
-                0px 0px 6px 3px var(--ecl-dnd) !important;}
+    box-shadow: 0px 0px 18px var(--status-dnd),
+                0px 0px 6px 3px var(--status-dnd) !important;}
 .avatar-profile .status.status-dnd{
-    box-shadow: 0px 0px 24px var(--ecl-dnd),
-                0px 0px 8px 4px var(--ecl-dnd) !important;}
+    box-shadow: 0px 0px 24px var(--status-dnd),
+                0px 0px 8px 4px var(--status-dnd) !important;}
 
 .channel.private .status.status-streaming,
 .account .status.status-streaming,
 .member .status.status-streaming{
-    box-shadow: 0px 0px 6px var(--ecl-streaming),
-                0px 0px 2px 1px var(--ecl-streaming) !important;}
+    box-shadow: 0px 0px 6px var(--status-streaming),
+                0px 0px 2px 1px var(--status-streaming) !important;}

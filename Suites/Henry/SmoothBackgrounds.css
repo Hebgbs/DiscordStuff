@@ -1,0 +1,24 @@
+/* "Smooth Backgrounds v1.1-custom" by Hebgbs, Zerthox */
+/* Make the background really clear & more smooth */
+
+.theme-light .guilds-wrapper,
+.theme-light .channels-wrap,
+.theme-light .content .flex-spacer,
+.theme-light .title-wrap,
+.theme-light .channel-members,
+.theme-light .search-results-wrap,
+.theme-light .friends-header,
+.theme-light .friends-table{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .guilds-wrapper,
+.theme-dark .channels-wrap,
+.theme-dark .content .flex-spacer,
+.theme-dark .title-wrap,
+.theme-dark .channel-members,
+.theme-dark .search-results-wrap,
+.theme-dark .friends-header,
+.theme-dark .friends-table {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
