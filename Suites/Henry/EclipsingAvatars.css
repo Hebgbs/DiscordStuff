@@ -23,14 +23,6 @@
 	
 	background-color: var(--status-online) !important;}
 
-.channel.private .status,
-.account .status,
-.member .status,
-.account .avatar-small:hover .status,
-.popout .header .status,
-.avatar-profile .status{
-	background-color: transparent !important;}
-
 /* Size */
 .channel.private .status,
 .account .status,
@@ -63,7 +55,8 @@
     top: 13px !important;}
 
 /* Appearance settings; change colours in :root */
-.status.status-online{
+.title .status.status-online,
+.friends-row .status.status-online{
 	background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 .account .status.status-online,
@@ -81,7 +74,8 @@
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
-.status.status-idle{
+.title .status.status-idle,
+.friends-row .status.status-idle{
 	background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 .account .status.status-idle,
@@ -98,7 +92,8 @@
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
                 
-.status.status-dnd{
+.title .status.status-dnd,
+.friends-row .status.status-dnd{
 	background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
