@@ -5,9 +5,9 @@
 
 /* Defaults for font size to keep things from breaking when unspecified */
 :root{
-    --headsize: initial;
-    --bodysize: initial;
-    --monosize: initial;}
+    --headsize: inherit;
+    --bodysize: inherit;
+    --monosize: inherit;}
 
 /* I tried my best previously, but there is no semblence of order and sorting here anymore. */
 
