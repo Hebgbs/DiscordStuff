@@ -20,6 +20,16 @@
     top: 0px !important;
     border: none !important;
     background: transparent !important;}
+	
+	background-color: var(--status-online) !important;}
+
+.channel.private .status,
+.account .status,
+.member .status,
+.account .avatar-small:hover .status,
+.popout .header .status,
+.avatar-profile .status{
+	background-color: transparent !important;}
 
 /* Size */
 .channel.private .status,
