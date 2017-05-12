@@ -4,10 +4,6 @@
    Copyleft 2017, CC0. Do whatever you may please, use and modify at your own peril. */
 
 /* Defaults for font size to keep things from breaking when unspecified */
-:root{
-    --headsize: inherit;
-    --bodysize: inherit;
-    --monosize: inherit;}
 
 /* I tried my best previously, but there is no semblence of order and sorting here anymore. */
 
