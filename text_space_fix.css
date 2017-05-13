@@ -9,7 +9,7 @@ Code blocks taken from triple_font_min.css */
 BUTTON:not(.guilds-add), H1, H2, H3, H4, FORM HEADER, LABEL:not(A), .esc-text,
 DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .ui-form-title, .ui-tab-bar-header, .game-name, .guild-settings-audit-logs .ui-flex-child STRONG,
-.badge, .reaction-count, .new-messages-indicator, .channels-wrap *,  .channel-name,
+.badge, .reaction-count, .new-messages-indicator, .channels-wrap *,  .channel-name, .search-query .search-for,
 .private-channel-call-actions *, .alert-actions *, .btn-close-forever, .channel-name.focus *,
 .channel-members SPAN, #user-profile-modal .guild, .user-name, .username, .nickname,
 #user-profile-modal .connected-accounts, .typing SPAN.text STRONG, .modal-inner .markdown-modal-header,
