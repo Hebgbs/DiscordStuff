@@ -1,7 +1,7 @@
 /* Visibility improvements via text shadow */
 	/* Apply */
-.theme-light .ui-tab-bar-header, .theme-light .content-column H2.margin-bottom-20, .theme-light .content-column H3.ui-flex-child,
-.theme-light .margin-bottom-40 H5, .theme-light .content-column .ui-form-section H5.margin-bottom-8{
+.theme-light .ui-tab-bar-header, .theme-light .content-column H2.margin-bottom-20, .theme-light .content-column :not(.margin-bottom-20) H3.ui-flex-child,
+.theme-light .margin-bottom-40 H5, .theme-light .content-column :not(.ui-card) H5.margin-bottom-8{
     text-shadow: 0px 0px 6px #000,
                  0px 0px 6px #000 !important;}
 	/* Deny */
