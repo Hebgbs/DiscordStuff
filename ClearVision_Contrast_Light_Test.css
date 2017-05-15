@@ -7,7 +7,7 @@
 	/* Deny */
 .theme-light .ui-form-section:not(.user-settings-authorized-apps):not(.user-settings-voice):not(.user-settings-games) .ui-form-section:not(.margin-bottom-40) H5.margin-bottom-4,
 .theme-light .ui-card H5.margin-bottom-8, .theme-light .ui-form-text.style-description, .theme-light .ui-card DIV, .theme-light .connection H3,
-.theme-light .user-info-viewing H5,
+.theme-light .user-info-viewing H5, .theme-light .btn-close:after
 .theme-light #bd-settingspane-container H3{
     text-shadow: none !important;}
 /* Colours */
@@ -31,5 +31,5 @@
 #bd-settings-sidebar A{
     color: #000 !important;}
 
-.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close, .btn-close:after{
+.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
     filter: brightness(0) !important;}
