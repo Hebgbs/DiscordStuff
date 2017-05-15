@@ -31,7 +31,10 @@
 #bd-settings-sidebar A{
     color: #000 !important;}
 .theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
-	color: rgba(255, 255, 255, 0.7) !important;}
+	color: rgba(255, 255, 255, 0.5) !important;}
+
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after{
+	opacity: 0.5 !important}
 
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
     filter: brightness(0) !important;}
