@@ -30,7 +30,7 @@
 .margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 #bd-settings-sidebar A{
     color: #000 !important;}
-.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover){
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
 	color: rgba(255, 255, 255, 0.7) !important;}
 
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
