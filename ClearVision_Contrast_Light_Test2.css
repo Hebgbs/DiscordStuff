@@ -1,8 +1,8 @@
 /* Visibility improvements via text shadow */
 	/* Apply */
 .theme-light .ui-tab-bar-header, .theme-light .content-column H2.margin-bottom-20, .theme-light .ui-form-section:not(.user-settings-connections) H3.ui-flex-child,
-.theme-light .ui-form-section:not(.user-settings-authorized-apps):not(.user-settings-streamer-mode):not(.user-settings-locale) .margin-bottom-40 H5,
-.theme-light .content-column H5.margin-bottom-8, .theme-light .user-settings-voice .margin-bottom-4, .theme-light .user-settings-games H5{
+.theme-light .ui-form-section:not(.user-settings-streamer-mode):not(.user-settings-locale) .margin-bottom-40 H5,
+.theme-light .ui-form-section:not(.user-settings-authorized-apps) H5.margin-bottom-8, .theme-light .user-settings-voice .margin-bottom-4, .theme-light .user-settings-games H5{
     text-shadow: 0px 0px 6px #000,
                  0px 0px 6px #000 !important;}
 	/* Deny */
