@@ -35,8 +35,9 @@
 .theme-light .guild-channels .channel-text:not(.unread):not(.selected) A SPAN, .theme-light .channel.private A SPAN{
 	color: rgba(0, 0, 0, 0.5) !important;}
 
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after, .theme-light .channel.private A SPAN{
-	opacity: 0.5 !important}
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after, .theme-light .guild-channels .channel-text:not(.unread):not(.selected):not(:hover) SPAN,
+.theme-light .channel:not(.selected).private SPAN{
+	opacity: 0.75 !important}
 
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
     filter: brightness(0) !important;}
