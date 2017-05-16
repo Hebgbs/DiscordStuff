@@ -22,10 +22,10 @@
 .theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name,
 .theme-light .guild-settings-audit-logs .ui-selectable-item:not(.selected):not(:hover), .theme-light .guild-settings-members-member .name{
     color: #fff !Important}
-	/* Darken */
+	/* Darken */	
 .theme-light .premium-free-months, .theme-light .premium-feature .ui-form-text.style-default, .theme-light .ui-form-text .margin-top-4,
 .theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents, .theme-light .style-description,
-.theme-light .user-settings-games .last-played, .theme-light .user-settinga-appearance A, .theme-light .user-settings-streamer-mode .margin-bottom-20 A,
+.theme-light .user-settings-games .last-played, .theme-light .user-settings-appearance A, .theme-light .user-settings-streamer-mode .margin-bottom-20 A,
 .theme-settings .guild-settings-security A, .theme-light .guild-settings-audit-logs .timestamp, .theme-light .guild-settings-audit-logs .prefix,
 .margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 .theme-light .guild-settings-members-member .name, .theme-light .guild-settings-members-member .tag, .theme-light .guild-settings-widget INPUT::placeholder, #bd-settings-sidebar A{
