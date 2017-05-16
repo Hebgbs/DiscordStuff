@@ -14,7 +14,7 @@
 	/* Greys */
 .theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
 	color: #999 !important;}
-.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4{
+.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4, .theme-light .select-value SPAN{
 	color: #d2d2d2 !important;}
 .theme-light .guild-settings-audit-logs .ui-audit-log .header :not(STRONG), #bd-settingspane-container .ui-switch-item .margin-top-4{
 	color: #bdbdbd !Important;}
@@ -30,7 +30,7 @@
 .margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 .theme-light .guild-settings-members-member .name, .theme-light .guild-settings-members-member .tag, #bd-settings-sidebar A{
     color: #000 !important;}
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover), .theme-light .guild-channels .channel:not(.unread):not(.selected){
 	color: rgba(255, 255, 255, 0.5) !important;}
 
 .theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after{
