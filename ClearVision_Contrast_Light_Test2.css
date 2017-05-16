@@ -14,7 +14,7 @@
 	/* Greys */
 .theme-light .user-settings-games .now-playing-add, .theme-light .keybind-group .ui-form-text{
 	color: #999 !important;}
-.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4,{
+.theme-light #bd-settingspane-container .ui-switch-item .margin-top-4{
 	color: #d2d2d2 !important;}
 .theme-light .guild-settings-audit-logs .ui-audit-log .header :not(STRONG), #bd-settingspane-container .ui-switch-item .margin-top-4{
 	color: #bdbdbd !Important;}
