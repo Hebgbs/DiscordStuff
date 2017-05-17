@@ -30,11 +30,11 @@
 .margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 .theme-light .guild-settings-members-member .name, .theme-light .guild-settings-members-member .tag, #bd-settings-sidebar A{
     color: #000 !important;}
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
+.theme-light :not(#pubslayer) .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
 	color: rgba(255, 255, 255, 0.5) !important;}
 
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after{
+.theme-light :not(#pubslayer) .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after{
 	opacity: 0.5 !important}
 
-.theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
+.theme-light :not(#pubslayer) .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
     filter: brightness(0) !important;}
