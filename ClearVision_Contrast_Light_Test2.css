@@ -22,8 +22,6 @@
 .theme-light .content-column .desc, .theme-light .user-settings-games .game .game-name, .theme-light .guild-settings-widget INPUT,
 .theme-light .guild-settings-audit-logs .ui-selectable-item:not(.selected):not(:hover), .theme-light .guild-settings-members-member .name{
     color: #fff !Important}
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
-	color: rgba(255, 255, 255, 0.5) !important;}
 	/* Darken */	
 .theme-light .premium-free-months, .theme-light .premium-feature .ui-form-text.style-default, .theme-light .ui-form-text .margin-top-4,
 .theme-light .ghost-pill, .theme-light .ui-button.link-color.link:not(:disabled) .ui-button-contents, .theme-light .style-description,
@@ -32,12 +30,11 @@
 .margin-bottom-40 A, .theme-light .guild-settings-roles .ui-tab-bar-item.guild-role.selected:last-child, .theme-light .guild-settings-roles A,
 .theme-light .guild-settings-members-member .name, .theme-light .guild-settings-members-member .tag, #bd-settings-sidebar A{
     color: #000 !important;}
-.theme-light .guild-channels .channel-text:not(.unread):not(.selected) A SPAN, .theme-light .channel.private A SPAN{
-	color: rgba(0, 0, 0, 0.5) !important;}
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover){
+	color: rgba(255, 255, 255, 0.5) !important;}
 
-.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after, .theme-light .guild-channels .channel-text:not(.unread):not(.selected):not(:hover) SPAN,
-.theme-light .channel:not(.selected).private SPAN{
-	opacity: 0.75 !important}
+.theme-light .sidebar DIV.ui-tab-bar-item:not(.selected):not(:hover):after{
+	opacity: 0.5 !important}
 
 .theme-light .sidebar .ui-tab-bar-item:not(.selected):not(:hover), .theme-light .btn-close{
     filter: brightness(0) !important;}
