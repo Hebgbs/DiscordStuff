@@ -19,8 +19,8 @@ Changelog: https://git.io/v6r5N
 
 /* Below is the root block you need to include. Modify to suit!
 :root {
-	--main-color: #ff0061;
-	--hover-color: #ff0061;
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
 	--background-url: https://github.com/Zerthox/ClearVision/raw/master/images/sapphire.jpg;
     --background-blur: 0px;
     --background-brightness: 100%;
