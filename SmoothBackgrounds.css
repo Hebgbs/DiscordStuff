@@ -1,0 +1,32 @@
+/* "Smooth Backgrounds v1.2" by Hebgbs, originally by Zerthx */
+/* Make the background really clear & more smooth via root variables.
+
+Add these into the theme root block;
+    --smoothBG_L: 0.00;
+    --smoothBG_D: 0.00;
+
+For real-time modification in Custom CSS, place the variables in their own
+root block, using the root block from your ClearVision theme as an example.
+
+Change "0.00" to any value you like; one is for lightappearance, the other
+is for dark, but thay can be both the same if you don't care. */
+
+.theme-light .guilds-wrapper,
+.theme-light .channels-wrap,
+.theme-light .content .flex-spacer,
+.theme-light .title-wrap,
+.theme-light .channel-members,
+.theme-light .search-results-wrap,
+.theme-light .friends-header,
+.theme-light .friends-table{
+    background-color: rgba(0, 0, 0, var(--smoothBG_L)) !important;}
+
+.theme-dark .guilds-wrapper,
+.theme-dark .channels-wrap,
+.theme-dark .content .flex-spacer,
+.theme-dark .title-wrap,
+.theme-dark .channel-members,
+.theme-dark .search-results-wrap,
+.theme-dark .friends-header,
+.theme-dark .friends-table{
+    background-color: rgba(0, 0, 0, var(--smoothBG_D)) !important;}
