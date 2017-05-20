@@ -21,7 +21,7 @@ Changelog: https://git.io/v6r5N
 :root {
 	--main-color: #2780e6;
 	--hover-color: #1e63b3;
-	--background-url: https://github.com/Zerthox/ClearVision/raw/master/images/sapphire.jpg;
+	--background: url(https://github.com/Zerthox/ClearVision/raw/master/images/sapphire.jpg);
     --background-blur: 0px;
     --background-brightness: 100%;
 }
@@ -37,5 +37,5 @@ body::after,
 .invite-modal .invite-splash,
 .radio-theme.light label,
 .radio-theme.dark label{
-    background-image: url(var(--background-url)) !important;
+    background-image: var(--background) !important;
 }
