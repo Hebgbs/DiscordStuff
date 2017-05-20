@@ -1,0 +1,21 @@
+/* "Smooth Backgrounds v1.2" by Hebgbs, originally by Zerthox */
+
+.theme-light .guilds-wrapper,
+.theme-light .channels-wrap,
+.theme-light .content .flex-spacer,
+.theme-light .title-wrap,
+.theme-light .channel-members,
+.theme-light .search-results-wrap,
+.theme-light .friends-header,
+.theme-light .friends-table{
+    background-color: transparent !important;}
+
+.theme-dark .guilds-wrapper,
+.theme-dark .channels-wrap,
+.theme-dark .content .flex-spacer,
+.theme-dark .title-wrap,
+.theme-dark .channel-members,
+.theme-dark .search-results-wrap,
+.theme-dark .friends-header,
+.theme-dark .friends-table{
+    background-color: transparent !important;}
