@@ -1,4 +1,4 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.6"}*//{}
+//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.7"}*//{}
 
 /* Colours; Adjust to preference */
 :root{
@@ -18,7 +18,14 @@
     border: none !important;
     background: transparent !important;}
 
+.avatar-popout{
+	border: none !important;}
+
 /* Size */
+.channel-textarea-autocomplete-inner .status{
+	height: 26px !important;
+	width: 26px !Important;}
+
 .channel.private .status,
 .account .status,
 .member .status{
@@ -55,7 +62,8 @@
 background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 .account .status.status-online,
-.member .status.status-online{
+.member .status.status-online,
+.channel-textarea-autocomplete-inner .status.status-online{
     box-shadow: 0px 0px 6px var(--status-online),
                 0px 0px 2px 1px var(--status-online) !important;}
 .account .avatar-small:hover .status.online{
@@ -74,7 +82,8 @@ background-color: var(--status-online) !important;}
 background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 .account .status.status-idle,
-.member .status.status-idle{
+.member .status.status-idle,
+.channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0px 0px 6px var(--status-idle),
                 0px 0px 2px 1px var(--status-idle) !important;}
 .account .avatar-small:hover .status.idle{
@@ -92,7 +101,8 @@ background-color: var(--status-idle) !important;}
 background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
-.member .status.status-dnd{
+.member .status.status-dnd,
+.channel-textarea-autocomplete-inner .status.status-dnd{
     box-shadow: 0px 0px 6px var(--status-dnd),
                 0px 0px 2px 1px var(--status-dnd) !important;}
 .account .avatar-small:hover .status.dnd{
