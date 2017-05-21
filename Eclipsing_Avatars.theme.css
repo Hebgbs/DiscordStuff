@@ -12,7 +12,8 @@
 .account .status,
 .member .status,
 .popout .header .status,
-.avatar-profile .status{
+.avatar-profile .status,
+.channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
     border: none !important;
@@ -24,7 +25,8 @@
 /* Size */
 .channel-textarea-autocomplete-inner .status{
 	height: 26px !important;
-	width: 26px !Important;}
+	width: 26px !Important;
+	border-radius: 26px !Important;}
 
 .channel.private .status,
 .account .status,
