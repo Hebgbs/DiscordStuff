@@ -1,0 +1,10 @@
+//META{"name":"Eclipsing_Avatars-Material","description":"User status enhancer to make avatars fit in with a lunar-style theme.<br><br><b>This is intended to work with Beard's Material theme only.</b>","author":"Hebgbs","version":"3.0"}*//{}
+
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Eclipsing_Avatars-Material.import.css);
+
+/* Colours; Adjust to preference */
+:root{
+    --status-online: #43b581;
+    --status-idle: #faa61a;
+    --status-dnd: #f04747;
+    --status-streaming: #593695;}
