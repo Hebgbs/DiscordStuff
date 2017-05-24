@@ -2,18 +2,18 @@
    Import file for use wit Beard's Material Theme */
 
 /* Fix for account avatar */
-.account .avatar-small:hover .status,
-.account .avatar-small.popout-open .status{
+.account .avatar-small:hover DIV.status,
+.account .avatar-small.popout-open DIV.status{
     height: 50px !important;
     width: 50px !important;
     border-radius: 50px !important;}
 
 /* Animation settings */
-.account .avatar-small:hover .status,
-.account .avatar-small.popout-open .status{
+.account .avatar-small:hover DIV.status,
+.account .avatar-small.popout-open DIV.status{
     transition: all .15s ease-in-out;}
 
 /* Colour setting for privare calls */
-.private-channel-call DIV.speaking{
+DIV.private-channel-call DIV.speaking{
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}

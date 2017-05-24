@@ -2,7 +2,7 @@
    Import file for use wit Beard's Material Theme */
 
 /* Fix for profile avatar (for now) */
-.avatar-profile .status{
+.avatar-profile DIV.status{
 	top: 24px !important;
 	left: 24px !Important;
     border: none !important;
