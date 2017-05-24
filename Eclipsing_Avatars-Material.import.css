@@ -1,21 +1,20 @@
-//META{"name":"Eclipsing_Avatars","description":"User status enhancer to make avatars fit in with a lunar-style theme.","author":"Hebgbs","version":"2.7"}*//{}
-
-/* Colours; Adjust to preference */
-:root{
-    --status-online: #43b581;
-    --status-idle: #faa61a;
-    --status-dnd: #f04747;
-    --status-streaming: #593695;}
+/* Eclipsing Avatars 2.7
+   Import file for use wit Beard's Material Theme */
 
 /* General */
 .channel.private .status,
 .account .status,
 .member .status,
 .popout .header .status,
-.avatar-profile .status,
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
+    border: none !important;
+    background: transparent !important;}
+
+.avatar-profile .status{
+	top: 24px !important;
+	left: 24px !Important;
     border: none !important;
     background: transparent !important;}
 
@@ -41,8 +40,8 @@
     border-radius: 90px !important;}
 
 .avatar-profile .status{
-    height: 128px !important;
-    width: 128px !important;
+    height: 124px !important;
+    width: 124px !important;
     border-radius: 128px !important;}
 
 /* Typing indicator */
@@ -117,3 +116,4 @@ background-color: var(--status-dnd) !important;}
 .member .status.status-streaming{
     box-shadow: 0px 0px 6px var(--status-streaming),
 0px 0px 2px 1px var(--status-streaming) !important;}
+```
