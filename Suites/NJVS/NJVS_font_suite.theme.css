@@ -10,6 +10,7 @@
     /* Fixes for ClearVision theme */
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/cv_ui_fixes.css');
     /* Import argument for base sheet; */
+@Import url('https://rawgit.com/Hebgbs/DiscordStuff/master/Suites/NJVS/NJVS_font_fix.css');
 @import url('https://rawgit.com/Hebgbs/DiscordStuff/master/triple_font_min.css');
 	/* Import argument for web fonts;
 	   use whatever famlies specified for these imports */
