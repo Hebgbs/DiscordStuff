@@ -1,4 +1,4 @@
 /* CSS supplementary sheet for NJVS font suite */
 
-BUTTON, .badge, .download-button, .tab-bar *{
+BUTTON.button, DIV.badge, A.download-button, DIV.tab-bar *{
 	font-family: var(--bodyfam) !important;}
