@@ -3,7 +3,7 @@
 
 /* General */
 .channel.private .status,
-.account .status,
+DIV .avatar-small .status,
 .member .status,
 .popout .header .status,
 .avatar-profile .status,
@@ -16,6 +16,9 @@
 .avatar-popout{
 	border: none !important;}
 
+.status-picker .popout-menu-item .status{
+	box-shadow: none !important;}
+
 /* Size */
 .channel-textarea-autocomplete-inner .status{
 	height: 26px !important;
@@ -23,7 +26,7 @@
 	border-radius: 26px !Important;}
 
 .channel.private .status,
-.account .status,
+DIV .avatar-small .status,
 .member .status{
     height: 30px !important;
     width: 30px !important;
@@ -46,16 +49,17 @@
     top: 13px !important;}
 
 /* Appearance settings; change colours in .theme.css */
+.status-picker .status-online,
 .title .status.status-online,
 .friends-row .status.status-online{
 background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
-.account .status.status-online,
+DIV .status.status-online,
 .member .status.status-online,
 .channel-textarea-autocomplete-inner .status.status-online{
     box-shadow: 0px 0px 6px var(--status-online),
                 0px 0px 2px 1px var(--status-online) !important;}
-.account .avatar-small:hover .status.online{
+DIV .avatar-small:hover .status.online{
     box-shadow: 0px 0px 12px var(--status-online),
                 0px 0px 4px 2px var(--status-online) !important;}
 .popout .header .status.status-online{
@@ -66,16 +70,17 @@ background-color: var(--status-online) !important;}
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
+.status-picker .status-idle,
 .title .status.status-idle,
 .friends-row .status.status-idle{
 background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
-.account .status.status-idle,
+DIV .status.status-idle,
 .member .status.status-idle,
 .channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0px 0px 6px var(--status-idle),
                 0px 0px 2px 1px var(--status-idle) !important;}
-.account .avatar-small:hover .status.idle{
+DIV .avatar-small:hover .status.idle{
     box-shadow: 0px 0px 12px var(--status-idle),
                 0px 0px 4px 2px var(--status-idle) !important;}
 .popout .header .status.status-idle{
@@ -84,17 +89,18 @@ background-color: var(--status-idle) !important;}
 .avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
-                
+
+.status-picker .status-dnd,
 .title .status.status-dnd,
 .friends-row .status.status-dnd{
 background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
-.account .status.status-dnd,
+DIV .status.status-dnd,
 .member .status.status-dnd,
 .channel-textarea-autocomplete-inner .status.status-dnd{
     box-shadow: 0px 0px 6px var(--status-dnd),
                 0px 0px 2px 1px var(--status-dnd) !important;}
-.account .avatar-small:hover .status.dnd{
+DIV .avatar-small:hover .status.dnd{
     box-shadow: 0px 0px 12px var(--status-dnd),
                 0px 0px 4px 2px var(--status-dnd) !important;}
 .popout .header .status.status-dnd{
