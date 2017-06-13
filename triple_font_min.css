@@ -6,7 +6,7 @@
 /* I tried my best previously, but there is no semblence of order and sorting here anymore. */
 
 /* Headings and titles */
-BUTTON:not(.guilds-add), H1, H2, H3, H4, FORM HEADER, LABEL:not(A),
+BUTTON:not(.guilds-add), H1, H2, H3, H4, H5, FORM HEADER, LABEL:not(A),
 .create-guild-container HEADER, .create-guild-container .action-header, .create-guild-container .or,
 DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .ui-form-title, .ui-tab-bar-header, .game-name, .guild-settings-audit-logs .ui-flex-child STRONG,
@@ -43,16 +43,17 @@ INPUT, LABEL A, P,
 .upload DIV.speed, .user-settings-modal-accounts-list, .authed-app .body, .authed-app LI, .control-group A, DIV#overlay-explanation,
 .premium-free-months, .premium-feature .style-description, .premium-description .style-default, .item-game .last-played *, .now-playing,
 .now-playing-add, .change-log LI, .change-log .markdown-modal-footer,
+.view-body, DIV[class|=description], DIV[class|=default], DIV [class^=font-scale-sample],
 DIV#bd-pub-button, .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
 DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer, #pubslayer .scroller,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN, #bdcl H1, #bdcl .footer{
     font-family: var(--bodyfam) !important;}
 
 /* Monospace fonts */
-#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1), CODE, CODE.inline, .keyboard-shortcuts-modal,
-.keybind-shortcut SPAN, .keybind-shortcut.dim SPAN, .upload DIV.filename, DIV.attachment-inner A, .accessory .embed-provider,
-.embed-footer, .shortcut-recorder INPUT, .quickswitcher-container .list-nav SPAN, .CodeMirror, .quickswitcher-container .misc-controls SPAN,
-#bd-settings-sidebar SPAN, #pubslayer SPAN{
+.slider-mark-value, CODE, CODE.inline, .keyboard-shortcuts-modal, .keybind-shortcut SPAN, .keybind-shortcut.dim SPAN,
+.upload DIV.filename, DIV.attachment-inner A, .accessory .embed-provider, .embed-footer, .shortcut-recorder INPUT,
+.quickswitcher-container .list-nav SPAN, .CodeMirror, .quickswitcher-container .misc-controls SPAN,
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > span:nth-child(1), #bd-settings-sidebar SPAN, #pubslayer SPAN{
     font-family: var(--monofam) !important;
     font-size: 10pt !important;}
 
