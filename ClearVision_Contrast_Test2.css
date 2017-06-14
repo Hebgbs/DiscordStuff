@@ -70,7 +70,7 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 DIV[class|="contentSelectedText"] DIV[class|="wrapper"]{
 	background-color: #fff !important;}
 
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] [class|="wrapper"]{
+.channels-wrap .scroller [class*="Text"][class*="content"] DIV[class*="icon"] DIV[class|="wrapper"]{
 	opacity: 1 !Important;}
 
 /* Icon replacement and object brightness */
