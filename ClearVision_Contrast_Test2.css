@@ -1,4 +1,7 @@
-/* This is messy and updates too often to be reliable. Do not use it.
+//META{"name":"ClearVision_Contrast_Improvements","description":"Black text and objects for places in the ClearVision theme which are otherwise difficult to see as white with brighter colours.","author":"Hebgbs","version":"1.1"}*//{}
+
+/* Contrast Improvements v1.3 by Hebgbs (@w/ :heart:)
+   Black text and objects where it is otherwise difficult to see with brighter colours.
    
    This code must be the first import to be fully effective. */
 
@@ -22,6 +25,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 .ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
 .guild-settings-roles .ui-sidebar .ui-tab-bar-item:not(:first-child).selected,
+DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[class|="wrapper"], DIV[class|="contentUnreadText"] DIV[class|="wrapper"],
 #bd-pub-button:hover{
     color: #000 !important;}
 
@@ -62,6 +66,13 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
     background-color: #000 !important;}
+
+DIV[class|="contentSelectedText"] DIV[class|="wrapper"]{
+	background-color: #fff !important;}
+
+.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] [class|="wrapper"]{
+	opacity: 1 !Important;}
+
 /* Icon replacement and object brightness */
     /* Disappear */
 .titlebar .win-buttons BUTTON:hover,
@@ -75,7 +86,8 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 .icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after, .guild:first-child.active .friends-icon:after,
 .channel .icon-friends:after, .popout-menu-item.invite .popout-menu-icon, .status-deafened:after, .search-popout DIV:hover:before,
 .search-popout .selected:before, .avatar-xxlarge SPAN DIV:after, .ui-radiogroup .ui-card .ui-icon-check-mark,
-.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV{
+.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV,
+DIV[class|="contentSelectedText"] SVG{
     filter: brightness(0) !important;}
 
         /* Titlebar */
