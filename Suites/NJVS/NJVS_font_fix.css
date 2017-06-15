@@ -1,4 +1,5 @@
 /* CSS supplementary sheet for NJVS font suite */
 
-BUTTON.button, DIV.badge, A.download-button, DIV.tab-bar *{
+BUTTON.btn, .ui-form-item BUTTON, DIV.badge, A.download-button, DIV.tab-bar *,
+#friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"]{
 	font-family: var(--bodyfam) !important;}
