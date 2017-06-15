@@ -117,7 +117,7 @@ DIV[class|="contentSelectedText"] SVG{
     display: block;
     width: 100%;
     height: 100%;
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 0px 0px/75%;}
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat center center/75%;}
 
         /* Friends / Friend actions */
 .friends-column-actions DIV:after,
