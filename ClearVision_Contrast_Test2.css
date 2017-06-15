@@ -65,7 +65,7 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 
 /* background colour */
 /* #friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge, (Keeping this in case I need it later.) */
-.private-channels .channel.selected .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");'],
+.private-channels .channel.selected DIV[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");'],
 DIV[class|="contentSelectedText"] DIV[class|="wrapper"]{
     background-color: #fff !important;}
 
