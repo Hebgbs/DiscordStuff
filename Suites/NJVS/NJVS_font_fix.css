@@ -1,5 +1,9 @@
 /* CSS supplementary sheet for NJVS font suite */
 
+<<<<<<< HEAD
 BUTTON[class*="btn"], BUTTON[class*="btn"] DIV, BUTTON[class*="default"], DIV.badge, A.download-button, DIV.tab-bar *,
+=======
+BUTTON[class*=btn] DIV, BUTTON[class*=button] DIV, DIV.badge, A.download-button, DIV.tab-bar *,
+>>>>>>> parent of e6c8d80... Signs of improvement
 .content-column.default .bd-pfbtn{
 	font-family: var(--bodyfam) !important;}
