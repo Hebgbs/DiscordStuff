@@ -1,5 +1,5 @@
 /* CSS supplementary sheet for NJVS font suite */
 
-BUTTON[class*=btn] DIV, BUTTON[class*=button] DIV, DIV.badge, A.download-button, DIV.tab-bar *,
+BUTTON[class*="btn"], BUTTON[class*="btn"] DIV, BUTTON[class*="button"] DIV, DIV.badge, A.download-button, DIV.tab-bar *,
 .content-column.default .bd-pfbtn{
 	font-family: var(--bodyfam) !important;}
