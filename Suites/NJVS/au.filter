@@ -1,0 +1,9 @@
+<filter id="linear">
+    <feColorMatrix
+        type="matrix"
+        values="0.00 0.00 0.00 0.87 0.00
+                0.00 0.00 0.00 0.74 0.00
+                0.00 0.00 0.00 0.00 0.00
+                0.00 0.00 0.00 1.00 0.00"/>
+    </feColorMatrix>
+</filter>
