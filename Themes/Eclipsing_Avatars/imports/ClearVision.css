@@ -1,0 +1,19 @@
+/* Eclipsing Avatars 2.7
+   Import file for use with Zerthox's ClearVision theme. */
+
+/* Fix for account avatar */
+DIV[class^=container] .avatar-small:hover DIV.status,
+DIV[class^=container] .avatar-small.popout-open DIV.status{
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50px !important;}
+
+/* Animation settings */
+DIV[class^=container] .avatar-small:hover DIV.status,
+DIV[class^=container] .avatar-small.popout-open DIV.status{
+    transition: all .15s ease-in-out;}
+
+/* Colour setting for privare calls */
+DIV.private-channel-call DIV.speaking{
+    box-shadow: 0px 0px 24px var(--main-color),
+                0px 0px 8px 4px var(--main-color) !important;}

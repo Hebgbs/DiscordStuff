@@ -1,0 +1,10 @@
+/* Eclipsing Avatars 2.7
+   Import file for use wit Beard's Material Theme */
+
+/* Fix for profile avatar */
+#user-profile-modal DIV.avatar-wrapper{
+    box-shadow: none !Important;}
+
+.avatar-profile DIV.status{
+    zoom: 1 !important;
+	transform: none !important;}
