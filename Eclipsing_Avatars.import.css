@@ -11,7 +11,7 @@
         opacity: 0;
     	display: none;}}
 	/* Good-bye, cruel world. */
-DIV.title-wrap DIV.title SPAN:after{
+DIV.title-wrap .title SPAN:after{
     pointer-events: none !Important;
     content: "This is a courtesy message from the creator of the \"Eclipsing Avatars\" series of avatar enhancers, for users of both the stock and Material theme variants. URLs for import at-rules in your present copy of the theme will become inaccessible on 07/01/17, 00:00 EST due to ongoing cleanup in my GitHub repository. Until then, what you have now will remain functional. To permanently remove this message and retain continued use, visit http://tinyurl.com/eclava and use the files from there to reinstall this theme.";
     line-height: 1;
