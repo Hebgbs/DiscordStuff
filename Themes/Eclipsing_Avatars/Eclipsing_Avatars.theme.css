@@ -5,7 +5,9 @@
    
    This stand-alone version is supplied as a stand-alone example. The preferred mode for anyone using this in their theme is to remove
    the meta line, and commit as a plain CSS file. If using with a theme as a stand-alone revision modify the meta line, then optionally
-   for consistiency commit as .import.css and add it above the supplied import. If using this in your theme feel free to remove this comment. */
+   for consistiency commit additional changes as plain CSS and create a new at-rule above the present one.
+
+   Feel free to remove this comment if creating your own revision of this with additional at-rules. */
 
 @import url(https://rawgit.com/Hebgbs/DiscordStuff/master/themes/Eclipsing_Avatars/imports/default.css);
 
