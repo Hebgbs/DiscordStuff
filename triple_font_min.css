@@ -29,7 +29,7 @@ DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 
 /* Body content, menus and information */
 INPUT, LABEL A, P,
-.notice, .tooltip, .checkbox, .radio, .Select *, *::-webkit-input-placeholder, .help-text, .item-group,
+.ui-new-terms-modal A, .notice, .tooltip, .checkbox, .radio, .Select *, *::-webkit-input-placeholder, .help-text, .item-group,
 .quickswitcher-container .misc-controls, .timestamp, DIV.attachment-inner DIV, .ui-form-text, .ui-tab-bar-item,
 .create-guild-container .action-body, .modal-content.form .form-inner, .actions.flex-horizontal, .guild-settings-audit-logs .ui-flex-child,
 .guild-settings-members-header, .change-str, .remove-button, .avatar-uploader-hint, .popout-menu, .option-popout *, .context-menu *,
