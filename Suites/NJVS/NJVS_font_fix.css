@@ -1,5 +1,6 @@
 /* CSS supplementary sheet for NJVS font suite */
 
 BUTTON[class*="btn"] DIV, BUTTON[class*="button"] DIV, DIV.sink-interactions BUTTON.btn[class|="btn"], DIV.badge, A.download-button, DIV.tab-bar *,
+DIV.mention-filter, .channels-wrap DIV[class^="wrapper"],
 .content-column.default .bd-pfbtn{
 	font-family: var(--bodyfam) !important;}
