@@ -27,7 +27,7 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, 
 .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar [class*="item"][class*="selected-"],
 .private-channels .channel.selected *, #friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge,
 DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[class|="wrapper"], DIV[class|="contentUnreadText"] DIV[class|="wrapper"],
-#bd-settings-sidebar .ui-tab-bar-item.selected, #bd-pub-button:hover{
+#bd-settings-sidebar .sidebar .ui-tab-bar-item.selected, #bd-pub-button:hover{
     color: #000 !important;}
 
     /* White */
