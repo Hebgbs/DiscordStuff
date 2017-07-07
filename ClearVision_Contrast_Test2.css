@@ -23,10 +23,11 @@ DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-b
 .quickswitcher .result.selected, DIV.search-results-wrap .action-buttons .jump-button:hover,
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
-.ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name, .sidebar DIV[class*="selected"],
+.ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller DIV[class*="item"][class*="selected-"],
 .private-channels .channel.selected *, #friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge,
 DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[class|="wrapper"], DIV[class|="contentUnreadText"] DIV[class|="wrapper"],
-#bd-pub-button:hover{
+#bd-settings-sidebar .ui-tab-bar-item.selected, #bd-pub-button:hover{
     color: #000 !important;}
 
     /* White */
