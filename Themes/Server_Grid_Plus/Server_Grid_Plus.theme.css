@@ -1,5 +1,20 @@
 //META{"name":"Server_Grid_Plus","description":"Automatically-updating style to display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at a specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.3~Hebgbs"}*//{}
 
+/* ################################
+   # How the DM button should act #
+   ################################ */
+/* Because of some disagreement over how this should work,
+   this section is wholly dedicated to appeasing everybody.
+
+   Each of the two files detailed below will function as such;
+   > dmA.css; Centres button no matter what; Jiiks' Original behaviour.
+   > dmB.css; Makes button expand with columns, moves tooltip to suit.
+
+   A complete omission of the import below makes it act like any other server button;
+   a satisfiable option for people who don't want the button to move or expand. */
+    
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/dmA.css);
+
 /* ########################################
    # Import to define how this style acts #
    ########################################
@@ -21,17 +36,3 @@
 
     --NguildCols: /*Show*/ 1 /*column(s) normally*/;
     --HguildCols: /*Show*/ 3 /*column(s) on hover*/;}
-
-/* ################################
-   # How the DM button should act #
-   ################################ */
-/* Because of some disagreement over how this should work,
-   this section is wholly dedicated to appeasing everybody.
-
-   Each of the two files detailed below will function as such;
-   > dmA.css; Centres button no matter what; Jiiks' Original behaviour.
-   > dmB.css; Makes button expand with columns, moves tooltip to suit.
-
-   A complete omission of the import below makes it act like any other server button;
-   a satisfiable option for people who don't want the button to move or expand. */
-    
