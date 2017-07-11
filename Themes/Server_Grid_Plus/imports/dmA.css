@@ -1,0 +1,8 @@
+/* Jiiks' original behaviour */
+.guilds-wrapper .scroller-wrap .guilds DIV.guild:first-child{
+    /* FIXME: Code needs to not affect SPAN.dms */
+    position: relative; 
+    left: -2px;
+    margin: 15px auto auto auto}
+.guilds-wrapper .guilds DIV.guild:first-child{
+	left: -2px;}

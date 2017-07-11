@@ -1,0 +1,7 @@
+If you use anything in this repository of this directory,
+expect things to bbecome broken in the future.
+
+Know this, and assume full responsibility of modifications
+you make to Discord which rely on beta / unfinished software.
+
+Thank you for understanding.
