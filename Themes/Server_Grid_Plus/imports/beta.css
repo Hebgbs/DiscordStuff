@@ -4,7 +4,7 @@
         display: block;}
     to{
         opacity: 0;
-    	display: none;}}
+        display: none;}}
 
 DIV.title-wrap .title SPAN:after{
     pointer-events: none !Important;
