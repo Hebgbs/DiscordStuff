@@ -8,14 +8,14 @@
 
 /* How many columns to display normally */
 .guilds-wrapper:not(:hover){
-    width: calc(6px + (58px * var(--NguildCols)));}
+    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--NguildCols)));}
 .guilds-wrapper:not(:hover) .scroller-wrap{
-    width: calc(26px + (58px * var(--NguildCols)));}
+    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--NguildCols)));}
 /* How many columns to display on hover */
 .guilds-wrapper/*:hover*/{
-    width: calc(6px + (58px * var(--HguildCols)));}
+    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--HguildCols)));}
 .guilds-wrapper/*:hover*/ .scroller-wrap{
-    width: calc(26px + (58px * var(--HguildCols)));}
+    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
     display: flex;
