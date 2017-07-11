@@ -1,10 +1,10 @@
 /* Make DMs button expandable */
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
-    width: calc((var(--SGPg3dSize) * var(--NguildCols)) - 8px) !important;}
+	width: calc((58px * var(--NguildCols)) - 8px);}
 .guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
 .guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
-    width: calc((var(--SGPg3dSize) * var(--HguildCols)) - 8px) !important;}
+    width: calc((58px * var(--HguildCols)) - 8px);}
 /* Reposition tooltip */
 .tooltips .tooltip-right[style*="top: 47px"]{
-    margin-left: calc((var(--SGPg3dSize) * var(--HguildCols)) - var(--SGPf4nT5pP6n));}
+    margin-left: calc((58px * var(--HguildCols)) - 50px);}
