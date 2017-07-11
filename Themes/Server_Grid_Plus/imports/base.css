@@ -8,14 +8,14 @@
 
 /* How many columns to display normally */
 .guilds-wrapper:not(:hover){
-    width: calc(6px + (58px * var(--NguildCols)));}
+    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--NguildCols)));}
 .guilds-wrapper:not(:hover) .scroller-wrap{
-    width: calc(26px + (58px * var(--NguildCols)));}
+    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--NguildCols)));}
 /* How many columns to display on hover */
 .guilds-wrapper/*:hover*/{
-    width: calc(6px + (58px * var(--HguildCols)));}
+    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--HguildCols)));}
 .guilds-wrapper/*:hover*/ .scroller-wrap{
-    width: calc(26px + (58px * var(--HguildCols)));}
+    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
     display: flex;
@@ -35,13 +35,6 @@
     /* FIXME: Code needs to not affect SPAN.dms */
     position: relative; 
     margin: 15px 0 0 8px}
-
-.guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
-.guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
-    width: calc((58px * var(--NguildCols)) - 8px);}
-.guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
-.guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
-    width: calc((58px * var(--HguildCols)) - 8px);}
 
 .guilds-wrapper .guilds .friends-icon:after,
 .guilds-wrapper .guilds:hover .friends-icon:after{
@@ -88,6 +81,3 @@
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
-    /* Thanks Hammock for helping with this. */
-.tooltips .tooltip-right[style*="top: 47px"]{
-    margin-left: calc((58px * var(--HguildCols)) - 50px);}
