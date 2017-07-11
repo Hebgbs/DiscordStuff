@@ -13,7 +13,7 @@
    A complete omission of the import below makes it act like any other server button;
    a satisfiable option for people who don't want the button to move or expand. */
     
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/dmA.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/dmA.css);
 
 /* ########################################
    # Import to define how this style acts #
@@ -24,10 +24,10 @@
    if an alternative version exists which works with your present theme.
    
    You are free to append further onto this with other imports for different
-   functions and themes. Check out what's availaable @ the repo linked above. */
+   functions and themes. Check out what's availaable @ the repo linked above	. */
 
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/themes/Server_Grid_Plus/imports/base.css);
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/themes/Server_Grid_Plus/imports/default.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/base.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/default.css);
 
 /* #####################################
    # How the server list will function #
