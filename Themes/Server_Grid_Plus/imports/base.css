@@ -43,9 +43,9 @@
 .guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
     /* Probably a temporary fix until a better solution is found.
        This code resolves the above tampering with the DMs section. */
-    position: static;
-    width: 50px;
-    margin: 8px 0 0 8px;}
+    position: static !important;
+    width: 50px !important;
+    margin: 8px 0 0 8px !important;}
 
 #bd-pub-li{
     position: absolute;
