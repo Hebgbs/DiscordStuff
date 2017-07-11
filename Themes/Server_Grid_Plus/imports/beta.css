@@ -1,6 +1,14 @@
+@keyframes isBeta{
+    from{
+        opacity: 1;
+        display: block;}
+    to{
+        opacity: 0;
+    	display: none;}}
+
 DIV.title-wrap .title SPAN:after{
     pointer-events: none !Important;
-    content: "This is beta work and as such, is in a state of incomplete disarray. If stuff breaks, that is on you. This message will be removed when the content is complete.";
+    content: "This is beta work and as such, is in a state of incomplete disarray. If stuff breaks, that is on you. This message will be removed when the content is complete. Updates and change logs available @ http://is.gd/sgplus";
     line-height: 1;
     text-align: left;
     font-family: monospace;
@@ -15,4 +23,4 @@ DIV.title-wrap .title SPAN:after{
     border: 2px solid #f00;
     padding: 2px;
     background-color: rgba(128, 0, 0, 0.50);
-    animation: eclNotice 5s 15s 1 normal forwards;}
+    animation: isBeta 5s 20s 1 normal forwards;}
