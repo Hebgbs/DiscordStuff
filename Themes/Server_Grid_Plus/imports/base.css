@@ -8,14 +8,14 @@
 
 /* How many columns to display normally */
 .guilds-wrapper:not(:hover){
-    width: calc(60px * var(--NguildCols));}
+    width: calc(6px + (58px * var(--NguildCols)));}
 .guilds-wrapper:not(:hover) .scroller-wrap{
-    width: calc(14px + (60px * var(--NguildCols)));}
+    width: calc(26px + (58px * var(--NguildCols)));}
 /* How many columns to display on hover */
 .guilds-wrapper/*:hover*/{
-    width: calc(60px * var(--HguildCols));}
+    width: calc(6px + (58px * var(--HguildCols)));}
 .guilds-wrapper/*:hover*/ .scroller-wrap{
-    width: calc(14px + (60px * var(--HguildCols)));}
+    width: calc(26px + (58px * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
     display: flex;
@@ -24,12 +24,35 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-    margin: 2px auto !important;}
+    margin: 8px 0 0 8px;}
 
 .guilds-wrapper .guilds .guild.unread::before{
     left: -2px;
     top: 5px;
     z-index:9000;}
+
+.guilds-wrapper .guilds .guild:first-child{
+    /* FIXME: Code needs to not affect SPAN.dms */
+    position: relative; 
+    margin: 15px 0 0 8px}
+
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
+    width: calc((58px * var(--NguildCols)) - 8px);}
+.guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
+.guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
+    width: calc((58px * var(--HguildCols)) - 8px);}
+
+.guilds-wrapper .guilds .friends-icon:after,
+.guilds-wrapper .guilds:hover .friends-icon:after{
+    background-size: 36px 36px;}
+
+.guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
+    /* Probably a temporary fix until a better solution is found.
+       This code resolves the above tampering with the DMs section. */
+    position: static;
+    width: 50px;
+    margin: 8px 0 0 8px;}
 
 #bd-pub-li{
     position: absolute;
@@ -51,14 +74,20 @@
     width: 100%;
     margin: 5px auto auto auto;}
 
+.guilds-wrapper .guilds .guild{
+    position: relative;}
+
 .guilds-wrapper .guilds .dms{
     width: 100%;
     display: flex;
     flex-flow: row wrap;}
+
+.guilds-wrapper .guilds .dms .guild{
+    left: 0;}
 
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
     /* Thanks Hammock for helping with this. */
 .tooltips .tooltip-right[style*="top: 47px"]{
-    margin-left: calc((60px * var(--HguildCols)) - 50px);}
+    margin-left: calc((58px * var(--HguildCols)) - 50px);}
