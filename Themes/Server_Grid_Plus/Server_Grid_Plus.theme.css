@@ -16,13 +16,13 @@
    this section is wholly dedicated to appeasing everybody.
 
    Each of the two files detailed below will function as such;
-   > SGP_DM-A.css; Centres button no matter what; Jiiks' Original behaviour.
-   > SGP_DM-B.css; Makes button expand with columns, moves tooltip to suit.
+   > dmA.css; Centres button no matter what; Jiiks' Original behaviour.
+   > dmB.css; Makes button expand with columns, moves tooltip to suit.
 
    A complete omission of the import below makes it act like any other server button;
    a satisfiable option for people who don't want the button to move or expand. */
     
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/SGP_DM-A.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/dmA.css);
 
 /* #####################################
    # How the server list will function #
