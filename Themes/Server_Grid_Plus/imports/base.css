@@ -31,6 +31,10 @@
     top: 5px;
     z-index:9000;}
 
+.guilds-wrapper .guilds .guild:first-child{
+    position: relative; 
+    margin: 15px 0 0 8px}
+
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
     width: calc((var(--SGPg3dSize) * var(--NguildCols)) - 8px);}
@@ -40,11 +44,7 @@
 
 .guilds-wrapper .guilds .friends-icon:after,
 .guilds-wrapper .guilds:hover .friends-icon:after{
-    background-size: 36px !Important;}
-
-.guilds-wrapper .guilds .guild:first-child{
-    position: relative; 
-    margin: 15px 0 0 8px}
+    background-size: 36px 36px;}
 
 .guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
     position: static;
@@ -85,6 +85,6 @@
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
-    /* Thanks Hammock for helping with this. */
+/* Thanks Hammock for helping with this. */
 .tooltips .tooltip-right[style*="top: 47px"]{
     margin-left: calc((var(--SGPg3dSize) * var(--HguildCols)) - var(--SGPf4nT5pP6n));}
