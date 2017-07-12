@@ -35,9 +35,6 @@
 .guilds-wrapper .guilds:hover .friends-icon:after{
     background-size: 36px 36px;}
 
-.guilds-wrapper .guilds{
-	padding-top: 24px !Important;}
-
 #bd-pub-li{
     position: absolute;
     top: 0px;
