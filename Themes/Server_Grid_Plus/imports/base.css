@@ -31,21 +31,12 @@
     top: 5px;
     z-index:9000;}
 
-.guilds-wrapper .guilds .guild:first-child{
-    /* FIXME: Code needs to not affect SPAN.dms */
-    position: relative; 
-    margin: 15px 0 0 8px}
-
 .guilds-wrapper .guilds .friends-icon:after,
 .guilds-wrapper .guilds:hover .friends-icon:after{
     background-size: 36px 36px;}
 
-.guilds-wrapper .scroller-wrap .guilds .dms .guild:first-child{
-    /* Probably a temporary fix until a better solution is found.
-       This code resolves the above tampering with the DMs section. */
-    position: static !important;
-    width: 50px !important;
-    margin: 8px 0 0 8px !important;}
+.guilds-wrapper .guilds{
+	padding-top: 24px !Important;}
 
 #bd-pub-li{
     position: absolute;
