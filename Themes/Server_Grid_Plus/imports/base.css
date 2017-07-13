@@ -8,14 +8,14 @@
 
 /* How many columns to display normally */
 .guilds-wrapper:not(:hover){
-    width: calc(6px + ((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)));}
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)) + var(--SGPg4tSize));}
 .guilds-wrapper:not(:hover) .scroller-wrap{
-    width: calc((var(--SGPs7rHide) + (var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)));}
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)) + var(--SGPs7rHide));}
 /* How many columns to display on hover */
 .guilds-wrapper/*:hover*/{
-    width: calc(6px + ((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)));}
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)) + var(--SGPg4tSize));}
 .guilds-wrapper/*:hover*/ .scroller-wrap{
-    width: calc((var(--SGPs7rHide) + (var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)));}
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)) + var(--SGPs7rHide));}
 
 .guilds-wrapper .guilds{
     display: flex;
@@ -67,6 +67,12 @@
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
+
+.guilds-wrapper .guilds .friends-online{
+    position: relative;
+    width: 100%;
+    margin: 5px calc((var(--SGPg4tSize) + var(--SGPc5rMove)) * -1) auto auto;
+	text-align: left;}
 
 .tooltips{
 	pointer-events: none !Important;}
