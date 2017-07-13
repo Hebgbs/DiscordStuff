@@ -8,14 +8,14 @@
 
 /* How many columns to display normally */
 .guilds-wrapper:not(:hover){
-    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--NguildCols)));}
+    width: calc(6px + ((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)));}
 .guilds-wrapper:not(:hover) .scroller-wrap{
-    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--NguildCols)));}
+    width: calc((var(--SGPs7rHide) + (var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)));}
 /* How many columns to display on hover */
 .guilds-wrapper/*:hover*/{
-    width: calc(var(--SGPp5dSize) + (var(--SGPg3dSize) * var(--HguildCols)));}
+    width: calc(6px + ((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)));}
 .guilds-wrapper/*:hover*/ .scroller-wrap{
-    width: calc(var(--SGPs7rHide) + (var(--SGPg3dSize) * var(--HguildCols)));}
+    width: calc((var(--SGPs7rHide) + (var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)));}
 
 .guilds-wrapper .guilds{
     display: flex;
@@ -24,7 +24,7 @@
     align-content: flex-start;}
 
 .guilds-wrapper .guilds .guild{
-    margin: 8px 0 0 8px;}
+    margin: var(--SGPp5gSize) 0 0 var(--SGPp5gSize);}
 
 .guilds-wrapper .guilds .guild.unread::before{
     left: -2px;
@@ -34,6 +34,9 @@
 .guilds-wrapper .guilds .friends-icon:after,
 .guilds-wrapper .guilds:hover .friends-icon:after{
     background-size: 36px 36px;}
+
+.guilds-wrapper .guilds{
+	padding-top: 24px !Important;}
 
 #bd-pub-li{
     position: absolute;
@@ -50,11 +53,6 @@
     width: 100%;
     margin-top: 10px;}
 
-.guilds-wrapper .guilds .friends-online{
-    position: relative;
-    width: 100%;
-    margin: 5px auto auto auto;}
-
 .guilds-wrapper .guilds .guild{
     position: relative;}
 
@@ -69,3 +67,6 @@
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .dms .guild-inner:before{
     display: none;}
+
+.tooltips{
+	pointer-events: none !Important;}

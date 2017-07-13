@@ -1,6 +1,8 @@
-:root{ /* This import is for the default appearance of DIscord and other themes
+:root{ /* This import is for the default appearance of Discord and other themes
           which reskin, but do not reposition or resize the guild scroller. */
-	--SGPs7rHide: 26px; /* Overprovisioning to hide scrollbar */
-	--SGPg3dSize: 58px; /* Size of most guild buttons */
-	--SGPp5dSize: 6px; /* Size of padding between buttons */
-	--SGPf4nT5pP6n: 50px /* Position of the friend button tooltip */}
+	--SGPg3dSize: 50px; /* guild button size */
+	--SGPp5gSize: 8px; /* Padding size between buttons */
+	--SGPg4tSize: 5px; /* Padding size at right edge (gutter) */
+	--SGPs7rHide: calc(20px + var(--SGPg4tSize)); /* Scrollbar hiding */
+	--SGPt5pMove: 50px; /* Position of the friend button tooltip */
+	--SGPc5rMove: 2px; /* Friend counter adjustment */}

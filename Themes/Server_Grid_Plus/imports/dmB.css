@@ -1,10 +1,17 @@
 /* Make DMs button expandable */
-.guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds > .guild:first-child,
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
-	width: calc((var(--SGPg3dSize) * var(--NguildCols)) - 8px);}
-.guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
+	width: calc(((var(--SGPg3dSize) + (var(--SGPp5gSize))) * var(--NguildCols)) - var(--SGPp5gSize));}
+.guilds-wrapper .scroller-wrap:hover .guilds > .guild:first-child,
 .guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
-    width: calc((var(--SGPg3dSize) * var(--HguildCols)) - 8px);}
+    width: calc(((var(--SGPg3dSize) + (var(--SGPp5gSize))) * var(--HguildCols)) - var(--SGPp5gSize));}
 /* Reposition tooltip */
-.tooltips .tooltip-right[style*="top: 47px"]{
+.tooltips .tooltip-right[style*="top: 46px"]{
     margin-left: calc((var(--SGPg3dSize) * var(--HguildCols)) - var(--SGPf4nT5pP6n));}
+
+/* Nudge online counter */
+.guilds-wrapper .guilds .friends-online{
+    position: relative;
+    width: 100%;
+    margin: 5px 5px auto auto !important;
+	text-align: center !important;}

@@ -1,7 +1,11 @@
-/* Make DMs button expandable */
-.guilds-wrapper .scroller-wrap:not(:hover) .guilds .guild:first-child,
-.guilds-wrapper .scroller-wrap:not(:hover) .guilds .friends-icon{
-	left: calc((var(--SGPg3dSize) * var(--NguildCols)) / 2);}
-.guilds-wrapper .scroller-wrap:hover .guilds .guild:first-child,
-.guilds-wrapper .scroller-wrap:hover .guilds .friends-icon{
-    left: calc((var(--SGPg3dSize) * var(--HguildCols)) / 2);}
+/* Jiiks' original behaviour */
+.guilds-wrapper .scroller-wrap:not(:hover) .guilds > .guild:first-child{
+	left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--NguildCols) - 1)) / 2));}
+.guilds-wrapper .scroller-wrap:hover .guilds > .guild:first-child{
+	left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--HguildCols) - 1)) / 2));}
+
+/* Nudge online counter */
+.guilds-wrapper .guilds .friends-online{
+    position: relative;
+    width: 100%;
+    margin: 5px 5px auto auto;}
