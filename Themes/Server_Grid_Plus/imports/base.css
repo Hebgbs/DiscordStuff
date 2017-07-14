@@ -68,7 +68,7 @@
 .guilds-wrapper .guilds .friends-online{
     position: relative;
     width: 100%;
-    margin: 5px calc((var(--SGPg4tSize) + var(--SGPc5rMove)) * -1) auto auto;
+    margin: 5px calc((var(--SGPg4tSize) + var(--SGPc5rLeft)) * -1) auto auto;
 	text-align: left;}
 
 .tooltips{
