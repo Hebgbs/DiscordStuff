@@ -7,7 +7,7 @@
    version for use with a different theme, this section should not be modified. */
    
 @import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/base.css);
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/gaia.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/default.css);
 
 /* ################################
    # How the DM button should act #
@@ -22,6 +22,7 @@
    A complete omission of the import below makes it act like any other server button;
    a satisfiable option for people who don't want the button to move or expand. */
     
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/dmA.css);
 
 /* #####################################
    # How the server list will function #
