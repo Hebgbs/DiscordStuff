@@ -8,5 +8,5 @@
 .guilds-wrapper .guilds .friends-online{
     position: relative;
     width: 100%;
-    margin: 5px 5px auto auto !Important;
+    margin: 5px calc(var(--SGPc5rMove) + 3px) auto auto !Important;
 	text-align: center !important;}
