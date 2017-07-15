@@ -1,9 +1,8 @@
-:root{ /* This import is for the default appearance of Discord and other themes
-          which reskin, but do not reposition or resize the guild scroller. */
+:root{ /* This import is for Gimo's Gaia theme, or derivatives thereof. */
     --SGPg3dSize: 50px; /* guild button size */
     --SGPp5gSize: 8px; /* Padding size between buttons */
     --SGPg4tSize: 6px; /* Padding size at right edge (gutter) */
     --SGPs7rHide: calc(20px + var(--SGPg4tSize)); /* Scrollbar hiding */
     --SGPt5pMove: 50px; /* Position of the friend button tooltip */
-    --SGPc5rLeft: 2px; /* Friend counter adjustment (to the left) */
-    --SGPc5rCntr: 3px; /* Friend counter adjustment (to the centre) */}
+    --SGPc5rLeft: 4px; /* Friend counter adjustment (to the left) */
+    --SGPc5rCntr: 15px; /* Friend counter adjustment (to the centre) */}

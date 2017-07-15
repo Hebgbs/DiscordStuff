@@ -1,12 +1,12 @@
 /* Jiiks' original behaviour */
 .guilds-wrapper .scroller-wrap:not(:hover) .guilds > .guild:first-child{
-	left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--NguildCols) - 1)) / 2));}
+    left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--NguildCols) - 1)) / 2));}
 .guilds-wrapper .scroller-wrap:hover .guilds > .guild:first-child{
-	left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--HguildCols) - 1)) / 2));}
+    left: calc((((var(--SGPg3dSize) + var(--SGPp5gSize)) * (var(--HguildCols) - 1)) / 2));}
 
 /* Nudge online counter */
 .guilds-wrapper .guilds .friends-online{
     position: relative;
     width: 100%;
     margin: 5px calc(var(--SGPc5rLeft) + var(--SGPc5rCntr)) auto auto !Important;
-	text-align: center !important;}
+    text-align: center !important;}
