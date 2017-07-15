@@ -1,26 +1,16 @@
-@keyframes isBeta{
-    from{
-        opacity: 1;
-        display: block;}
-    to{
-        opacity: 0;
-        display: none;}}
-
 DIV.title-wrap .title SPAN:after{
     pointer-events: none !Important;
-    content: "This is beta work and as such, is in a state of incomplete disarray. If stuff breaks, that is on you. This message will be removed when the content is complete. Updates and change logs available @ http://is.gd/sgplus";
+    content: "SERVER GRID PLUS 1.5~dev - NOT FOR REGULAR USE";
     line-height: 1;
     text-align: left;
     font-family: monospace;
-    font-size: 10pt;
-    color: #fff;
+    font-size: 16pt;
+    color: #F00;
     width: 100%;
     height: auto;
     overflow: hidden;
     position: absolute;
     top: 56px;
     left: 0;
-    border: 2px solid #f00;
-    padding: 2px;
-    background-color: rgba(128, 0, 0, 0.50);
-    animation: isBeta 5s 20s 1 normal forwards;}
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0);

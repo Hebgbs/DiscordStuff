@@ -1,0 +1,100 @@
+//META{"name":"Server_Grid_Plus","description":"Display servers and DMs in a column grid<br><br>Includes fix for DMs, and the capability to expand at the specified number of columns on hover.","author":"Jiiks, Hebgbs","version":"1.5~dev"}*//{}
+/* --- VERSION INFO --- */
+
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Server_Grid_Plus/imports/base.css);
+
+/* --- DEFAULT.CSS --- */
+
+:root{ /* This import is for Gimo's Gaia theme, or derivatives thereof. */
+    --SGPg3dSize: 69px; /* guild button size */
+    --SGPp5gSize: 0px; /* Padding size between buttons */
+    --SGPg4tSize: 0px; /* Padding size at right edge (gutter) */
+    --SGPs7rHide: calc(20px + var(--SGPg4tSize)); /* Scrollbar hiding */
+    --SGPt5pMove: 50px; /* Position of the friend button tooltip */
+    --SGPc5rLeft: 2px; /* Friend counter adjustment (to the left) */
+    --SGPc5rCntr: 3px; /* Friend counter adjustment (to the centre) */}
+
+/* --- BASE.CSS --- */
+
+/* #######################################
+   # Don't touch any of the below if you #
+   # know nothing of what you are doing. #
+   ####################################### */
+
+/* How many columns to display normally */
+.guilds-wrapper:not(:hover){
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)) + var(--SGPg4tSize));}
+.guilds-wrapper:not(:hover) .scroller-wrap{
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--NguildCols)) + var(--SGPs7rHide));}
+/* How many columns to display on hover */
+.guilds-wrapper/*:hover*/{
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)) + var(--SGPg4tSize));}
+.guilds-wrapper/*:hover*/ .scroller-wrap{
+    width: calc(((var(--SGPg3dSize) + var(--SGPp5gSize)) * var(--HguildCols)) + var(--SGPs7rHide));}
+
+.guilds-wrapper .guilds{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;}
+
+.guilds-wrapper .guilds .guild{
+    margin: var(--SGPp5gSize) 0 0 var(--SGPp5gSize);}
+
+.guilds-wrapper .guilds .guild.unread::before{
+    left: -2px;
+    top: 5px;
+    z-index:9000;}
+
+.guilds-wrapper .guilds .friends-icon:after,
+.guilds-wrapper .guilds:hover .friends-icon:after{
+    background-size: 36px 36px;}
+
+.guilds-wrapper .guilds{
+    padding-top: 24px !Important;}
+
+#bd-pub-li{
+    position: absolute;
+    top: 0px;
+    left: 0px;}
+
+#bd-pub-li #bd-pub-button{
+    position:absolute;
+    width: 100%;
+    text-align: center;}
+
+.guilds-wrapper .guilds .guild-separator{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;}
+
+.guilds-wrapper .guilds .guild{
+    position: relative;}
+
+.guilds-wrapper .guilds .dms{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;}
+
+.guilds-wrapper .guilds .dms .guild{
+    left: 0;}
+
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .dms .guild-inner:before{
+    display: none;}
+
+.guilds-wrapper .guilds .friends-online{
+    position: relative;
+    width: 100%;
+    margin: 5px calc((var(--SGPg4tSize) + var(--SGPc5rLeft)) * -1) auto auto;
+    text-align: left;}
+
+.tooltips{
+    pointer-events: none !Important;}
+
+/* --- SERVER_GRID_PLUS.THEME.CSS (root settings only, no imports) --- */
+
+:root{ /* Change the integers to define the numbers of columns which will appear. 
+          A / N; This is set to make it easier to see when the guild scroller is hovered over. */
+    --NguildCols: /*Show*/ 3 /*column(s) normally*/;
+    --HguildCols: /*Show*/ 5 /*column(s) on hover*/;}
