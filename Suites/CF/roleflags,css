@@ -1,0 +1,14 @@
+/* Flag colours and emblems */
+	/* Canada */
+.member-role[style*="color: rgb(255, 0, 0)"]{
+	background-color: transparent !Important;
+	background: url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/ca15.svg) 50% 50% / 40px 40px no-repeat, linear-gradient(75deg, #f00 0%, #f00 25%, #fff 25%, #fff 75%, #f00 75%, #f00 100%);
+	background-repeat: no-repeat;
+	color: #000 !Important;}
+
+	/* Germany ('66) */
+.member-role[style*="color: rgb(1, 1, 1)"]{
+    background-color: transparent !important;
+	background-image: linear-gradient(75deg, #000 0%, #000 33%, #fff 33%, #fff 67%, #d00 67%, #d00 100%);
+	background-repeat: no-repeat;
+	color: #666 !Important;}
