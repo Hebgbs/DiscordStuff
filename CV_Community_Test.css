@@ -22,19 +22,21 @@
 	background: rgba(0, 0, 0, 0.85) !Important;
 }
 
-[class*="modal"][class*="modal"][class*="size"]{
+[class*="modal"][class*="modal"][class*="size"],
+[class*="need-help-modal"] .form-inner{
 	background-color: rgba(0, 0, 0, 0.6) !important;}
 	
-DIV[class*="need-help-modal"] .footer{
+[class*="need-help-modal"] .footer{
     background-color: rgba(0, 0, 0, 0.88) !important;
-    border-top: none;}
+    border-top: none !important;}
 	
-DIV[class*="need-help-modal"] .header{
+[class*="need-help-modal"] .header.control-group{
     background-color: var(--main-color) !important;}
-	
-.need-help-button:hover{
-    border-color: var(--main-color) !Important;
-    color: var(--main-color);}
-	
-.need-help-button:hover .btn-help{
-	color: var(--main-color) !important;}
+
+#help-query{
+	border: none !Important;
+	box-shadow: none !important;}
+
+#help-query:focus{
+	color: white !Important;
+}
