@@ -25,11 +25,11 @@
 [class*="modal"][class*="modal"][class*="size"]{
 	background-color: rgba(0, 0, 0, 0.6) !important;}
 	
-[class*="need-help-modal"] .footer{
+DIV[class*="need-help-modal"] .footer{
     background-color: rgba(0, 0, 0, 0.88) !important;
     border-top: none;}
 	
-[class*="need-help-modal"] .header{
+DIV[class*="need-help-modal"] .header{
     background-color: var(--main-color) !important;}
 	
 .need-help-button:hover{
