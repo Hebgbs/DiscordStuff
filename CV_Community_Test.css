@@ -1,0 +1,40 @@
+/* The following changes are by members of the ClearVision channel on Discord.
+   These are community contributions while Zerthox takes a break and deals with life. */
+
+/* tehbasshunter (modified by w/ &#2039;) */
+.channel-text-area-default [class*="selectorSelected-"]{
+	background-color: var(--main-color);}
+
+.channel-text-area-default [class*="inner-"],
+.channel-text-area-default [class*="autocomplete-"],
+.channel-text-area-default [class*="autocompleteInner-"]{
+    background-color: rgba(0, 0, 0, 0.6); }
+.channel-text-area-default [class*="textArea-"],
+.channel-text-area-default [class*="selector-"] [class*="marginLeft8-"]{
+    color: white; }
+
+.theme-dark [class*="channelTextAreaEnabled"] [class*="inner"]{
+    background: rgba(0,0,0,0.6);
+}
+
+/* w/ &#2039; */
+.instant-invite-modal DIV[class*="form"]{
+	background: rgba(0, 0, 0, 0.85) !Important;
+}
+
+[class*="modal"][class*="modal"][class*="size"]{
+	background-color: rgba(0, 0, 0, 0.6) !important;}
+	
+[class*="need-help-modal"] .footer{
+    background-color: rgba(0, 0, 0, 0.88);
+    border-top: none;}
+	
+[class*="need-help-modal"] .header{
+    background-color: var(--main-color);}
+	
+.need-help-button:hover{
+    border-color: var(--main-color);
+    color: var(--main-color);}
+	
+.need-help-button:hover .btn-help{
+	color: var(--main-color);}
