@@ -2,25 +2,24 @@
    These are community contributions while Zerthox takes a break and deals with life. */
 
 /* tehbasshunter (modified by w/ &#2039;) */
-.channel-text-area-default [class*="selectorSelected-"]{
+[class*="autocomplete-"] [class*="selectorSelected-"]{
 	background-color: var(--main-color);}
 
 .channel-text-area-default [class*="inner-"],
 .channel-text-area-default [class*="autocomplete-"],
-.channel-text-area-default [class*="autocompleteInner-"]{
-    background-color: rgba(0, 0, 0, 0.6); }
+[class*="autocomplete-"][class*="autocomplete-"]{
+    background-color: rgba(0, 0, 0, 0.6) !important;}
+
 .channel-text-area-default [class*="textArea-"],
 .channel-text-area-default [class*="selector-"] [class*="marginLeft8-"]{
-    color: white; }
+    color: white;}
 
 .theme-dark [class*="channelTextAreaEnabled"] [class*="inner"]{
-    background: rgba(0,0,0,0.6);
-}
+    background: rgba(0, 0, 0, 0.6);}
 
 /* w/ &#2039; */
 .instant-invite-modal DIV[class*="form"]{
-	background: rgba(0, 0, 0, 0.85) !Important;
-}
+	background: rgba(0, 0, 0, 0.85) !Important;}
 
 [class*="modal"][class*="modal"][class*="size"],
 [class*="need-help-modal"] .form-inner{
@@ -38,5 +37,8 @@
 	box-shadow: none !important;}
 
 #help-query:focus{
-	color: white !Important;
-}
+	color: white !Important;}
+
+.autocomplete-1TnWNR .autocomplete-1LLKUa{
+	background-color: red !Important;
+	background: red !Important;}
