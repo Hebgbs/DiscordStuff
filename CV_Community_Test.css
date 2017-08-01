@@ -53,21 +53,23 @@
 [class*="checkbox"] [class*="checked"] polyline{
     stroke: var(--main-color) !Important;}
 
-[class*="radioGroup"] [class*="card"]:first-child [class*="checkbox"]:hover [class*="box"]:not([class*="checked"]) polyline{
+.layer[layer-id="server-settings"] [class*="card"]:first-child [class*="checkbox"]:hover polyline,
+.user-settings-voice [class*="checkbox"]:hover polyline,
+.ui-form-item [class*="checkbox"]:hover polyline{
     stroke: var(--main-color) !important;
     opacity: 0.5;}
 
-.margin-bottom-40:first-child [class*="card"]:first-child [class*="checkbox"]:hover polyline,
-[class*="radioGroup"] [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline{
+.layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:first-child [class*="checkbox"]:hover polyline,
+.layer[layer-id="server-settings"] [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline{
     stroke: rgba(67, 181, 129, 0.5)}
 
-.margin-bottom-40:first-child [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline,
-[class*="radioGroup"] [class*="card"]:nth-child(3) [class*="checkbox"]:hover polyline{
+.layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline,
+.layer[layer-id="server-settings"] [class*="card"]:nth-child(3) [class*="checkbox"]:hover polyline{
     stroke: rgba(250, 166, 26, 0.5)}
 
-[class*="radioGroup"] [class*="card"]:nth-child(4) [class*="checkbox"]:hover polyline{
+.layer[layer-id="server-settings"] [class*="card"]:nth-child(4) [class*="checkbox"]:hover polyline{
     stroke: rgba(245, 119, 49, 0.5)}
 
-.margin-bottom-40:first-child [class*="card"]:last-child [class*="checkbox"]:hover polyline,
-[class*="radioGroup"] [class*="card"]:last-child [class*="checkbox"]:hover polyline{
+.layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:last-child [class*="checkbox"]:hover polyline,
+.layer[layer-id="server-settings"] [class*="card"]:last-child [class*="checkbox"]:hover polyline{
     stroke: rgba(240, 71, 71, 0.5)}
