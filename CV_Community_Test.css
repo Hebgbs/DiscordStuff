@@ -47,7 +47,7 @@
     color: var(--main-color) !important;}
 
 [class*="checkbox"]{
-	background-color: rgba(0, 0, 0, 0.64 !important;}
+    background-color: rgba(0, 0, 0, 0.32) !important;}
 
 [class*="checkbox"] [class*="checked"]{
     border-color: var(--main-color) !important;}
@@ -56,7 +56,7 @@
     stroke: var(--main-color) !Important;}
 .layer[layer-id="server-settings"] [class*="card"]:first-child:hover [class*="checkbox"][class*="checked"] polyline,
 .ui-form-item [class*="card"]:hover [class*="checkbox"][class*="checked"] polyline{
-	opacity: 1 !important;}
+    opacity: 1 !important;}
 
 .layer[layer-id="server-settings"] [class*="card"]:first-child:hover [class*="checkbox"] polyline,
 .ui-form-item [class*="card"]:hover [class*="checkbox"] polyline{
