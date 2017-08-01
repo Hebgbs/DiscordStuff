@@ -46,7 +46,7 @@
 [class*="titleChecked"]{
     color: var(--main-color) !important;}
 
-[class^="checkbox"]{
+[class*="checkbox"]{
 	background-color: rgba(0, 0, 0, 0.64 !important;}
 
 [class*="checkbox"] [class*="checked"]{
