@@ -3,7 +3,7 @@
 
 /* tehbasshunter (modified by w/ &#2039;) */
 [class*="autocomplete-"] [class*="selectorSelected-"]{
-	background-color: var(--main-color);}
+    background-color: var(--main-color);}
 
 .channel-text-area-default [class*="inner-"],
 .channel-text-area-default [class*="autocomplete-"],
@@ -19,26 +19,55 @@
 
 /* w/ &#2039; */
 .instant-invite-modal DIV[class*="form"]{
-	background: rgba(0, 0, 0, 0.85) !Important;}
+    background: rgba(0, 0, 0, 0.85) !Important;}
 
 [class*="modal"][class*="modal"][class*="size"],
 [class*="need-help-modal"] .form-inner{
-	background-color: rgba(0, 0, 0, 0.6) !important;}
-	
+    background-color: rgba(0, 0, 0, 0.6) !important;}
+    
 [class*="need-help-modal"] .footer{
     background-color: rgba(0, 0, 0, 0.88) !important;
     border-top: none !important;}
-	
+    
 [class*="need-help-modal"] .header.control-group{
     background-color: var(--main-color) !important;}
 
 #help-query{
-	border: none !Important;
-	box-shadow: none !important;}
+    border: none !Important;
+    box-shadow: none !important;}
 
 #help-query:focus{
-	color: white !Important;}
+    color: white !Important;}
 
-.autocomplete-1TnWNR .autocomplete-1LLKUa{
-	background-color: red !Important;
-	background: red !Important;}
+.radio .radio-inner{
+    background-color: rgba(0, 0, 0, 0.64) !important;
+    border: 2px solid var(--main-color) !important;}
+
+[class*="titleChecked"]{
+    color: var(--main-color) !important;}
+    
+[class*="checkbox"] [class*="checked"]{
+    background-color: transparent !important;
+    border-color: var(--main-color) !important;}
+
+[class*="checkbox"] [class*="checked"] polyline{
+    stroke: var(--main-color) !Important;}
+
+[class*="radioGroup"] [class*="card"]:first-child [class*="checkbox"]:hover [class*="box"]:not([class*="checked"]) polyline{
+    stroke: var(--main-color) !important;
+    opacity: 0.5;}
+
+.margin-bottom-40:first-child [class*="card"]:first-child [class*="checkbox"]:hover polyline,
+[class*="radioGroup"] [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline{
+    stroke: rgba(67, 181, 129, 0.5)}
+
+.margin-bottom-40:first-child [class*="card"]:nth-child(2) [class*="checkbox"]:hover polyline,
+[class*="radioGroup"] [class*="card"]:nth-child(3) [class*="checkbox"]:hover polyline{
+    stroke: rgba(250, 166, 26, 0.5)}
+
+[class*="radioGroup"] [class*="card"]:nth-child(4) [class*="checkbox"]:hover polyline{
+    stroke: rgba(245, 119, 49, 0.5)}
+
+.margin-bottom-40:first-child [class*="card"]:last-child [class*="checkbox"]:hover polyline,
+[class*="radioGroup"] [class*="card"]:last-child [class*="checkbox"]:hover polyline{
+    stroke: rgba(240, 71, 71, 0.5)}
