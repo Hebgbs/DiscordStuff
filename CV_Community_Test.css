@@ -1,9 +1,10 @@
 /* The following changes are by members of the ClearVision channel on Discord.
    These are community contributions while Zerthox takes a break and deals with life. */
 
-/* tehbasshunter (modified by w/ &#2039;) */
-[class*="autocomplete-"] [class*="selectorSelected-"]{
-    background-color: var(--main-color);}
+/* tehbasshunter */
+/**/ /* Modified by w/ &#2039; */
+/**/ [class*="autocomplete-"] [class*="selectorSelected-"]{
+/**/     background-color: var(--main-color);}
 
 .channel-text-area-default [class*="inner-"],
 .channel-text-area-default [class*="autocomplete-"],
@@ -13,6 +14,17 @@
 .channel-text-area-default [class*="textArea-"],
 .channel-text-area-default [class*="selector-"] [class*="marginLeft8-"]{
     color: white;}
+
+.emoji-picker .scroller .emoji-item.selected {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: contain !important;
+    -moz-background-size: contain !important;
+    background-size: contain !important;}
+
+/* Dani */
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn{
+    display: none}
 
 .theme-dark [class*="channelTextAreaEnabled"] [class*="inner"]{
     background: rgba(0, 0, 0, 0.6);}
@@ -46,7 +58,7 @@
 [class*="titleChecked"]{
     color: var(--main-color) !important;}
 
-/**/ /* Some assistance by @DevilsLynAvenged */
+/**/ /* Some assistance by DevilsLynAvenged */
 /**/ [class*="checkbox"]{
 /**/ background-color: rgba(0, 0, 0, 0.32) !important;
 /**/ border: 2px solid var(--main-color) !Important;}
