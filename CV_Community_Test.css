@@ -46,11 +46,13 @@
 [class*="titleChecked"]{
     color: var(--main-color) !important;}
 
-[class*="checkbox"]{
-    background-color: rgba(0, 0, 0, 0.32) !important;}
-
-[class*="checkbox"] [class*="checked"]{
-    border-color: var(--main-color) !important;}
+/**/ /* Some assistance by @DevilsLynAvenged */
+/**/ [class*="checkbox"]{
+/**/ background-color: rgba(0, 0, 0, 0.32) !important;
+/**/ border: 2px solid var(--main-color) !Important;}
+/**/
+/**/ [class*="checkbox"] [class*="focused"]{
+/**/ box-shadow: none !important;}
 
 [class*="checkbox"] [class*="checked"] polyline{
     stroke: var(--main-color) !Important;}
@@ -77,3 +79,15 @@
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:last-child:hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:last-child:hover [class*="checkbox"] polyline{
     stroke: rgba(240, 71, 71, 0.2)}
+
+[class*="switchWrapper"] [class*="switch"][class*="checked"],
+.sensitivity [class*="slider"].slider-bar.speaking{
+	background-color: var(--main-color) !important;}
+
+DIV [class*="slider"] > [class*="bar"],
+.sensitivity [class*="slider"].slider-bar:not(.speaking){
+	background: rgba(255, 255, 255, .1) !important;}
+
+[class*="slider"] [class*="bar"] [class*="barFill"]{
+	background: -webkit-linear-gradient(right, var(--hover-color) 0%, var(--main-color) 100%);
+    background: linear-gradient(to right, var(--hover-color) 0%, var(--main-color) 100%);}
