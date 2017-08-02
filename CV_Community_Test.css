@@ -61,7 +61,8 @@
 /**/ /* Some assistance by DevilsLynAvenged */
 /**/ [class*="checkbox"]{
 /**/ background-color: rgba(0, 0, 0, 0.32) !important;
-/**/ border: 2px solid var(--main-color) !Important;}
+/**/ border-width: 2px !Important;
+/**/ border-color: var(--main-color) !Important;}
 /**/
 /**/ [class*="checkbox"] [class*="focused"]{
 /**/ box-shadow: none !important;}
