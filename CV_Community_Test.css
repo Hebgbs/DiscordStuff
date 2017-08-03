@@ -104,3 +104,7 @@ DIV [class*="slider"] > [class*="bar"],
 [class*="slider"] [class*="bar"] [class*="barFill"]{
 	background: -webkit-linear-gradient(right, var(--hover-color) 0%, var(--main-color) 100%);
     background: linear-gradient(to right, var(--hover-color) 0%, var(--main-color) 100%);}
+
+[class*="modal"] FORM[class*="modal"][class*="container"][class*="sizeSmall"] [class*="message"]{
+	background-color: transparent !important;
+	box-shadow: none !Important;}
