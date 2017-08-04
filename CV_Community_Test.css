@@ -9,7 +9,7 @@
 .channel-text-area-default [class*="inner-"],
 .channel-text-area-default [class*="autocomplete-"],
 [class*="autocomplete-"][class*="autocomplete-"]{
-    background-color: rgba(0, 0, 0, 0.6) !important;}
+    background-color: rgba(0, 0, 0, .6) !important;}
 
 .channel-text-area-default [class*="textArea-"],
 .channel-text-area-default [class*="selector-"] [class*="marginLeft8-"]{
@@ -27,18 +27,27 @@
     display: none}
 
 .theme-dark [class*="channelTextAreaEnabled"] [class*="inner"]{
-    background: rgba(0, 0, 0, 0.6);}
+    background: rgba(0, 0, 0, .6);}
 
 /* w/ &#2039; */
 .instant-invite-modal DIV[class*="form"]{
-    background: rgba(0, 0, 0, 0.85) !Important;}
+    background: rgba(0, 0, 0, .85) !Important;}
+
+[class*="modal"] [class*="sizeSmall"] [class*="footer"] BUTTON[type="button"]{
+	background-color: rgba(0, 0, 0, .5) !Important;
+}
 
 [class*="modal"][class*="modal"][class*="size"],
-[class*="need-help-modal"] .form-inner{
-    background-color: rgba(0, 0, 0, 0.6) !important;}
+[class*="need-help-modal"] .form-inner,
+[class*="modal"] [class*="customWidth"]{
+    background-color: rgba(0, 0, 0, .6) !important;}
+
+input:focus{
+	border-color: var(--main-color) !important;
+}
     
 [class*="need-help-modal"] .footer{
-    background-color: rgba(0, 0, 0, 0.88) !important;
+    background-color: rgba(0, 0, 0, .88) !important;
     border-top: none !important;}
     
 [class*="need-help-modal"] .header.control-group{
@@ -52,7 +61,7 @@
     color: white !Important;}
 
 .radio .radio-inner{
-    background-color: rgba(0, 0, 0, 0.64) !important;
+    background-color: rgba(0, 0, 0, .64) !important;
     border: 2px solid var(--main-color) !important;}
 
 [class*="titleChecked"]{
@@ -60,7 +69,7 @@
 
 /**/ /* Some assistance by DevilsLynAvenged */
 /**/ [class*="checkbox"]{
-/**/ background-color: rgba(0, 0, 0, 0.32) !important;
+/**/ background-color: rgba(0, 0, 0, .32) !important;
 /**/ border-width: 2px !Important;
 /**/ border-color: var(--main-color) !Important;}
 /**/
@@ -76,24 +85,24 @@
 .layer[layer-id="server-settings"] [class*="card"]:first-child:hover [class*="checkbox"] polyline,
 .ui-form-item [class*="card"]:hover [class*="checkbox"] polyline{
     stroke: var(--main-color) !important;
-    opacity: 0.2;}
+    opacity: .2;}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:first-child:hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(2):hover [class*="checkbox"] polyline{
-    stroke: rgba(67, 181, 129, 0.2)}
+    stroke: rgba(67, 181, 129, .2)}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:nth-child(2):hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(3):hover [class*="checkbox"] polyline{
-    stroke: rgba(250, 166, 26, 0.2)}
+    stroke: rgba(250, 166, 26, .2)}
 
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(4):hover [class*="checkbox"] polyline{
-    stroke: rgba(245, 119, 49, 0.2)}
+    stroke: rgba(245, 119, 49, .2)}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:last-child:hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:last-child:hover [class*="checkbox"] polyline{
-    stroke: rgba(240, 71, 71, 0.2)}
+    stroke: rgba(240, 71, 71, .2)}
 
-[class*="switchWrapper"] [class*="switch"][class*="checked"],
+[class*="switchWrapperDefault"] [class*="switch"][class*="checked"],
 .sensitivity [class*="slider"].slider-bar.speaking{
 	background-color: var(--main-color) !important;}
 
