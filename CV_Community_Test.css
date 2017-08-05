@@ -135,4 +135,4 @@ DIV.slider-handle{
 	box-shadow: none !Important;}
 
 .ui-standard-sidebar-view DIV.tools{
-	position: fixed !Important;}
+	position: static !Important;}
