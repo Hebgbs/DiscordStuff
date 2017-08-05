@@ -68,12 +68,12 @@ input:focus{
     color: var(--main-color) !important;}
 
 /**/ /* Some assistance by DevilsLynAvenged */
-/**/ [class*="checkbox"]{
+/**/ .content-column [class*="checkbox"]{
 /**/ background-color: rgba(0, 0, 0, .32) !important;
 /**/ border-width: 2px !Important;
 /**/ border-color: var(--main-color) !Important;}
 /**/
-/**/ [class*="checkbox"] [class*="focused"]{
+/**/ .content-column [class*="checkbox"] [class*="focused"]{
 /**/ box-shadow: none !important;}
 
 [class*="checkbox"] [class*="checked"] polyline{
@@ -102,6 +102,11 @@ input:focus{
 .layer[layer-id="server-settings"] [class*="card"]:last-child:hover [class*="checkbox"] polyline{
     stroke: rgba(240, 71, 71, .2)}
 
+.content-column [class*="switchWrapperDefault"] [class*="switch"],
+.content-column [class*="bar"] .fill[class*="barFill"]{
+	background-color: rgba(0, 0, 0, .32) !important;
+}
+
 .content-column [class*="switchWrapperDefault"] [class*="switch"][class*="checked"],
 .sensitivity [class*="slider"].slider-bar.speaking{
 	background-color: var(--main-color) !important;}
@@ -110,9 +115,9 @@ input:focus{
 .sensitivity [class*="slider"].slider-bar:not(.speaking){
 	background: rgba(255, 255, 255, .1) !important;}
 
-.content-column [class*="slider"] [class*="bar"] [class*="barFill"]{
-	background: -webkit-linear-gradient(right, var(--hover-color) 0%, var(--main-color) 100%);
-    background: linear-gradient(to right, var(--hover-color) 0%, var(--main-color) 100%);}
+.content-column [class*="bar"] :not(.fill)[class*="barFill"]{
+	background: -webkit-linear-gradient(right, var(--hover-color) 0%, var(--main-color) 100%) !important;
+    background: linear-gradient(to right, var(--hover-color) 0%, var(--main-color) 100%) !important;}
 
 .content-column [class*="grabber"]{
 	background-color: var(--main-color) !important;
@@ -128,3 +133,6 @@ DIV.slider-handle{
 [class*="modal"] FORM[class*="modal"][class*="container"][class*="sizeSmall"] [class*="message"]{
 	background-color: transparent !important;
 	box-shadow: none !Important;}
+
+.ui-standard-sidebar-view DIV.tools{
+	position: fixed !Important;}
