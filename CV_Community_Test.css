@@ -42,9 +42,12 @@
 [class*="modal"] [class*="customWidth"]{
     background-color: rgba(0, 0, 0, .6) !important;}
 
+input{
+	border-width: 2px !Important;}
+
 input:focus{
 	border-color: var(--main-color) !important;
-}
+	box-shadow: 0px 0px 3px var(--main-color);}
     
 [class*="need-help-modal"] .footer{
     background-color: rgba(0, 0, 0, .88) !important;
@@ -82,34 +85,44 @@ input:focus{
 .ui-form-item [class*="card"]:hover [class*="checkbox"][class*="checked"] polyline{
     opacity: 1 !important;}
 
+.radio:hover .radio-inner SPAN:after,
+.radio:hover .radio-inner.default SPAN:after,
 .layer[layer-id="server-settings"] [class*="card"]:first-child:hover [class*="checkbox"] polyline,
 .ui-form-item [class*="card"]:hover [class*="checkbox"] polyline{
     stroke: var(--main-color) !important;
-    opacity: .2;}
+    opacity: .5;}
+
+.radio:not(:hover) .radio-inner.default SPAN:after{
+	opacity: .25 !important;}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:first-child:hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(2):hover [class*="checkbox"] polyline{
-    stroke: rgba(67, 181, 129, .2)}
+    stroke: rgba(67, 181, 129, .5)}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:nth-child(2):hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(3):hover [class*="checkbox"] polyline{
-    stroke: rgba(250, 166, 26, .2)}
+    stroke: rgba(250, 166, 26, .5)}
 
 .layer[layer-id="server-settings"] [class*="card"]:nth-child(4):hover [class*="checkbox"] polyline{
-    stroke: rgba(245, 119, 49, .2)}
+    stroke: rgba(245, 119, 49, .5)}
 
 .layer[layer-id="user-settings"] .margin-bottom-40:first-child [class*="card"]:last-child:hover [class*="checkbox"] polyline,
 .layer[layer-id="server-settings"] [class*="card"]:last-child:hover [class*="checkbox"] polyline{
-    stroke: rgba(240, 71, 71, .2)}
+    stroke: rgba(240, 71, 71, .5)}
 
-.content-column [class*="switchWrapperDefault"] [class*="switch"],
+.content-column [class*="switch"][class*="valueUnchecked"],
 .content-column [class*="bar"] .fill[class*="barFill"]{
 	background-color: rgba(0, 0, 0, .32) !important;
 }
 
-.content-column [class*="switchWrapperDefault"] [class*="switch"][class*="checked"],
+.content-column [class*="switch"][class*="valueChecked"],
 .sensitivity [class*="slider"].slider-bar.speaking{
 	background-color: var(--main-color) !important;}
+
+.content-column .connection-list [class*="switch"][class*="valueUnchecked"]{
+	background: transparent !important;}
+.content-column .connection-list [class*="switch"][class*="valueChecked"]{
+	background: rgba(255, 255, 255, .3) !important;}
 
 .content-column [class*="slider"] > [class*="bar"],
 .sensitivity [class*="slider"].slider-bar:not(.speaking){
@@ -133,6 +146,3 @@ DIV.slider-handle{
 [class*="modal"] FORM[class*="modal"][class*="container"][class*="sizeSmall"] [class*="message"]{
 	background-color: transparent !important;
 	box-shadow: none !Important;}
-
-.ui-standard-sidebar-view DIV.tools{
-	position: static !Important;}
