@@ -1,3 +1,4 @@
+/* === FONTS BACKEND === */
 /* CSS base sheet for Discord triple font themes;
    This is a universal sheet for works created by and derived from Hebgbs.
    
@@ -37,18 +38,17 @@ INPUT, LABEL A, P,
 .quickswitcher-container .result-username, .topic.topic-expandable, .search-bar *, .quickswitcher-container .result-note,
 .ui-empty-state-text.margin-top-8, .empty-message H1, .system-message DIV, .quick-region-select, .ghost-pill, .last-played, .desc,
 .channel-textarea-inner *, .typing SPAN.text, .message-group .body .markup:not(.user-name):not(CODE):not(PRE), .message-content,
-.user-popout .discriminator, SPAN.discriminator, .account:after, .embed-rich .embed-fields *, .emoji-row, .ui-role-list-role,
-#autocomplete-popout .row .search-popout DIV:not(.header), .channel-activity, .channel-activity STRONG, DIV.activity, .activity STRONG,
+.user-popout .discriminator, SPAN.discriminator, .account:after, .embed-rich .embed-fields *, .emoji-row, .ui-role-list-role, 
+.channel-activity, .channel-activity STRONG, DIV.activity, .activity STRONG,
 .member-activity, .note *, .protip *, .keyboard-shortcuts-modal .keybind-description, .need-help-modal *:not(H1),
 .quickswitcher-empty-state-cta, .friend-table-add-description, .quickswitcher-container .list-nav, .user-settings-avatar-upload .remove-button,
 .upload DIV.speed, .user-settings-modal-accounts-list, .authed-app .body, .authed-app LI, .control-group A, DIV#overlay-explanation,
 .premium-free-months, .premium-feature .style-description, .premium-description .style-default, .item-game .last-played *, .now-playing,
 .now-playing-add, .change-log LI, .change-log .markdown-modal-footer, .expire-text, #rtc-connection-popout SECTION *, .search-popout DIV SPAN,
-.channel-textarea-autocomplete-inner LI, [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
-.view-body, DIV[class|=description], DIV[class|=default], DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-bar-header),
-.margin-bottom-40 [class*="card"] [class*="desc"], [class*="modal"][class*="modal"] [class*="small"],
-.channel-textarea-autocomplete-inner LI, [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
-[class*="modal"] [class*="inner"] [class*="modal"][class*="modal"] [class*="content"] [class*="selectable"],
+[class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]), .view-body, DIV[class|=description], DIV[class|=default],
+DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-bar-header), .margin-bottom-40 [class*="card"] [class*="desc"],
+[class*="modal"][class*="modal"] [class*="small"], [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
+[class*="modal"] [class*="inner"] [class*="modal"][class*="modal"] [class*="content"] [class*="selectable"], [class*="autocomplete"][class*="autocomplete"],
 .bda-slist, DIV#bd-pub-button, .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
 DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer, #pubslayer .scroller,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN, #bdcl H1, #bdcl .footer{
