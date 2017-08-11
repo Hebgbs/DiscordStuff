@@ -24,7 +24,7 @@ DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .radio-theme:after, .item-game *:not(.last-played), .streamer-mode-enabled-btn, .change-log .markdown-modal-header,
 .changelog-margin-top, .server-row SPAN.server-name-span, .server-row.server-pinned, .keyboard-shortcuts-modal H1 .content,
 .quickswitcher-container .section-title, .quickswitcher-container .result-match, .quickswitcher-empty-state-not,
-.sidebar [class*="header-1"], .margin-bottom-40 [class*="card"] [class*="title"], #rtc-connection-popout HEADER,
+.sidebar [class*="header-1"], [class*="card"] [class*="title"], #rtc-connection-popout HEADER,
 * .bda-name, DIV#bda-gem *, #app-mount:after{
     font-family: var(--headfam) !important;}
 
@@ -46,7 +46,7 @@ INPUT, LABEL A, P,
 .premium-free-months, .premium-feature .style-description, .premium-description .style-default, .item-game .last-played *, .now-playing,
 .now-playing-add, .change-log LI, .change-log .markdown-modal-footer, .expire-text, #rtc-connection-popout SECTION *, .search-popout DIV SPAN,
 [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]), .view-body, DIV[class|=description], DIV[class|=default],
-DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-bar-header), .margin-bottom-40 [class*="card"] [class*="desc"],
+DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-bar-header), [class*="card"] [class*="desc"],
 [class*="modal"][class*="modal"] [class*="small"], [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
 [class*="modal"] [class*="inner"] [class*="modal"][class*="modal"] [class*="content"] [class*="selectable"], [class*="autocomplete"][class*="autocomplete"],
 .bda-slist, DIV#bd-pub-button, .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
