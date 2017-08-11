@@ -24,7 +24,7 @@ DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .radio-theme:after, .item-game *:not(.last-played), .streamer-mode-enabled-btn, .change-log .markdown-modal-header,
 .changelog-margin-top, .server-row SPAN.server-name-span, .server-row.server-pinned, .keyboard-shortcuts-modal H1 .content,
 .quickswitcher-container .section-title, .quickswitcher-container .result-match, .quickswitcher-empty-state-not,
-.sidebar [class*="header-1"], .margin-bottom-40 [class*="card"] [class*="title"] #rtc-connection-popout HEADER,
+.sidebar [class*="header-1"], .margin-bottom-40 [class*="card"] [class*="title"], #rtc-connection-popout HEADER,
 * .bda-name, DIV#bda-gem *, #app-mount:after{
     font-family: var(--headfam) !important;}
 
