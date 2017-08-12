@@ -22,7 +22,8 @@ DIV.esc-text, #user-profile-modal .connected-accounts, .typing SPAN.text STRONG,
 .tab-bar *, .change-str STRONG, .ui-popout-list, .connection, .authed-app .header, .user-settings-modal-keybinds .account-warning,
 .radio-theme:after, .item-game *:not(.last-played), .streamer-mode-enabled-btn, .change-log .markdown-modal-header,
 .changelog-margin-top, .server-row SPAN.server-name-span, .server-row.server-pinned, .keyboard-shortcuts-modal H1 .content,
-.quickswitcher-container .section-title, .quickswitcher-container .result-match, .quickswitcher-empty-state-not,
+.quickswitcher-container .section-title, .quickswitcher-container .result-match, .quickswitcher-empty-state-not, [class*="channelTextArea"] TEXTAREA,
+[class*="userPopout"] [class*="header"], [class*="userPopout"] [class*="body"] [class*="bodyTitle"], [class*="userPopout"] .member-roles,
 .sidebar [class*="header-1"], [class*="card"] [class*="title"], [class*="auditLog"] SPAN:not([class*="discrim"]), [class*="auditLog"] STRONG,
 * .bda-name, DIV#bda-gem *, #app-mount:after{
     font-family: var(--headfam) !important;}
@@ -49,6 +50,7 @@ DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-b
 [class*="auditLog"] [class*="timestamp"], [class*="auditLog"] [class*="changeDetails"], [class*="modal"][class*="modal"] [class*="small"],
 [class*="auditLog"] SPAN[class*="discrim"], [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
 [class*="modal"] [class*="inner"] [class*="modal"][class*="modal"] [class*="content"] [class*="selectable"], [class*="autocomplete"][class*="autocomplete"],
+[class*="userPopout"] [class*="header"] [class*="headerDiscriminator"]
 .bda-slist, DIV#bd-pub-button, .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
 DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer, #pubslayer .scroller,
 #bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN, #bdcl H1, #bdcl .footer{
