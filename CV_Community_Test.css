@@ -144,6 +144,10 @@ DIV.slider-handle{
 	height: 18px !important;
 	width: 18px !Important;}
 
-[class*="modal"] FORM[class*="modal"][class*="container"][class*="sizeSmall"] [class*="message"]{
+[class*="modal"] [class*="modal"][class*="container"] [class*="message"]{
 	background-color: transparent !important;
 	box-shadow: none !Important;}
+	
+[class*="modal"] [class*="modal"].container-2WJW5U [class*="footer"] BUTTON[type="button"]{
+	background-color: rgba(0, 0, 0, .5) !Important;
+}
