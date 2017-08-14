@@ -29,13 +29,14 @@
 .theme-dark [class*="channelTextAreaEnabled"] [class*="inner"]{
     background: rgba(0, 0, 0, .6);}
 
+/**/ /* Modified by w/ &#2039; */
+/**/ [class*="modal"] [class*="modal"][class*="container"] [class*="footer"]{
+/**/ 	background: transparent !important;
+}
+
 /* w/ &#2039; */
 .instant-invite-modal DIV[class*="form"]{
     background: rgba(0, 0, 0, .85) !Important;}
-
-[class*="modal"] [class*="sizeSmall"] [class*="footer"] BUTTON[type="button"]{
-	background-color: rgba(0, 0, 0, .5) !Important;
-}
 
 [class*="modal"][class*="modal"][class*="size"],
 [class*="need-help-modal"] .form-inner,
