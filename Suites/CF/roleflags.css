@@ -1,6 +1,6 @@
 /* Flag colours and emblems */
 	/* Canada */
-.member-role[style*="color: rgb(255, 0, 0)"]{
+.member-role[style*="color: rgb(255, 1, 1)"]{
 	background-color: transparent !Important;
 	background: url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/ca15.svg) 50% 50% / 40px 40px no-repeat, linear-gradient(75deg, #f00 0%, #f00 25%, #fff 25%, #fff 75%, #f00 75%, #f00 100%);
 	background-repeat: no-repeat;
