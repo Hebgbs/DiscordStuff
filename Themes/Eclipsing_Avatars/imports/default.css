@@ -100,8 +100,7 @@ DIV .avatar-small .status.idle{
 .popout .header .status.status-idle{
     box-shadow: 0px 0px 18px var(--status-idle),
                 0px 0px 6px 3px var(--status-idle) !important;}
-.avatar-profile .status.status-idle,
-.ui-call-avatar-border.selected{
+.avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
 
@@ -125,9 +124,9 @@ DIV .avatar-small .status.dnd{
     box-shadow: 0px 0px 24px var(--status-dnd),
                 0px 0px 8px 4px var(--status-dnd) !important;}
 
-.ui-call-avatar-border.video.selected{
-    box-shadow: 0px 0px 6px var(--status-select),
-                0px 0px 2px 1px var(--status-select) !important;}
+.ui-call-avatar-border.selected{
+    box-shadow: 0px 0px 24px var(--status-select),
+                0px 0px 8px 4px var(--status-select) !important;}
 
 .title .status.status-streaming,
 .friends-row .status.status-streaming{
