@@ -5,9 +5,9 @@
     --status-online: #43b581;
     --status-idle: #faa61a;
     --status-dnd: #f04747;
-	--status-select: #7289da;
+   --status-select: #7289da;
     --status-streaming: #593695;}
-	
+   
 /* Base import file for Eclipsing Avatars;
    This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
 
@@ -24,17 +24,20 @@ DIV .avatar-small .status,
     background: transparent !important;}
 
 .avatar-popout{
-	border: none !important;}
+   border: none !important;}
+
+.private-channel-call-participants{
+   overflow: visible !important;}
 
 .ui-call-avatar-border.video{
-	position: fixed !important;
-	margin: 0px 4px 0px 4px !important;}
+   position: fixed !important;
+   margin: 0px 4px 0px 4px !important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
-	height: 26px !important;
-	width: 26px !Important;
-	border-radius: 26px !Important;}
+   height: 26px !important;
+   width: 26px !Important;
+   border-radius: 26px !Important;}
 
 .channel.private .status,
 DIV .avatar-small .status,
@@ -67,18 +70,17 @@ background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 DIV[class^="container"] .status.status-online,
 .member .status.status-online,
-.channel-textarea-autocomplete-inner .status.status-online,
-.ui-call-avatar-border.video.speaking{
-    box-shadow: 0px 0px 4px var(--status-online),
+.channel-textarea-autocomplete-inner .status.status-online{
+    box-shadow: 0px 0px 6px var(--status-online),
                 0px 0px 2px 1px var(--status-online) !important;}
 DIV .avatar-small .status.online{
-    box-shadow: 0px 0px 11px var(--status-online),
+    box-shadow: 0px 0px 12px var(--status-online),
                 0px 0px 4px 2px var(--status-online) !important;}
 .popout .header .status.status-online{
-    box-shadow: 0px 0px 17px var(--status-online),
+    box-shadow: 0px 0px 18px var(--status-online),
                 0px 0px 6px 3px var(--status-online) !important;}
 .avatar-profile .status.status-online,
-.ui-call-avatar-border:not(.video).speaking{
+.ui-call-avatar-border.speaking{
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
@@ -90,16 +92,16 @@ background-color: var(--status-idle) !important;}
 DIV[class^="container"] .status.status-idle,
 .member .status.status-idle,
 .channel-textarea-autocomplete-inner .status.status-idle{
-    box-shadow: 0px 0px 3px var(--status-idle),
+    box-shadow: 0px 0px 6px var(--status-idle),
                 0px 0px 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle{
-    box-shadow: 0px 0px 11px var(--status-idle),
+    box-shadow: 0px 0px 12px var(--status-idle),
                 0px 0px 4px 2px var(--status-idle) !important;}
 .popout .header .status.status-idle{
-    box-shadow: 0px 0px 17px var(--status-idle),
+    box-shadow: 0px 0px 18px var(--status-idle),
                 0px 0px 6px 3px var(--status-idle) !important;}
 .avatar-profile .status.status-idle,
-.ui-call-avatar-border:not(.video).selected{
+.ui-call-avatar-border.selected{
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
 
@@ -111,20 +113,20 @@ background-color: var(--status-dnd) !important;}
 DIV[class^="container"] .status.status-dnd,
 .member .status.status-dnd,
 .channel-textarea-autocomplete-inner .status.status-dnd{
-    box-shadow: 0px 0px 4px var(--status-dnd),
+    box-shadow: 0px 0px 6px var(--status-dnd),
                 0px 0px 2px 1px var(--status-dnd) !important;}
 DIV .avatar-small .status.dnd{
-    box-shadow: 0px 0px 11px var(--status-dnd),
+    box-shadow: 0px 0px 12px var(--status-dnd),
                 0px 0px 4px 2px var(--status-dnd) !important;}
 .popout .header .status.status-dnd{
-    box-shadow: 0px 0px 17px var(--status-dnd),
+    box-shadow: 0px 0px 18px var(--status-dnd),
                 0px 0px 6px 3px var(--status-dnd) !important;}
 .avatar-profile .status.status-dnd{
     box-shadow: 0px 0px 24px var(--status-dnd),
                 0px 0px 8px 4px var(--status-dnd) !important;}
 
 .ui-call-avatar-border.video.selected{
-    box-shadow: 0px 0px 4px var(--status-select),
+    box-shadow: 0px 0px 6px var(--status-select),
                 0px 0px 2px 1px var(--status-select) !important;}
 
 .title .status.status-streaming,
@@ -132,5 +134,5 @@ DIV .avatar-small .status.dnd{
     background-color: var(--status-streaming) !important;}
 .channel.private .status.status-streaming,
 .member .status.status-streaming{
-    box-shadow: 0px 0px 4px var(--status-streaming),
+    box-shadow: 0px 0px 6px var(--status-streaming),
                 0px 0px 2px 1px var(--status-streaming) !important;}

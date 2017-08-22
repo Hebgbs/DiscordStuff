@@ -14,12 +14,9 @@ DIV[class^=container] .avatar-small.popout-open DIV.status{
     transition: all .15s ease-in-out;}
 
 /* Colour setting for privare calls */
-DIV.ui-call-avatar-border.video.selected{
-    box-shadow: 0px 0px 4px var(--hover-color),
-                0px 0px 2px 1px var(--hover-color) !important;}
-DIV.ui-call-avatar-border.video.speaking{
-	box-shadow: 0px 0px 4px var(--main-color),
-                0px 0px 2px 1px var(--main-color) !important;}
-DIV.ui-call-avatar-border:not(.video).speaking{
+DIV.ui-call-avatar-border.selected{
+    box-shadow: 0px 0px 24px var(--hover-color),
+                0px 0px 8px 4px var(--hover-color) !important;}
+DIV.ui-call-avatar-border.speaking{
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}
