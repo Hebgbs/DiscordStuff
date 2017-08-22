@@ -5,6 +5,7 @@
     --status-online: #43b581;
     --status-idle: #faa61a;
     --status-dnd: #f04747;
+	--status-select: #7289da;
     --status-streaming: #593695;}
 	
 /* Base import file for Eclipsing Avatars;
@@ -88,8 +89,7 @@ background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 DIV[class^="container"] .status.status-idle,
 .member .status.status-idle,
-.channel-textarea-autocomplete-inner .status.status-idle,
-.ui-call-avatar-border.video.selected{
+.channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0px 0px 3px var(--status-idle),
                 0px 0px 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle{
@@ -122,6 +122,10 @@ DIV .avatar-small .status.dnd{
 .avatar-profile .status.status-dnd{
     box-shadow: 0px 0px 24px var(--status-dnd),
                 0px 0px 8px 4px var(--status-dnd) !important;}
+
+.ui-call-avatar-border.video.selected{
+    box-shadow: 0px 0px 4px var(--status-select),
+                0px 0px 2px 1px var(--status-select) !important;}
 
 .title .status.status-streaming,
 .friends-row .status.status-streaming{
