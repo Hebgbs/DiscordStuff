@@ -1,13 +1,6 @@
 /* Base import file for Eclipsing Avatars;
    This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
 
-:root{
-    --status-online: #43b581;
-    --status-idle: #faa61a;
-    --status-dnd: #f04747;
-    --status-select: #7289da;
-    --status-streaming: #593695;}
-
 /* General */
 .channel.private .status,
 DIV .avatar-small .status,
