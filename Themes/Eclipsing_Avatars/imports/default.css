@@ -5,7 +5,7 @@
     --status-online: #43b581;
     --status-idle: #faa61a;
     --status-dnd: #f04747;
-   --status-select: #7289da;
+    --status-select: #7289da;
     --status-streaming: #593695;}
    
 /* Base import file for Eclipsing Avatars;
@@ -16,12 +16,14 @@
 DIV .avatar-small .status,
 .member .status,
 .popout .header .status,
-[class*="popout"] [class*="avatar"] [class*="Status"][class*="status"],
+[class*="popout"] [class*="avatar"] [class*="Status"],
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
-    border: none !important;
     background: transparent !important;}
+
+[class*="avatar"][class*="popout"]{
+	border: none !important;}
 
 .avatar-popout{
    border: none !important;}
