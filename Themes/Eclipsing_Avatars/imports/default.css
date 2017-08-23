@@ -22,7 +22,11 @@ DIV .avatar-small .status,
     top: 0px !important;
     background: transparent !important;}
 
+<<<<<<< HEAD
 DIV[class*="avatar"][class*="popout"][class*="avatar"][class*="avatar"]{
+=======
+[class*="avatar"][class*="popout"]{
+>>>>>>> parent of 86daaa1... Popout fixes quatre
 	border: none !important;}
 
 .avatar-popout{

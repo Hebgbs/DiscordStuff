@@ -34,7 +34,7 @@ DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[clas
 .form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear), .notice .btn,
 .alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary), .ui-guild-nsfw .ui-button-contents,
 DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-child(2) .region-select:not(:hover) BUTTON,
-.ui-settings-notice-message, .settings-notice-reset-button SPAN{
+.ui-settings-notice-message, .settings-notice-reset-button SPAN, DIV.incoming-call BUTTON{
     color: #fff !important;}
 
     /* ClearVision defaults */
