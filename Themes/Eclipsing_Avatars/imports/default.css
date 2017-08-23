@@ -7,9 +7,6 @@
     --status-dnd: #f04747;
     --status-select: #7289da;
     --status-streaming: #593695;}
-   
-/* Base import file for Eclipsing Avatars;
-   This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
 
 /* General */
 .channel.private .status,
@@ -22,11 +19,7 @@ DIV .avatar-small .status,
     top: 0px !important;
     background: transparent !important;}
 
-<<<<<<< HEAD
-DIV[class*="avatar"][class*="popout"][class*="avatar"][class*="avatar"]{
-=======
 [class*="avatar"][class*="popout"]{
->>>>>>> parent of 86daaa1... Popout fixes quatre
 	border: none !important;}
 
 .avatar-popout{
