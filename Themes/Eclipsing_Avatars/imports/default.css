@@ -16,7 +16,7 @@
 DIV .avatar-small .status,
 .member .status,
 .popout .header .status,
-[class*="popout"] [class*="avatar"] [class*="Status"],
+[class*="popout"] [class*="avatar"] [class*="Status"][class*="status"],
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
@@ -46,7 +46,7 @@ DIV .avatar-small .status,
     width: 30px !important;
     border-radius: 30px !important;}
 
-.popout .header .status{
+[class*="popout"] [class*="avatar"] [class*="Status"][class*="status"]{
     height: 90px !important;
     width: 90px !important;
     border-radius: 90px !important;}
