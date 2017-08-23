@@ -22,7 +22,7 @@ DIV .avatar-small .status,
     top: 0px !important;
     background: transparent !important;}
 
-DIV[class*="avatar"][class*="popout"]{
+DIV[class*="avatar"][class*="popout"][class*="avatar"][class*="avatar"]{
 	border: none !important;}
 
 .avatar-popout{
