@@ -16,7 +16,7 @@
 DIV .avatar-small .status,
 .member .status,
 .popout .header .status,
-.avatar-profile .status,
+[class*="popout"] [class*="avatar"] [class*="Status"],
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
@@ -76,7 +76,7 @@ DIV[class^="container"] .status.status-online,
 DIV .avatar-small .status.online{
     box-shadow: 0px 0px 12px var(--status-online),
                 0px 0px 4px 2px var(--status-online) !important;}
-.popout .header .status.status-online{
+[class*="popout"] [class*="avatar"] [class*="Status"][class*="statusOnline"]{
     box-shadow: 0px 0px 18px var(--status-online),
                 0px 0px 6px 3px var(--status-online) !important;}
 .avatar-profile .status.status-online,
@@ -97,7 +97,7 @@ DIV[class^="container"] .status.status-idle,
 DIV .avatar-small .status.idle{
     box-shadow: 0px 0px 12px var(--status-idle),
                 0px 0px 4px 2px var(--status-idle) !important;}
-.popout .header .status.status-idle{
+[class*="popout"] [class*="avatar"] [class*="Status"][class*="statusIdle"]{
     box-shadow: 0px 0px 18px var(--status-idle),
                 0px 0px 6px 3px var(--status-idle) !important;}
 .avatar-profile .status.status-idle{
@@ -117,7 +117,7 @@ DIV[class^="container"] .status.status-dnd,
 DIV .avatar-small .status.dnd{
     box-shadow: 0px 0px 12px var(--status-dnd),
                 0px 0px 4px 2px var(--status-dnd) !important;}
-.popout .header .status.status-dnd{
+[class*="popout"] [class*="avatar"] [class*="Status"][class*="statusDnd"]{
     box-shadow: 0px 0px 18px var(--status-dnd),
                 0px 0px 6px 3px var(--status-dnd) !important;}
 .avatar-profile .status.status-dnd{
