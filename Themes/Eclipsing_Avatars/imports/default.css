@@ -72,7 +72,7 @@ DIV .avatar-small .status.online{
     box-shadow: 0px 0px 18px var(--status-online),
                 0px 0px 6px 3px var(--status-online) !important;}
 .avatar-profile .status.status-online,
-DIV.ui-call-avatar-border.speaking{
+.ui-call-avatar-border.speaking{
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
@@ -116,7 +116,7 @@ DIV .avatar-small .status.dnd{
     box-shadow: 0px 0px 24px var(--status-dnd),
                 0px 0px 8px 4px var(--status-dnd) !important;}
 
-DIV.ui-call-avatar-border.selected{
+.ui-call-avatar-border.selected{
     box-shadow: 0px 0px 24px var(--status-select),
                 0px 0px 8px 4px var(--status-select) !important;}
 
