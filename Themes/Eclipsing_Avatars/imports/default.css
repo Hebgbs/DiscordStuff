@@ -10,13 +10,12 @@ DIV .avatar-small .status,
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
-    background: transparent !important;}
+    background: transparent !important;
+    border: none !important;}
 
-[class*="avatar"][class*="popout"]{
-	border: none !important;}
-
+[class*="avatar"][class*="popout"],
 .avatar-popout{
-   border: none !important;}
+    border: none !important;}
 
 .private-channel-call-participants{
    overflow: visible !important;}
