@@ -21,8 +21,7 @@ DIV .avatar-small .status,
    overflow: visible !important;}
 
 .ui-call-avatar-border.video{
-   position: fixed !important;
-   margin: 0px 4px 0px 4px !important;}
+   position: fixed !important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
