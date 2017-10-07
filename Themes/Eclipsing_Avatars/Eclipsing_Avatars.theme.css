@@ -10,6 +10,7 @@
    Feel free to remove this comment if creating your own revision of this with additional at-rules. */
 
 @import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/default.css);
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/VCfix.css);
 
 /* Colours; Adjust to preference */
 :root{

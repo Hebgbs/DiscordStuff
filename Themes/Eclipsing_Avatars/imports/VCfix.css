@@ -1,0 +1,7 @@
+/* Eclipsing Avatars 2.7
+   Import file for use with default theme. */
+
+/* Fix for VC speaking in guilds */
+[class*="avatarSpeaking"]{
+    box-shadow: 0px 0px 6px var(--status-online),
+                0px 0px 2px 1px var(--status-online) !important;}
