@@ -6,6 +6,7 @@
 DIV .avatar-small .status,
 .member .status,
 .popout .header .status,
+.avatar-profile .status,
 [class*="popout"] [class*="avatar"] [class*="Status"],
 .channel-textarea-autocomplete-inner .status{
     left: 0px !important;
