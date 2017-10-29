@@ -8,8 +8,8 @@ DIV .avatar-small .status,
 [class*="popout"] [class*="avatarStatus"][class*="status"],
 .avatar-profile .status,
 .channel-textarea-autocomplete-inner .status{
-    left: 0px !important;
-    top: 0px !important;
+    left: 0 !important;
+    top: 0 !important;
     background-color: transparent !important;
     border: none !important;}
 
@@ -20,6 +20,9 @@ DIV .avatar-small .status,
 
 [class*="popout"] [class*="avatar"]{
     border: none !important;}
+
+[class*="avatarHint"]{
+    margin: 0 !Important;}
 
 .private-channel-call-participants{
     overflow: visible !important;}
@@ -65,18 +68,18 @@ background-color: var(--status-online) !important;}
 DIV[class^="container"] .status.status-online,
 .member .status.status-online,
 .channel-textarea-autocomplete-inner .status.status-online{
-    box-shadow: 0px 0px 6px var(--status-online),
-                 0px 0px 2px 1px var(--status-online) !important;}
+    box-shadow: 0 0 6px var(--status-online),
+                 0 0 2px 1px var(--status-online) !important;}
 DIV .avatar-small .status.online{
-    box-shadow: 0px 0px 12px var(--status-online),
-                 0px 0px 4px 2px var(--status-online) !important;}
+    box-shadow: 0 0 12px var(--status-online),
+                 0 0 4px 2px var(--status-online) !important;}
 [class*="popout"] [class*="avatarStatusOnline"]{
-    box-shadow: 0px 0px 18px var(--status-online),
-                 0px 0px 6px 3px var(--status-online) !important;}
+    box-shadow: 0 0 18px var(--status-online),
+                 0 0 6px 3px var(--status-online) !important;}
 .avatar-profile .status.status-online,
 .ui-call-avatar-border.speaking{
-    box-shadow: 0px 0px 24px var(--status-online),
-                 0px 0px 8px 4px var(--status-online) !important;}
+    box-shadow: 0 0 24px var(--status-online),
+                 0 0 8px 4px var(--status-online) !important;}
 
 .status-picker .status-idle,
 .title .status.status-idle,
@@ -86,17 +89,17 @@ background-color: var(--status-idle) !important;}
 DIV[class^="container"] .status.status-idle,
 .member .status.status-idle,
 .channel-textarea-autocomplete-inner .status.status-idle{
-    box-shadow: 0px 0px 6px var(--status-idle),
-                 0px 0px 2px 1px var(--status-idle) !important;}
+    box-shadow: 0 0 6px var(--status-idle),
+                 0 0 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle{
-    box-shadow: 0px 0px 12px var(--status-idle),
-                 0px 0px 4px 2px var(--status-idle) !important;}
+    box-shadow: 0 0 12px var(--status-idle),
+                 0 0 4px 2px var(--status-idle) !important;}
 [class*="popout"] [class*="avatarStatusIdle"]{
-    box-shadow: 0px 0px 18px var(--status-idle),
-                 0px 0px 6px 3px var(--status-idle) !important;}
+    box-shadow: 0 0 18px var(--status-idle),
+                 0 0 6px 3px var(--status-idle) !important;}
 .avatar-profile .status.status-idle{
-    box-shadow: 0px 0px 24px var(--status-idle),
-                 0px 0px 8px 4px var(--status-idle) !important;}
+    box-shadow: 0 0 24px var(--status-idle),
+                 0 0 8px 4px var(--status-idle) !important;}
 
 .status-picker .status-dnd,
 .title .status.status-dnd,
@@ -106,26 +109,26 @@ background-color: var(--status-dnd) !important;}
 DIV[class^="container"] .status.status-dnd,
 .member .status.status-dnd,
 .channel-textarea-autocomplete-inner .status.status-dnd{
-    box-shadow: 0px 0px 6px var(--status-dnd),
-                 0px 0px 2px 1px var(--status-dnd) !important;}
+    box-shadow: 0 0 6px var(--status-dnd),
+                 0 0 2px 1px var(--status-dnd) !important;}
 DIV .avatar-small .status.dnd{
-    box-shadow: 0px 0px 12px var(--status-dnd),
-                 0px 0px 4px 2px var(--status-dnd) !important;}
+    box-shadow: 0 0 12px var(--status-dnd),
+                 0 0 4px 2px var(--status-dnd) !important;}
 [class*="popout"] [class*="avatarStatusDnd"]{
-    box-shadow: 0px 0px 18px var(--status-dnd),
-                 0px 0px 6px 3px var(--status-dnd) !important;}
+    box-shadow: 0 0 18px var(--status-dnd),
+                 0 0 6px 3px var(--status-dnd) !important;}
 .avatar-profile .status.status-dnd{
-    box-shadow: 0px 0px 24px var(--status-dnd),
-                 0px 0px 8px 4px var(--status-dnd) !important;}
+    box-shadow: 0 0 24px var(--status-dnd),
+                 0 0 8px 4px var(--status-dnd) !important;}
 
 .ui-call-avatar-border.selected:not(.speaking){
-    box-shadow: 0px 0px 24px var(--status-select),
-                 0px 0px 8px 4px var(--status-select) !important;}
+    box-shadow: 0 0 24px var(--status-select),
+                 0 0 8px 4px var(--status-select) !important;}
 
 .title .status.status-streaming,
 .friends-row .status.status-streaming{
     background-color: var(--status-streaming) !important;}
 .channel.private .status.status-streaming,
 .member .status.status-streaming{
-    box-shadow: 0px 0px 6px var(--status-streaming),
-                 0px 0px 2px 1px var(--status-streaming) !important;}
+    box-shadow: 0 0 6px var(--status-streaming),
+                 0 0 2px 1px var(--status-streaming) !important;}
