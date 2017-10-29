@@ -1,17 +1,4 @@
-.theme-light .guilds-wrapper .scroller-wrap,
-.theme-dark .guilds-wrapper .scroller-wrap,
-.theme-light DIV[class*="channels-"],
-.theme-dark DIV[class*="channels-"],
-.theme-light .content .flex-spacer,
-.theme-dark .content .flex-spacer,
-[class*="titleWrapper"].theme-light > DIV,
-[class*="titleWrapper"].theme-dark > DIV,
-.theme-light .channel-members,
-.theme-dark .channel-members,
-.theme-light .search-results-wrap,
-.theme-dark .search-results-wrap,
-.theme-light .friends-header,
-.theme-dark .friends-header,
-.theme-light .friends-table,
-.theme-dark .friends-table {
-    background-color: transparent !important;}
+/* Chain-importing until this doesn't work anymore; If it so happens
+   this doesn't work, expect this to be modified in the in the future. */
+
+@Import url(https://rawgit.com/Zerthox/ClearVision/master/mods/SmoothBackgrounds.css);
