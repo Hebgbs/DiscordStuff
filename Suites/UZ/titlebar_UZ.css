@@ -1,0 +1,6 @@
+/* Titlebar mod for UZ theme */
+
+[class*="winButton"]{
+    width: 45px !important;}
+[class*="winButtonMinMax"]:hover{
+    background-color: var(--main-cclor) !important;}
