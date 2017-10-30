@@ -48,7 +48,7 @@ body::after,
 .invite-modal .invite-splash,
 .radio-theme.light label,
 .radio-theme.dark label{
-    background: url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/UZlogo.png) no-repeat center calc(50% - 70px)/350px, url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/UZ.png) center center/cover; !important; /* IMPORTANT: Link must be HTTPS! */
+    background: url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/UZlogo2.png) no-repeat center calc(50% - 70px)/350px, url(https://rawgit.com/Hebgbs/DiscordStuff/master/Images/UZ.png) center center/cover; !important; /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
