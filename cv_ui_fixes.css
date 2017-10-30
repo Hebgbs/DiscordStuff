@@ -3,11 +3,60 @@
    Copyleft 2017, CC0. Do whatever you may please, use and modify at your own peril. */
 
 /* Voice connection status */
-DIV#voice-connection{
+/*DIV#voice-connection{
     padding-left: 4px !Important;
-    padding-right: 14px !important;}
+    padding-right: 14px !important;}*/
 
 /* Adjust width / position of member list headings */
 .channel-members H2{
     padding: 4px 4px 4px 5px;
     width: 196px !important;}
+
+/* Friends and topics */
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item:hover:not(.selected){
+    background: rgba(0, 0, 0, 0.29);}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.selected{
+    background-color: var(--main-color);
+    color: #fff;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.selected{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item .badge{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
+
+[class*="title-"] [class*="topic-"]:before,
+[class*="title-"] [class*="divider-"],
+#friends [class*="headerBar-"] .tab-bar .tab-bar-separator{
+    background-color: hsla(0, 0%, 85%, .1) !important;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item,
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.tab-bar-item-primary{
+    color: hsla(0, 0%, 100%, .6);}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.tab-bar-item-primary{
+    background-color: transparent !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected){
+    background-color: rgba(0, 0, 0, 0.29) !important;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.tab-bar-item-primary.selected{
+    background-color: var(--main-color) !important;
+    color: #fff;}
+
+#friends [class*="headerBar-"] .tab-bar .tab-bar-item.selected .badge{
+    color: var(--main-color) !important;
+    background-color: #fff !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-animation: none;
+    animation: none;}
