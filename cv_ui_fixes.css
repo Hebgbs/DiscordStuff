@@ -8,9 +8,9 @@
     padding-right: 14px !important;}*/
 
 /* Adjust width / position of member list headings */
-.channel-members H2{
+/*.channel-members H2{
     padding: 4px 4px 4px 5px;
-    width: 196px !important;}
+    width: 196px !important;}*/
 
 /* Friends and topics */
 #friends [class*="headerBar-"] .tab-bar .tab-bar-item:hover:not(.selected){
