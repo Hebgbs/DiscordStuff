@@ -1,0 +1,27 @@
+@keyframes eolMsg{
+    from{
+        opacity: 1;
+        display: block;}
+    to{
+        opacity: 0;
+        display: none;}}
+
+[class*="wordmark"]{
+    opacity: 1 !important;}
+
+[class*="wordmark"] SVG{
+    opacity: .6 !important;)}
+
+[class*="wordmark"]:after{
+    position: relative;
+    left: 6px;
+    top: -3px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 6px;
+    border-left: 1px solid rgba(255, 255, 255, .6);
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 0, 0, .5);
+    content: "This suite is unsupported; any maintenance which fixes or improves upon this is coincidental and does not represent continued support.";
+	animation: eolMsg 5s 30s 1 normal forwards;}
