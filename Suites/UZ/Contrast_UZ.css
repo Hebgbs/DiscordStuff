@@ -1,0 +1,14 @@
+.channel-members H2.old-h2,
+.chat > .content .messages .message-group DIV A,
+.channel-members .member DIV.member-activity STRONG,
+.protip LABEL.label,
+DIV.activity STRONG,
+.tab-bar.TOP DIV.tab-bar-item.selected,
+#user-profile-modal .tab-bar.TOP DIV.tab-bar-item.selected{
+	color: var(--hover-color) !important;)
+}
+
+.tab-bar.TOP DIV.tab-bar-item.selected,
+#user-profile-modal .tab-bar.TOP DIV.tab-bar-item.selected{
+	border-color: var(--hover-color) !important;
+}
