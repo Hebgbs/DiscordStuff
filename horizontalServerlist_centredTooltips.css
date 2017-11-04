@@ -1,0 +1,30 @@
+/* Centred tooltips for horizontal guild scroller v1.5
+   Any resolution, any window size, any theme, No problem.
+   
+   Import or use this code wherever you feel most comfortable.
+   Use however you wish, modify at your own peril. */
+
+/* Centring tooltips and text */
+.tooltip-right{
+    position: absolute !important;
+    left: calc(50% - 99px) !important;
+    right: calc(50% - 99px) !important;
+    margin-left: 4px !important;
+    margin-top: calc(-70px * var(--guild-row-count) + 10px) !important;
+    text-align: center !important;}
+/* Stuff to makk this not suck */
+   /* Removal of arrow */
+.tooltip-right::after{
+    display: none !Important;}
+   /* Undoing tooltip mistakes */
+DIV.tooltip,
+DIV.tooltip.tooltip-error{
+	max-width: 190px !important;}
+
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] svg:hover,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] svg:hover,
+.channels-wrap [class*="scroller-"] [class*="horizontal"] [class*="icon"]:hover,
+
+[class*="container"] [class*="container"] [class*="avatarDefault"]{
+    opacity: .7;
+}
