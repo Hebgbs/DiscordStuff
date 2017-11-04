@@ -10,7 +10,7 @@
     left: calc(50% - 99px) !important;
     right: calc(50% - 99px) !important;
     margin-left: 4px !important;
-    margin-top: calc((-70px * var(--guild-row-count)) + 10px) !important;
+    margin-top: calc(-70px * var(--guild-row-count) + 10px) !important;
     text-align: center !important;}
 /* Stuff to makk this not suck */
    /* Removal of arrow */
