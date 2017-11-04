@@ -1,5 +1,13 @@
 /* Titlebar mod for UZ theme */
 
+@keyframes suiteMsg{
+    from{
+        opacity: 1;
+        display: block;}
+    to{
+        opacity: 0;
+        display: none;}}
+
 [class*="winButton"]{
     width: 45px !important;}
 [class*="titleBar-"]{
@@ -19,4 +27,5 @@
     border-left: 1px solid white;
     font-size: 14px;
     color: white;
-    content: "UZ theme suite by Hebgbs, using ClearVision v5.2.4 by Zerthox";}
+    content: "UZ theme suite by Hebgbs, using ClearVision v5.2.4 by Zerthox";
+	animation: eolMsg 5s 30s 1 normal forwards;}
