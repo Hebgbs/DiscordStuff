@@ -2,8 +2,8 @@ DIV.theme-light .guilds-wrapper .scroller-wrap,
 DIV.theme-dark .guilds-wrapper .scroller-wrap,
 DIV.theme-light DIV[class*="channels-"],
 DIV.theme-dark DIV[class*="channels-"],
-DIV.theme-light DIV.flex-spacer.flex-horizontal
-DIV.theme-dark DIV.flex-spacer.flex-horizontal
+DIV.theme-light DIV.flex-spacer.flex-horizontal,
+DIV.theme-dark DIV.flex-spacer.flex-horizontal,
 DIV[class*="titleWrapper"].theme-light > DIV,
 DIV[class*="titleWrapper"].theme-dark > DIV,
 DIV.theme-light .channel-members,
