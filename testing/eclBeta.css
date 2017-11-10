@@ -44,7 +44,7 @@ DIV .avatar-small .status,
 .channel.private .status,
 DIV .avatar-small .status,
 .member .status,
-.friends-row .friends-column.friends-column-status .status{
+.friends-row .friends-column.friends-column-status .status[class*="status-"]{
     height: 30px !important;
     width: 30px !important;
     border-radius: 30px !important;}
