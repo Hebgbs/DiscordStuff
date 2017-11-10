@@ -32,7 +32,7 @@ DIV .avatar-small .status,
     position: fixed !important;}
 
    /* Status detached */
-.friends-row .friends-column.friends-column-status DIV.status[class*="status"]{
+.friends-row .friends-column.friends-column-status .status{
 	background-color: transparent !important;}
 
 /* Size */
@@ -43,7 +43,8 @@ DIV .avatar-small .status,
 
 .channel.private .status,
 DIV .avatar-small .status,
-.member .status{
+.member .status,
+.friends-row .friends-column.friends-column-status .status{
     height: 30px !important;
     width: 30px !important;
     border-radius: 30px !important;}
