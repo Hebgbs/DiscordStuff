@@ -3,11 +3,6 @@
 /* Base import file for Eclipsing Avatars;
    Beta work to test friends table modifications */
 
-/* Root stuff for calc things */
-:root{
-	--fStatIcon-offset: 0px;
-	--fStatText-offset: 0px;}
-
 /* General */
    /* Status attached */
 .channel.private .status,
@@ -47,7 +42,7 @@ DIV .avatar-small .status,
 .friends-column.friends-column-status .status-text{
 	position: relative !important;}
 
-.friends-column.friends-column-status .status[class*="status"]{
+.friend-row .friends-column.friends-column-status .status[class*="status"]{
 	left: calc(-241px - var(--fStatIcon-offset)) !Important;
 	width: 30px !important;
 	height: 30px !Important;
@@ -55,7 +50,7 @@ DIV .avatar-small .status,
 	border-radius: 30px !Important;}
 
 .friends-column.friends-column-status .status-text{
-	left: calc(-38px - var(--fStatText-offset)) !Important;}
+	left: calc(-38px - var(fStatText-offset)) !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
