@@ -84,8 +84,7 @@ DIV .avatar-small .status,
 
 /* Appearance settings; change colours in .theme.css */
 .status-picker .status-online,
-.title .status.status-online,
-.friends-row .status.status-online{
+.title .status.status-online{
 background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 DIV[class^="container"] .status.status-online,
@@ -106,8 +105,7 @@ DIV .avatar-small .status.online,
                  0 0 8px 4px var(--status-online) !important;}
 
 .status-picker .status-idle,
-.title .status.status-idle,
-.friends-row .status.status-idle{
+.title .status.status-idle{
 background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 DIV[class^="container"] .status.status-idle,
@@ -127,8 +125,7 @@ DIV .avatar-small .status.idle,
                  0 0 8px 4px var(--status-idle) !important;}
 
 .status-picker .status-dnd,
-.title .status.status-dnd,
-.friends-row .status.status-dnd{
+.title .status.status-dnd{
 background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 DIV[class^="container"] .status.status-dnd,
@@ -151,8 +148,7 @@ DIV .avatar-small .status.dnd,
     box-shadow: 0 0 24px var(--status-select),
                  0 0 8px 4px var(--status-select) !important;}
 
-.title .status.status-streaming,
-.friends-row .status.status-streaming{
+.title .status.status-streaming{
     background-color: var(--status-streaming) !important;}
 .channel.private .status.status-streaming,
 .member .status.status-streaming{
