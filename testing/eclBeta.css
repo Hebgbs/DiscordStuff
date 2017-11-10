@@ -2,6 +2,7 @@
    This is beta code which probably won't work; use at your own peril. */
 
 /* General */
+   /* Status attached */
 .channel.private .status,
 DIV .avatar-small .status,
 .member .status,
@@ -29,6 +30,10 @@ DIV .avatar-small .status,
 
 .ui-call-avatar-border.video{
     position: fixed !important;}
+
+   /* Status detached */
+.friends-row .status[class*="status"]{
+	background-color: transparent !important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
