@@ -47,7 +47,7 @@ DIV .avatar-small .status,
 .friends-column.friends-column-status .status-text{
 	position: relative !important;}
 
-.friend-row .friends-column.friends-column-status .status{
+.friends-column.friends-column-status .status[class*="status"]{
 	left: calc(-241px - var(--fStatIcon-offset)) !Important;
 	width: 30px !important;
 	height: 30px !Important;
@@ -55,7 +55,7 @@ DIV .avatar-small .status,
 	border-radius: 30px !Important;}
 
 .friends-column.friends-column-status .status-text{
-	left: calc(-38px - var(fStatText-offset)) !Important;}
+	left: calc(-38px - var(--fStatText-offset)) !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
