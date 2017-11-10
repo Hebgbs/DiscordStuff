@@ -3,6 +3,11 @@
 /* Base import file for Eclipsing Avatars;
    Beta work to test friends table modifications */
 
+/* Root stuff for calc things */
+:root{
+	--fStatIcon-offset: 0px;
+	--fStatText-offset: 0px;}
+
 /* General */
    /* Status attached */
 .channel.private .status,
@@ -92,8 +97,7 @@ DIV[class^="container"] .status.status-online,
 .channel-textarea-autocomplete-inner .status.status-online{
     box-shadow: 0 0 6px var(--status-online),
                  0 0 2px 1px var(--status-online) !important;}
-DIV .avatar-small .status.online,
-.friends-column.friends-column-status .status.status-online{
+DIV .avatar-small .status.online{
     box-shadow: 0 0 12px var(--status-online),
                  0 0 4px 2px var(--status-online) !important;}
 [class*="popout"] [class*="avatarStatusOnline"]{
@@ -113,8 +117,7 @@ DIV[class^="container"] .status.status-idle,
 .channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0 0 6px var(--status-idle),
                  0 0 2px 1px var(--status-idle) !important;}
-DIV .avatar-small .status.idle,
-.friends-column.friends-column-status .status.status-idle{
+DIV .avatar-small .status.idle{
     box-shadow: 0 0 12px var(--status-idle),
                  0 0 4px 2px var(--status-idle) !important;}
 [class*="popout"] [class*="avatarStatusIdle"]{
@@ -133,8 +136,7 @@ DIV[class^="container"] .status.status-dnd,
 .channel-textarea-autocomplete-inner .status.status-dnd{
     box-shadow: 0 0 6px var(--status-dnd),
                  0 0 2px 1px var(--status-dnd) !important;}
-DIV .avatar-small .status.dnd,
-.friends-column.friends-column-status .status.status-dnd{
+DIV .avatar-small .status.dnd{
     box-shadow: 0 0 12px var(--status-dnd),
                  0 0 4px 2px var(--status-dnd) !important;}
 [class*="popout"] [class*="avatarStatusDnd"]{
@@ -154,6 +156,3 @@ DIV .avatar-small .status.dnd,
 .member .status.status-streaming{
     box-shadow: 0 0 6px var(--status-streaming),
                  0 0 2px 1px var(--status-streaming) !important;}
-.friends-column.friends-column-status .status.status-streaming{
-    box-shadow: 0 0 12px var(--status-streaming),
-                 0 0 4px 2px var(--status-streaming) !important;}
