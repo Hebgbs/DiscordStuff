@@ -34,18 +34,18 @@ DIV .avatar-small .status,
     position: fixed !important;}
 
    /* Status detached */
-#app .friends-row .friends-column-name{
+.friends-row .friends-column-name{
 	margin-left: 30px !important;}
 
-#app .friends-row .friends-column.friends-column-status .status,
-#aap .friends-row .friends-column.friends-column-status .status-text{
+.friends-row .friends-column.friends-column-status .status,
+.friends-row .friends-column.friends-column-status .status-text{
 	position: relative !important;}
 
-#app .friends-row .friends-column.friends-column-status .status[class*="status"]{
-	left: 241px !Important;
+.friends-row .friends-column.friends-column-status .status[class*="status"]{
+	left: -241px !Important;
 	background-color: transparent !important;}
 
-#app .friends-row .friends-column.friends-column-status .status-text{
+.friends-column.friends-column-status .status-text{
 	left: 38px !Important;}
 
 /* Size */
