@@ -1,8 +1,15 @@
+:root{
+    --status-online: #43b581;
+    --status-idle: #faa61a;
+    --status-dnd: #f04747;
+    --status-streaming: #593695;
+	--status-select: #7289da;}
+
 /* Base import file for Eclipsing Avatars;
-   Beta work to test if friends table doesn't suck without ClearVision */
+   Beta work to test friends table modifications */
 
 /* General */
-   /* Status attached */ 
+   /* Status attached */
 .channel.private .status,
 DIV .avatar-small .status,
 .member .status,
@@ -16,8 +23,8 @@ DIV .avatar-small .status,
 
 /**/ /* Contributed by Arashiryuu */
 /**/ #app-mount div[class*="mask"]{
-/**/    mask: none !important;
-/**/    -webkit-mask: none !important;}
+/**/     mask: none !important;
+/**/     -webkit-mask: none !important;}
 
 [class*="popout"] [class*="avatar"]{
     border: none !important;}
@@ -33,19 +40,18 @@ DIV .avatar-small .status,
 
    /* Status detached */
 .friends-row .friends-column-name{
-    padding-left: 12px !important;}
+	margin-left: 30px !important;}
 
 .friends-column.friends-column-status .status,
 .friends-column.friends-column-status .status-text{
-    position: relative !important;}
+	position: relative !important;}
 
-.friends-column.friends-column-status .status{
-    left: 291px !Important;
-    background-color: transparent !important;}
+.friends-column.friends-column-status .status[class*="status"]{
+	left: calc(-231px - 10px) !Important;
+	background-color: transparent !important;}
 
 .friends-column.friends-column-status .status-text{
-    left: 38px !Important;}
-
+	left: calc(-18px - (10px * 2)) !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
@@ -89,7 +95,7 @@ DIV[class^="container"] .status.status-online,
     box-shadow: 0 0 6px var(--status-online),
                  0 0 2px 1px var(--status-online) !important;}
 DIV .avatar-small .status.online,
-.friends-column.friends-column-status .status-online{
+.friends-column.friends-column-status .status.status-online{
     box-shadow: 0 0 12px var(--status-online),
                  0 0 4px 2px var(--status-online) !important;}
 [class*="popout"] [class*="avatarStatusOnline"]{
@@ -111,7 +117,7 @@ DIV[class^="container"] .status.status-idle,
     box-shadow: 0 0 6px var(--status-idle),
                  0 0 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle,
-.friends-column.friends-column-status .status-idle{
+.friends-column.friends-column-status .status.status-idle{
     box-shadow: 0 0 12px var(--status-idle),
                  0 0 4px 2px var(--status-idle) !important;}
 [class*="popout"] [class*="avatarStatusIdle"]{
@@ -132,7 +138,7 @@ DIV[class^="container"] .status.status-dnd,
     box-shadow: 0 0 6px var(--status-dnd),
                  0 0 2px 1px var(--status-dnd) !important;}
 DIV .avatar-small .status.dnd,
-.friends-column.friends-column-status .status-dnd{
+.friends-column.friends-column-status .status.status-dnd{
     box-shadow: 0 0 12px var(--status-dnd),
                  0 0 4px 2px var(--status-dnd) !important;}
 [class*="popout"] [class*="avatarStatusDnd"]{
@@ -153,6 +159,6 @@ DIV .avatar-small .status.dnd,
 .member .status.status-streaming{
     box-shadow: 0 0 6px var(--status-streaming),
                  0 0 2px 1px var(--status-streaming) !important;}
-.friends-column.friends-column-status .status-streaming{
+.friends-column.friends-column-status .status.status-streaming{
     box-shadow: 0 0 12px var(--status-streaming),
                  0 0 4px 2px var(--status-streaming) !important;}
