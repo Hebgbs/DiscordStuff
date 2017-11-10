@@ -43,14 +43,14 @@ DIV .avatar-small .status,
 	position: relative !important;}
 
 .friends-column.friends-column-status .status{
-	left: -241px !Important;
+	left: calc(-241px - var(--fStatIcon-offset)) !Important;
 	width: 30px !important;
 	height: 30px !Important;
 	background-color: transparent !important;
 	border-radius: 30px !Important;}
 
 .friends-column.friends-column-status .status-text{
-	left: -38px !Important;}
+	left: calc(-38px - var(fStatText-offset)) !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
