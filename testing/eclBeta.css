@@ -1,0 +1,137 @@
+/* Base import file for Eclipsing Avatars;
+   This is beta code which probably won't work; use at your own peril. */
+
+/* General */
+.channel.private .status,
+DIV .avatar-small .status,
+.member .status,
+[class*="popout"] [class*="avatarStatus"][class*="status"],
+.avatar-profile .status,
+.channel-textarea-autocomplete-inner .status{
+    left: 0 !important;
+    top: 0 !important;
+    background-color: transparent !important;
+    border: none !important;}
+
+/**/ /* Contributed by Arashiryuu */
+/**/ #app-mount div[class*="mask"]{
+/**/     mask: none !important;
+/**/     -webkit-mask: none !important;}
+
+[class*="popout"] [class*="avatar"]{
+    border: none !important;}
+
+[class*="avatarHint"]{
+    margin: 0 !Important;}
+
+.private-channel-call-participants{
+    overflow: visible !important;}
+
+.ui-call-avatar-border.video{
+    position: fixed !important;}
+
+/* Size */
+.channel-textarea-autocomplete-inner .status{
+    height: 26px !important;
+    width: 26px !Important;
+    border-radius: 26px !Important;}
+
+.channel.private .status,
+DIV .avatar-small .status,
+.member .status{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 30px !important;}
+
+[class*="popout"] [class*="avatarStatus"]{
+    height: 90px !important;
+    width: 90px !important;
+    border-radius: 90px !important;}
+
+.avatar-profile .status{
+    height: 128px !important;
+    width: 128px !important;
+    border-radius: 128px !important;}
+
+/* Typing indicator */
+.member .status-typing .spinner{
+    position: absolute !important;
+    left: 2px !important;
+    top: 13px !important;}
+
+/* Appearance settings; change colours in .theme.css */
+.status-picker .status-online,
+.title .status.status-online{
+background-color: var(--status-online) !important;}
+.channel.private .status.status-online,
+DIV[class^="container"] .status.status-online,
+.member .status.status-online,
+.channel-textarea-autocomplete-inner .status.status-online{
+    box-shadow: 0 0 6px var(--status-online),
+                 0 0 2px 1px var(--status-online) !important;}
+DIV .avatar-small .status.online,
+.friends-row .status.status-online{
+    box-shadow: 0 0 12px var(--status-online),
+                 0 0 4px 2px var(--status-online) !important;}
+[class*="popout"] [class*="avatarStatusOnline"]{
+    box-shadow: 0 0 18px var(--status-online),
+                 0 0 6px 3px var(--status-online) !important;}
+.avatar-profile .status.status-online,
+.ui-call-avatar-border.speaking{
+    box-shadow: 0 0 24px var(--status-online),
+                 0 0 8px 4px var(--status-online) !important;}
+
+.status-picker .status-idle,
+.title .status.status-idle{
+background-color: var(--status-idle) !important;}
+.channel.private .status.status-idle,
+DIV[class^="container"] .status.status-idle,
+.member .status.status-idle,
+.channel-textarea-autocomplete-inner .status.status-idle{
+    box-shadow: 0 0 6px var(--status-idle),
+                 0 0 2px 1px var(--status-idle) !important;}
+DIV .avatar-small .status.idle,
+.friends-row .status.status-idle{
+    box-shadow: 0 0 12px var(--status-idle),
+                 0 0 4px 2px var(--status-idle) !important;}
+[class*="popout"] [class*="avatarStatusIdle"]{
+    box-shadow: 0 0 18px var(--status-idle),
+                 0 0 6px 3px var(--status-idle) !important;}
+.avatar-profile .status.status-idle{
+    box-shadow: 0 0 24px var(--status-idle),
+                 0 0 8px 4px var(--status-idle) !important;}
+
+.status-picker .status-dnd,
+.title .status.status-dnd{
+background-color: var(--status-dnd) !important;}
+.channel.private .status.status-dnd,
+DIV[class^="container"] .status.status-dnd,
+.member .status.status-dnd,
+.channel-textarea-autocomplete-inner .status.status-dnd{
+    box-shadow: 0 0 6px var(--status-dnd),
+                 0 0 2px 1px var(--status-dnd) !important;}
+DIV .avatar-small .status.dnd,
+.friends-row .status.status-dnd{
+    box-shadow: 0 0 12px var(--status-dnd),
+                 0 0 4px 2px var(--status-dnd) !important;}
+[class*="popout"] [class*="avatarStatusDnd"]{
+    box-shadow: 0 0 18px var(--status-dnd),
+                 0 0 6px 3px var(--status-dnd) !important;}
+.avatar-profile .status.status-dnd{
+    box-shadow: 0 0 24px var(--status-dnd),
+                 0 0 8px 4px var(--status-dnd) !important;}
+
+.ui-call-avatar-border.selected:not(.speaking){
+    box-shadow: 0 0 24px var(--status-select),
+                 0 0 8px 4px var(--status-select) !important;}
+
+.title .status.status-streaming,
+.friends-row .status.status-streaming{
+    background-color: var(--status-streaming) !important;}
+.channel.private .status.status-streaming,
+.member .status.status-streaming{
+    box-shadow: 0 0 6px var(--status-streaming),
+                 0 0 2px 1px var(--status-streaming) !important;}
+.friends-row .status.status-streaming{
+    box-shadow: 0 0 12px var(--status-streaming),
+                 0 0 4px 2px var(--status-streaming) !important;}
