@@ -42,7 +42,7 @@ DIV .avatar-small .status,
 .friends-column.friends-column-status .status-text{
 	position: relative !important;}
 
-.friends-column.friends-column-status .status{
+.friend-row .friends-column.friends-column-status .status{
 	left: calc(-241px - var(--fStatIcon-offset)) !Important;
 	width: 30px !important;
 	height: 30px !Important;
