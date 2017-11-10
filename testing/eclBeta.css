@@ -32,7 +32,7 @@ DIV .avatar-small .status,
     position: fixed !important;}
 
    /* Status detached */
-.friends-row .friends-column.friends-column-status .status[class*="status"]{
+.friends-row .friends-column.friends-column-status DIV.status[class*="status"]{
 	background-color: transparent !important;}
 
 /* Size */
