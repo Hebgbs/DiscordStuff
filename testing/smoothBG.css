@@ -1,10 +1,3 @@
-DIV[class*="theme-"] .guilds-wrapper .scroller-wrap,
-DIV[class*="theme-"] DIV[class*="noWrap"] [class*="channels-"],
-DIV[class*="theme-"] DIV.flex-spacer.flex-horizontal,
-DIV[class*="titleWrapper"][class*="theme-"] > DIV[class*="title-"],
-DIV[class*="theme-"] DIV.channel-members,
-DIV[class*="theme-"] .search-results-wrap,
-DIV[class*="theme-"] #friends [class*="noWrap"][class*="headerBar"],
-DIV[class*="theme-"] #friends DIV.friends-table{
-    background-color: transparent !important;
-}
+/* Import until Discord messes up again for people who use this sheet. */
+
+@import url(https://gitcdn.xyz/cdn/Zerthox/ClearVision/master/mods/SmoothBackgrounds.css);
