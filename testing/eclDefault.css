@@ -34,19 +34,19 @@ DIV .avatar-small .status,
     position: fixed !important;}
 
    /* Status detached */
-.friends-row DIV.friends-column-name{
+.friends-row .friends-column-name{
 	margin-left: 30px !important;}
 
-.friends-column.friends-column-status DIV.status,
-.friends-column.friends-column-status DIV.status-text{
+.friends-row .friends-column.friends-column-status .status,
+.friends-row .friends-column.friends-column-status .status-text{
 	position: relative !important;}
 
-.friends-column.friends-column-status DIV.status[class*="status"]{
-	left: calc(-231px - 10px) !Important;
+.friends-row .friends-column.friends-column-status .status[class*="status"]{
+	left: 241px !Important;
 	background-color: transparent !important;}
 
-.friends-column.friends-column-status DIV.status-text{
-	left: calc(-18px - (10px * 2)) !Important;}
+.friends-row .friends-column.friends-column-status .status-text{
+	left: 38px !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
