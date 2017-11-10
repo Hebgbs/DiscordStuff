@@ -42,11 +42,11 @@ DIV .avatar-small .status,
 	position: relative !important;}
 
 .friends-row .friends-column.friends-column-status .status[class*="status"]{
-	left: -241px !Important;
+	left: calc(-231px - 10px) !Important;
 	background-color: transparent !important;}
 
-.friends-column.friends-column-status .status-text{
-	left: 38px !Important;}
+.friends-row .friends-column.friends-column-status .status-text{
+	left: calc(-18px - (10px * 2)) !Important;}
 
 /* Size */
 .channel-textarea-autocomplete-inner .status{
