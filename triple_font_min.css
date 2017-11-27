@@ -23,12 +23,13 @@ DIV.btn, P.name, P.author, .form-header, .premium-feature .style-default,
 .radio-theme:after, .item-game *:not(.last-played), .streamer-mode-enabled-btn, .change-log .markdown-modal-header,
 .changelog-margin-top, .server-row SPAN.server-name-span, .server-row.server-pinned, .keyboard-shortcuts-modal H1 .content,
 .quickswitcher-container .section-title, .quickswitcher-container .result-match, .quickswitcher-empty-state-not,
-.react-datepicker__header,
+.react-datepicker__header, .private-channels HEADER, .private-channels .channel-name,
+.react-datepicker__header, .private-
 [class*="userPopout"] [class*="header"], [class*="userPopout"] [class*="body"] [class*="bodyTitle"], [class*="userPopout"] .member-roles,
 .sidebar [class*="header-1"], [class*="card"] [class*="title"], [class*="auditLog"] SPAN:not([class*="discrim"]), [class*="auditLog"] STRONG,
 [class*="channels"] [class*="header"] [class*="name"], .layer[layer-id="server-settings"] .guild-settings-roles .sidebar-header,
 [class*="channels"] [class*="container"] :not([class*="Text"]):not([class*="Voice"])[class*="name"], [class*="title-"] [class*="channelName"],
-[class*="bar-"][class*="center"], [class*="unreadBar"][class*="mention"],
+[class*="bar-"][class*="center"], [class*="unreadBar"][class*="mention"], .accessory [class*="content"] [class*="guildName"],
 * .bda-name, DIV#bda-gem *, #app-mount:after{
     font-family: var(--headfam) !important;}
 
@@ -56,10 +57,10 @@ DIV [class^=font-scale-sample], .sidebar :not([class*="header-1"]):not(.ui-tab-b
 [class*="auditLog"] SPAN[class*="discrim"], [class*="modal"][class*="modal"] [class*="scroller"] :not([class*="marginTop"]),
 [class*="modal"] [class*="inner"] [class*="modal"][class*="modal"] [class*="content"] [class*="selectable"], [class*="autocomplete"][class*="autocomplete"],
 [class*="userPopout"] [class*="header"] [class*="headerDiscriminator"], .layer[layer-id="server-settings"] [class*="text"].margin-top-8,
-[class*="channels"] [class*="container"] [class*="content"], [class*="title-"] [class*="topic"],
+[class*="channels"] [class*="container"] [class*="content"], [class*="title-"] [class*="topic"], .accessory [class*="content"] [class*="guildDetail"],
 bda-slist, DIV#bd-pub-button, .server-row DIV:not(.server-name) SPAN:not(.server-name-span):not(BUTTON),
 DIV.creation-date-wrapper, .bda-description, #server-bd-tag, #pubs-footer, #pubslayer .scroller,
-#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN, #bdcl H1, #bdcl .footer{
+#bd-pane DIV DIV DIV.bd-settings DIV:nth-child(6) > SPAN, #bdcl H1, #bdcl .footer, #bd-customcss-detach-controls-button SPAN{
     font-family: var(--bodyfam) !important;}
 
 /* Monospace fonts */
