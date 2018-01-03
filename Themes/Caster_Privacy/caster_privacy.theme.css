@@ -1,0 +1,28 @@
+//META{"name":"Enhanced privacy for videocasting","description":"Everything you need to know about modifying this is held within the style itself; open it with your favourite text editor.","author":"Hebgbs","version":"1.0"}*//{}
+
+@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Caster_Privacy/imports/standard.css);
+
+/* The import above will make it so you can cast with Discord regardless of window state
+   so you can show guild chat or private messages without showing your other guilds or friend aliases.
+   
+   To reveal, ideally you would transition away from your present scene or discuss something else
+   within another scene while moving your mouse over the borders at the left and at the top. After
+   select your guild or friend and chat away, or keep displayed. If you are using a theme, the root
+   block below will allow you to adjust for preference. For "colorgrip" you can define any acceptable
+   colour specification, be it hex triplet (3- or 6-digit), RGB, HSL, RGBA or HSLA.
+   
+   Each "Grip" is just a border you can hover over. Each affected element will expand when hovered.
+   The grips can be resized as necessary; play with the values below to suit. Remember; with this
+   enabled you can only show one element at a time for yourself.
+   
+   This is NOT compatible with anything which modifies how the guild scroller ("Servers") function.
+   Most cosmetic modifications should be compatible with this style.
+   
+   Lastly, this key combination for Discord is important; <Ctrl> + <,>
+*/
+   
+:root{
+    --guildgrip: 3px; /*Size of guild "Grip"*/
+    --changrip: 3px; /*Size of channels / friends "Grip"*/
+    --titlegrip: 3px; /*Size of title "Grip"*/
+    --colorgrip: #2c2f33;} /*COlour of each*/

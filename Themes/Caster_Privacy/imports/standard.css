@@ -1,0 +1,36 @@
+/* Channels: left; Guilds: left; Title: top; Conflicts: horizontalserverlist.css */
+
+/* Channels and guilds */
+   /* Normal */
+[class*="flex-"] [class*="channels-"]:not(:hover),
+[class*="flex-"] [class*="guilds-wrapper"]:not(:hover){
+    width: 0px !important;
+    border-left-style: solid;
+    border-left-color: var(--colorgrip);}
+
+[class*="flex-"] [class*="guilds-wrapper"]:not(:hover){
+    border-left-width: var(--guildgrip);}
+
+[class*="flex-"] [class*="channels-"]:not(:hover){
+    border-left-width: var(--changrip);}
+
+   /* Hover */
+[class*="flex-"] [class*="channels-"]:not(:normal),
+[class*="flex-"] [class*="guilds-wrapper"]:not(:normal){
+    border-left: none !Important;}
+
+/* Titles */
+   /* Guilds *//
+.chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"]{
+    border-bottom: var(--titlegrip) solid var(--colorgrip);
+    height: 0px !Important;}
+
+.chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"] *{
+    margin-bottom: 24px !important;}
+   /* Friends */
+.chat.private [class*="titleWrapper-"]:not(:hover) [class*="title-"] DIV:not(:first-child){
+    opacity: 0;}
+
+/* Decoration */
+[class*="flex-"] [class*="base-"]{
+    border-radius: 0 !important;}
