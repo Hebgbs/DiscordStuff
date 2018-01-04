@@ -5,6 +5,7 @@
 [class*="flex-"] [class*="channels-"]:not(:hover),
 [class*="flex-"] [class*="guilds-wrapper"]:not(:hover){
     width: 0px !important;
+	margin-left: 1px !important;
     border-left-style: solid;
     border-left-color: var(--colorgrip);}
 
