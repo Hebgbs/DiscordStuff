@@ -14,6 +14,9 @@
 [class*="flex-"] [class*="channels-"]:not(:hover){
     border-left-width: var(--changrip);}
 
+[class*="flex-"] [class*="channels-"]:not(:hover) [class*="unread"]{
+    display: none !Important;}
+
    /* Hover */
 [class*="flex-"] [class*="channels-"]:not(:normal),
 [class*="flex-"] [class*="guilds-wrapper"]:not(:normal){
