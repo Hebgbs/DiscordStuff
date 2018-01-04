@@ -26,7 +26,7 @@
     height: 0px !Important;}
 
 .chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"] *{
-    margin-bottom: 24px !important;}
+    margin-bottom: 48px !important;}
    /* Friends */
 .chat.private [class*="titleWrapper-"]:not(:hover) [class*="title-"] DIV:not(:first-child){
     opacity: 0;}
