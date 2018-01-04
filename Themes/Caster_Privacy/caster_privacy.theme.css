@@ -22,7 +22,7 @@
 */
    
 :root{
-    --guildgrip: 3px; /*Size of guild "Grip"*/
-    --changrip: 3px; /*Size of channels / friends "Grip"*/
-    --titlegrip: 3px; /*Size of title "Grip"*/
+    --guildgrip: 6px; /*Size of guild "Grip"*/
+    --changrip: 4px; /*Size of channels / friends "Grip"*/
+    --titlegrip: 4px; /*Size of title "Grip"*/
     --colorgrip: #2c2f33;} /*COlour of each*/
