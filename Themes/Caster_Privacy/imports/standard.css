@@ -1,11 +1,10 @@
-/* Channels: left; Guilds: left; Title: top; Conflicts: horizontalserverlist.css */
+/* Channels: left; Guilds: left; Title: top; Conflicts: horizontalserverlist.theme.css ServerGridPlus.theme.css */
 
 /* Channels and guilds */
    /* Normal */
 [class*="flex-"] [class*="channels-"]:not(:hover),
 [class*="flex-"] [class*="guilds-wrapper"]:not(:hover){
     width: 0px !important;
-	margin-left: 1px !important;
     border-left-style: solid;
     border-left-color: var(--colorgrip);}
 
@@ -21,15 +20,21 @@
     border-left: none !Important;}
 
 /* Titles */
-   /* Guilds *//
-.chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"]{
+   /* Guilds */
+.chat:not(.private) [class*="titleWrapper-"]:not(:hover){
     border-bottom: var(--titlegrip) solid var(--colorgrip);
+    height: 0px !Important;}
+
+.chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"]{
     height: 0px !Important;}
 
 .chat:not(.private) [class*="titleWrapper-"]:not(:hover) [class*="title-"] *{
     margin-bottom: 48px !important;}
-   /* Friends */
-.chat.private [class*="titleWrapper-"]:not(:hover) [class*="title-"] DIV:not(:first-child){
+
+/* Friends */
+.chat.private [class*="titleWrapper-"]:not(:hover) [class*="title-"] DIV:not(:first-child),
+.chat.private [class*="titleWrapper-"]:not(:hover) [class*="titleCall"] DIV:nth-child(3),
+.chat.private [class*="titleWrapper-"]:not(:hover) [class*="titleCall"] [class*="topic"]{
     opacity: 0;}
 
 /* Decoration */
