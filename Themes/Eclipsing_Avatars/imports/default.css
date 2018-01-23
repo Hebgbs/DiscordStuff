@@ -1,12 +1,19 @@
 /* Base import file for Eclipsing Avatars;
     This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
 
+/* TEST *//*
+[class*="avatarStatus"]{
+border: none !important;
+border-radius: 128px !important;
+box-shadow: 0 0 24px var(--status-online),
+            0 0 8px 4px var(--status-online) !important;}*/
+
 /* General */
 .channel.private .status,
 DIV .avatar-small .status,
 .member .status,
 [class*="popout"] [class*="avatarStatus"][class*="status"],
-.avatar-profile .status,
+[class*="profile-"] [class*="status-"],
 .channel-textarea-autocomplete-inner .status{
     left: 0 !important;
     top: 0 !important;
@@ -43,12 +50,12 @@ DIV .avatar-small .status,
     width: 30px !important;
     border-radius: 30px !important;}
 
-[class*="popout"] [class*="avatarStatus"]{
+[class*="profile-"] [class*="status-"]{
     height: 90px !important;
     width: 90px !important;
     border-radius: 90px !important;}
 
-.avatar-profile .status{
+[class*="avatarStatus-"][class*="status-"]{
     height: 128px !important;
     width: 128px !important;
     border-radius: 128px !important;}
@@ -69,17 +76,18 @@ DIV[class^="container"] .status.status-online,
 .member .status.status-online,
 .channel-textarea-autocomplete-inner .status.status-online{
     box-shadow: 0 0 6px var(--status-online),
-                 0 0 2px 1px var(--status-online) !important;}
+                0 0 2px 1px var(--status-online) !important;}
 DIV .avatar-small .status.online{
     box-shadow: 0 0 12px var(--status-online),
-                 0 0 4px 2px var(--status-online) !important;}
-[class*="popout"] [class*="avatarStatusOnline"]{
+                0 0 4px 2px var(--status-online) !important;}
+[class*="popout-"] [class*="avatarStatusOnline"],
+[class*="profile-"] [class*="statusOnline-"]{
     box-shadow: 0 0 18px var(--status-online),
-                 0 0 6px 3px var(--status-online) !important;}
-.avatar-profile .status.status-online,
+                0 0 6px 3px var(--status-online) !important;}
+[class*="avatarStatus-"][class*="statusOnline-"],
 .ui-call-avatar-border.speaking{
     box-shadow: 0 0 24px var(--status-online),
-                 0 0 8px 4px var(--status-online) !important;}
+                0 0 8px 4px var(--status-online) !important;}
 
 .status-picker .status-idle,
 .title .status.status-idle,
@@ -90,16 +98,17 @@ DIV[class^="container"] .status.status-idle,
 .member .status.status-idle,
 .channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0 0 6px var(--status-idle),
-                 0 0 2px 1px var(--status-idle) !important;}
+                0 0 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle{
     box-shadow: 0 0 12px var(--status-idle),
-                 0 0 4px 2px var(--status-idle) !important;}
-[class*="popout"] [class*="avatarStatusIdle"]{
+                0 0 4px 2px var(--status-idle) !important;}
+[class*="popout-"] [class*="avatarStatusIdle"],
+[class*="profile-"] [class*="statusIdle-"]{
     box-shadow: 0 0 18px var(--status-idle),
-                 0 0 6px 3px var(--status-idle) !important;}
-.avatar-profile .status.status-idle{
+                0 0 6px 3px var(--status-idle) !important;}
+[class*="avatarStatus-"][class*="statusIdle-"]{
     box-shadow: 0 0 24px var(--status-idle),
-                 0 0 8px 4px var(--status-idle) !important;}
+                0 0 8px 4px var(--status-idle) !important;}
 
 .status-picker .status-dnd,
 .title .status.status-dnd,
@@ -110,20 +119,21 @@ DIV[class^="container"] .status.status-dnd,
 .member .status.status-dnd,
 .channel-textarea-autocomplete-inner .status.status-dnd{
     box-shadow: 0 0 6px var(--status-dnd),
-                 0 0 2px 1px var(--status-dnd) !important;}
+                0 0 2px 1px var(--status-dnd) !important;}
 DIV .avatar-small .status.dnd{
     box-shadow: 0 0 12px var(--status-dnd),
-                 0 0 4px 2px var(--status-dnd) !important;}
-[class*="popout"] [class*="avatarStatusDnd"]{
+                0 0 4px 2px var(--status-dnd) !important;}
+[class*="popout-"] [class*="avatarStatusDnd"],
+[class*="profile-"] [class*="statusDnd-"]{
     box-shadow: 0 0 18px var(--status-dnd),
-                 0 0 6px 3px var(--status-dnd) !important;}
-.avatar-profile .status.status-dnd{
+                0 0 6px 3px var(--status-dnd) !important;}
+[class*="avatarStatus-"][class*="statusDnd-"]{
     box-shadow: 0 0 24px var(--status-dnd),
-                 0 0 8px 4px var(--status-dnd) !important;}
+                0 0 8px 4px var(--status-dnd) !important;}
 
 .ui-call-avatar-border.selected:not(.speaking){
     box-shadow: 0 0 24px var(--status-select),
-                 0 0 8px 4px var(--status-select) !important;}
+                0 0 8px 4px var(--status-select) !important;}
 
 .title .status.status-streaming,
 .friends-row .status.status-streaming{
@@ -131,4 +141,4 @@ DIV .avatar-small .status.dnd{
 .channel.private .status.status-streaming,
 .member .status.status-streaming{
     box-shadow: 0 0 6px var(--status-streaming),
-                 0 0 2px 1px var(--status-streaming) !important;}
+                0 0 2px 1px var(--status-streaming) !important;}
