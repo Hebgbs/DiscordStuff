@@ -17,6 +17,6 @@ DIV[class^=container] .avatar-small.popout-open DIV.status{
 DIV[class*="callAvatarBorder-"][class*="selected-"]:not([class*="speaking-"]){
     box-shadow: 0px 0px 24px var(--hover-color),
                 0px 0px 8px 4px var(--hover-color) !important;}
-DIV[class*="callAvatarBorder-"[class*="speaking-"]{
+DIV[class*="callAvatarBorder-"][class*="speaking-"]{
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}
