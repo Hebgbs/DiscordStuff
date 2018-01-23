@@ -31,7 +31,7 @@ DIV .avatar-small .status,
 [class*="avatarHint"]{
     margin: 0 !Important;}
 
-.private-channel-call-participants{
+[class*="videoCenter"] DIV{
     overflow: visible !important;}
 
 .ui-call-avatar-border.video{
@@ -81,7 +81,7 @@ DIV .avatar-small .status.online{
     box-shadow: 0 0 18px var(--status-online),
                 0 0 6px 3px var(--status-online) !important;}
 [class*="avatarStatus-"][class*="statusOnline-"],
-.ui-call-avatar-border.speaking{
+[class*="callAvatarBorder"][class*="speaking"]{
     box-shadow: 0 0 24px var(--status-online),
                 0 0 8px 4px var(--status-online) !important;}
 
@@ -127,7 +127,7 @@ DIV .avatar-small .status.dnd{
     box-shadow: 0 0 24px var(--status-dnd),
                 0 0 8px 4px var(--status-dnd) !important;}
 
-.ui-call-avatar-border.selected:not(.speaking){
+[class*="callAvatarBorder-"][class*="selected-"]:not([class*="speaking-"]){
     box-shadow: 0 0 24px var(--status-select),
                 0 0 8px 4px var(--status-select) !important;}
 
