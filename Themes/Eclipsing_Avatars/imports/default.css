@@ -50,15 +50,11 @@ DIV .avatar-small .status,
     width: 30px !important;
     border-radius: 30px !important;}
 
+[class*="avatarStatus-"][class*="status-"],
 [class*="profile-"] [class*="status-"]{
     height: 90px !important;
     width: 90px !important;
     border-radius: 90px !important;}
-
-[class*="avatarStatus-"][class*="status-"]{
-    height: 128px !important;
-    width: 128px !important;
-    border-radius: 128px !important;}
 
 /* Typing indicator */
 .member .status-typing .spinner{
