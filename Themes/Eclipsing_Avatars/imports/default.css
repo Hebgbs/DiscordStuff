@@ -1,12 +1,5 @@
 /* Base import file for Eclipsing Avatars;
-    This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
-
-/* TEST *//*
-[class*="avatarStatus"]{
-border: none !important;
-border-radius: 128px !important;
-box-shadow: 0 0 24px var(--status-online),
-            0 0 8px 4px var(--status-online) !important;}*/
+   This shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
 
 /* General */
 .channel.private .status,
@@ -14,7 +7,7 @@ DIV .avatar-small .status,
 .member .status,
 [class*="popout"] [class*="avatarStatus"][class*="status"],
 [class*="profile-"] [class*="status-"],
-.channel-textarea-autocomplete-inner .status{
+[class*="autocomplete-"] [class*="avatarStatus-"]{
     left: 0 !important;
     top: 0 !important;
     background-color: transparent !important;
@@ -38,10 +31,10 @@ DIV .avatar-small .status,
     position: fixed !important;}
 
 /* Size */
-.channel-textarea-autocomplete-inner .status{
-    height: 26px !important;
-    width: 26px !Important;
-    border-radius: 26px !Important;}
+[class*="autocomplete-"] [class*="avatarStatus-"]{
+    height: 20px !important;
+    width: 20px !Important;
+    border-radius: 20px !Important;}
 
 .channel.private .status,
 DIV .avatar-small .status,
@@ -50,7 +43,7 @@ DIV .avatar-small .status,
     width: 30px !important;
     border-radius: 30px !important;}
 
-[class*="avatarStatus-"][class*="status-"],
+.popout [class*="avatarStatus-"][class*="status-"],
 [class*="profile-"] [class*="status-"]{
     height: 90px !important;
     width: 90px !important;
@@ -70,7 +63,7 @@ background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 DIV[class^="container"] .status.status-online,
 .member .status.status-online,
-.channel-textarea-autocomplete-inner .status.status-online{
+[class*="autocomplete-"] [class*="statusOnline-"]{
     box-shadow: 0 0 6px var(--status-online),
                 0 0 2px 1px var(--status-online) !important;}
 DIV .avatar-small .status.online{
@@ -80,7 +73,7 @@ DIV .avatar-small .status.online{
 [class*="profile-"] [class*="statusOnline-"]{
     box-shadow: 0 0 18px var(--status-online),
                 0 0 6px 3px var(--status-online) !important;}
-[class*="avatarStatus-"][class*="statusOnline-"],
+.popout [class*="avatarStatus-"][class*="statusOnline-"],
 [class*="callAvatarBorder"][class*="speaking"]{
     box-shadow: 0 0 24px var(--status-online),
                 0 0 8px 4px var(--status-online) !important;}
@@ -92,7 +85,7 @@ background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 DIV[class^="container"] .status.status-idle,
 .member .status.status-idle,
-.channel-textarea-autocomplete-inner .status.status-idle{
+[class*="autocomplete-"] [class*="statusIdle-"]{
     box-shadow: 0 0 6px var(--status-idle),
                 0 0 2px 1px var(--status-idle) !important;}
 DIV .avatar-small .status.idle{
@@ -102,7 +95,7 @@ DIV .avatar-small .status.idle{
 [class*="profile-"] [class*="statusIdle-"]{
     box-shadow: 0 0 18px var(--status-idle),
                 0 0 6px 3px var(--status-idle) !important;}
-[class*="avatarStatus-"][class*="statusIdle-"]{
+.popout [class*="avatarStatus-"][class*="statusIdle-"]{
     box-shadow: 0 0 24px var(--status-idle),
                 0 0 8px 4px var(--status-idle) !important;}
 
@@ -113,7 +106,7 @@ background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 DIV[class^="container"] .status.status-dnd,
 .member .status.status-dnd,
-.channel-textarea-autocomplete-inner .status.status-dnd{
+[class*="autocomplete-"] [class*="statusDnd-"]{
     box-shadow: 0 0 6px var(--status-dnd),
                 0 0 2px 1px var(--status-dnd) !important;}
 DIV .avatar-small .status.dnd{
@@ -123,7 +116,7 @@ DIV .avatar-small .status.dnd{
 [class*="profile-"] [class*="statusDnd-"]{
     box-shadow: 0 0 18px var(--status-dnd),
                 0 0 6px 3px var(--status-dnd) !important;}
-[class*="avatarStatus-"][class*="statusDnd-"]{
+.popout [class*="avatarStatus-"][class*="statusDnd-"]{
     box-shadow: 0 0 24px var(--status-dnd),
                 0 0 8px 4px var(--status-dnd) !important;}
 
