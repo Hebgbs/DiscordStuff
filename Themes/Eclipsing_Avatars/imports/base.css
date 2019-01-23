@@ -1,0 +1,147 @@
+/* Eclipsing Avatars 3.0
+   This base shouldn't be used by itself, and is only intended to reduce additional coding overhead in the future. */
+
+/* General */
+[class*="privateChannels-"] [class*="channel-"] [class*="status-"],
+[class*="modal-"] [class*="avatarSmall-"] [class*="status-"],
+[class*="member-"] [class*="status-"],
+[class*="popout-"] [class*="avatarStatus-"][class*="status-"],
+[class*="profile-"] [class*="status-"],
+[class*="modal-"] [class*="listScroller-"] [class*="status-"],
+[class*="autocomplete-"] [class*="avatarStatus-"],
+[class*="channels-"] [class^="container-"] [class*="status-"]{
+    left: 0 !important;
+    top: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+    /**/ /* Contributed by Arashiryuu */
+    /**/ #app-mount [class*="mask-"] {
+    /**/ mask: none !important;
+    /**/ -webkit-mask: none !important;
+}
+[class*="popout-"] [class*="avatar-"] {
+    border: none !important;
+}
+[class*="avatarHint-"] {
+    margin: 0 !Important;
+}
+[class*="videoCenter-"] DIV {
+    overflow: visible !important;
+}
+.ui-call-avatar-border.video {
+    position: fixed !important;
+}
+/* Size */
+[class*="autocomplete-"] [class*="status-"] {
+    height: 20px !important;
+    width: 20px !Important;
+    border-radius: 20px !Important;
+}
+[class*="privateChannels-"] [class*="channel-"] [class*="status-"],
+[class*="modal-"] [class*="avatarSmall-"] [class*="status-"],
+[class*="member-"] [class*="status-"],
+[class*="channels-"] [class^="container-"] [class*="status-"] {
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 30px !important;
+	pointer-events: none !Important;
+}
+[class*="modal-"] [class*="listScroller-"] [class*="status-"] {
+	height: 40px !Important;
+	width: 40px !important;
+	border-radius: 40px !important;
+}
+[class*="popout-"] [class*="avatarStatus-"][class*="status-"],
+[class*="profile-"] [class*="status-"] {
+    height: 90px !important;
+    width: 90px !important;	
+    border-radius: 90px !important;
+}
+/* Typing indicator */
+.member .status-typing .spinner {
+    position: absolute !important;
+    left: 2px !important;
+    top: 13px !important;
+}
+/* Appearance settings; change colours in .theme.css */
+.popouttop-left [class*="online-"],
+[class*="title"] [class*="status"][class*="online"],
+[class*="friendsRow-"] [class*="status-"][class*="online-"] {
+    background-color: var(--status-online) !important;
+}
+[class*="autocomplete-"] [class*="online-"] {
+    box-shadow: 0 0 6px var(--status-online), 0 0 2px 1px var(--status-online) !important;
+}
+[class*="privateChannels-"] [class*="channel-"] [class*="status-"][class*="online-"],
+[class*="channels-"] [class^="container-"] [class*="status-"][class*="online-"],
+[class*="member-"] [class*="status-"][class*="online-"],
+[class*="modal-"] [class*="avatarSmall-"] [class*="status-"][class*="online-"] {
+    box-shadow: 0 0 12px var(--status-online), 0 0 4px 2px var(--status-online) !important;
+}
+[class*="headerTop-"] [class*="popout-"] [class*="status-"][class*="online-"],
+[class*="modal-"] [class*="listScroller-"] [class*="status-"][class*="online-"] {
+    box-shadow: 0 0 18px var(--status-online), 0 0 6px 3px var(--status-online) !important;
+}
+[class*="profile-"] [class*="status-"][class*="online-"],
+[class*="callAvatarBorder-"][class*="speaking-"] {
+    box-shadow: 0 0 24px var(--status-online), 0 0 8px 4px var(--status-online) !important;
+}
+.popouttop-left [class*="idle-"],
+[class*="title"] [class*="status"][class*="idle"],
+[class*="friendsRow-"] [class*="status-"][class*="idle-"] {
+    background-color: var(--status-idle) !important;
+}
+[class*="autocomplete-"] [class*="idle-"] {
+    box-shadow: 0 0 6px var(--status-idle), 0 0 2px 1px var(--status-idle) !important;
+}
+[class*="privateChannels-"] [class*="channel-"] [class*="status-"][class*="idle-"],
+[class*="channels-"] [class^="container-"] [class*="status-"][class*="idle-"],
+[class*="member-"] [class*="status-"][class*="idle-"],
+[class*="modal-"] [class*="avatarSmall-"] [class*="status-"][class*="idle-"] {
+    box-shadow: 0 0 12px var(--status-idle), 0 0 4px 2px var(--status-idle) !important;
+}
+[class*="headerTop-"] [class*="popout-"] [class*="status-"][class*="idle-"],
+[class*="modal-"] [class*="listScroller-"] [class*="status-"][class*="idle-"] {
+    box-shadow: 0 0 18px var(--status-idle), 0 0 6px 3px var(--status-idle) !important;
+}
+[class*="profile-"] [class*="status-"][class*="idle-"] {
+    box-shadow: 0 0 24px var(--status-idle), 0 0 8px 4px var(--status-idle) !important;
+}
+.popouttop-left [class*="dnd-"],
+[class*="title"] [class*="status"][class*="dnd"],
+[class*="friendsRow-"] [class*="status-"][class*="dnd-"] {
+    background-color: var(--status-dnd) !important;
+}
+[class*="autocomplete-"] [class*="dnd-"] {
+    box-shadow: 0 0 6px var(--status-dnd), 0 0 2px 1px var(--status-dnd) !important;
+}
+[class*="privateChannels-"] [class*="channel-"] [class*="status-"][class*="dnd-"],
+[class*="channels-"] [class^="container-"] [class*="status-"][class*="dnd-"],
+[class*="member-"] [class*="status-"][class*="dnd-"],
+[class*="modal-"] [class*="avatarSmall-"] [class*="status-"][class*="dnd-"] {
+    box-shadow: 0 0 12px var(--status-dnd), 0 0 4px 2px var(--status-dnd) !important;
+}
+[class*="headerTop-"] [class*="popout-"] [class*="status-"][class*="dnd-"],
+[class*="modal-"] [class*="listScroller-"] [class*="status-"][class*="dnd-"] {
+    box-shadow: 0 0 18px var(--status-dnd), 0 0 6px 3px var(--status-dnd) !important;
+}
+[class*="profile-"] [class*="status-"][class*="dnd-"] {
+    box-shadow: 0 0 24px var(--status-dnd), 0 0 8px 4px var(--status-dnd) !important;
+}
+[class*="callAvatarBorder-"][class*="selected-"]:not([class*="speaking-"]) {
+    box-shadow: 0 0 24px var(--status-select), 0 0 8px 4px var(--status-select) !important;
+}
+[class*="title"] [class*="status"][class*="streaming"],
+[class*="friendsRow-"] [class*="status-"][class*="streaming-"] {
+    background-color: var(--status-streaming) !important;
+}
+.channel.private .status.status-streaming,
+[class*="member-"] [class*="status-"][class*="streaming-"] {
+    box-shadow: 0 0 6px var(--status-streaming), 0 0 2px 1px var(--status-streaming) !important;
+}
+
+[class*="headerTop-"] [class*="popout-"] [class*="status-"][class*="offline-"],
+[class*="profile-"] [class*="status-"][class*="offline-"] {
+	box-shadow: none !important;
+}
