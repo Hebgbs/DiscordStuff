@@ -1,5 +1,6 @@
-/* Eclipsing Avatars 2.7
-   Import file for use with default theme. */
+/* Eclipsing Avatars 3.0
+   Import file for use with default theme using my vars. 
+   Some themes use different vars, this makes working with other themes easier. */
 
 /* Fix for VC speaking in guilds */
 [class*="avatarSpeaking"]{
