@@ -2,11 +2,16 @@
    Import file for use with Zerthox's ClearVision theme. */
 
 /* Fix for account avatar */
-/* DIV[class^=container] .avatar-small:hover DIV.status,
-DIV[class^=container] .avatar-small.popout-open DIV.status{
+.container-2Thooq .avatarSmall-3ACRaI:hover [class*="status"] {
     height: 50px !important;
     width: 50px !important;
-    border-radius: 50px !important;} */
+    border-radius: 50px !important;
+}
+.container-2Thooq .avatarSmall-3ACRaI:hover [class*="status"],
+.container-2Thooq .avatarSmall-3ACRaI:not(:hover) [class*="status"] {
+    -webkit-transition: all .15s ease-in-out !important;
+    transition: all .15s ease-in-out !important;
+}
 
 /* Animation settings */
 DIV[class^=container] .avatar-small:hover DIV.status,
