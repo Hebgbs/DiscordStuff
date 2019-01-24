@@ -1,16 +1,18 @@
 /* Eclipsing Avatars 3.0
    Import file for use with Zerthox's ClearVision theme. */
 
-/* Fix for account avatar */
-.container-2Thooq .avatarSmall-3ACRaI:hover [class*="status"] {
+.container-2Thooq .avatarSmall-3ACRaI:hover [class*="status"],
+.container-2Thooq .avatarSmall-3ACRaI.popout-open [class*="status"] {
     height: 50px !important;
     width: 50px !important;
     border-radius: 50px !important;
 }
-.container-2Thooq .avatarSmall-3ACRaI:hover [class*="status"],
-.container-2Thooq .avatarSmall-3ACRaI:not(:hover) [class*="status"] {
-    -webkit-transition: all .15s ease-in-out !important;
-    transition: all .15s ease-in-out !important;
+
+.container-2Thooq .avatarSmall-3ACRaI [class*="status"]{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 /* Animation settings */
